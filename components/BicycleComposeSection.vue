@@ -60,8 +60,12 @@
 
           <div class="mt-6 flex flex-col sm:flex-row items-center gap-4">
             <div class="text-xl sm:text-2xl font-bold">{{ selectedKit.price }} zl</div>
-            <Button variant="primary" class="w-full sm:w-auto">
-              Купить
+            <Button 
+              variant="primary" 
+              class="w-full sm:w-auto"
+              @click="navigateTo(`/configure-kit?type=${selected}`)"
+            >
+              Заказать
             </Button>
           </div>
         </div>
@@ -73,6 +77,7 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue'
 import Button from './ui/Button.vue'
+import { navigateTo } from '#app'
 
 const selected = ref('light')
 

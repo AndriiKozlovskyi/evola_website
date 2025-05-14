@@ -6,8 +6,8 @@
     <div class="md:w-1/2 m-4">
       <h1 class="text-4xl md:text-6xl font-bold">Электровелосипед своими руками</h1>
       <p class="text-base md:text-lg mt-4">Evola — когда одного заряда хватает на целый день приключений.</p>
-      <Button type="button" variant="primary" class="mt-6">
-        Купить комплект
+      <Button type="button" variant="primary" class="mt-6" @click="navigateTo('kits')">
+        Заказать комплект
       </Button>
     </div>
   </section>
@@ -15,6 +15,8 @@
 
 <script setup>
 import Button from './ui/Button.vue';
+import { navigateTo } from '#app'
+
 </script>
 
 <style scoped>
