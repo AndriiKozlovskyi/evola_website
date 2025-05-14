@@ -5,7 +5,7 @@
         <!-- Logo -->
         <div class="flex-shrink-0">
           <nuxt-link to="/" class="text-2xl font-bold">
-            <span class=""">
+            <span class="">
               <span class="text-orange-700">E</span>VOLA
             </span>
           </nuxt-link>
