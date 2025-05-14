@@ -112,7 +112,7 @@ const kitsConfig = {
     basePrice: 2000,
     baseSpeed: 70,
     image: '/assets/turbo-kit.jpg',
-    speedMultiplier: 1.2
+    speedMultiplier: 1
   }
 }
 

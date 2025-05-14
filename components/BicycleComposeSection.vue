@@ -79,16 +79,16 @@ import { ref, computed } from 'vue'
 import Button from './ui/Button.vue'
 import { navigateTo } from '#app'
 
-const selected = ref('light')
+const selected = ref('lite')
 
 const options = [
-  { label: 'Lite', value: 'light' },
+  { label: 'Lite', value: 'lite' },
   { label: 'Base', value: 'base' },
   { label: 'Turbo', value: 'turbo' }
 ]
 
 const kits = {
-  light: {
+  lite: {
     description: 'Лёгкий набор для спокойных катаний в городе, парках и на природе.',
     power: '250 Вт',
     speed: '35 км/ч',
