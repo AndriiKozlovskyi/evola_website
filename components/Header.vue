@@ -1,11 +1,11 @@
 <template>
-  <header class="fixed w-full bg-white dark:bg-gray-900 shadow-md z-50">
+  <header class="fixed w-full bg-white shadow-md z-50">
     <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-16">
         <!-- Logo -->
         <div class="flex-shrink-0">
           <nuxt-link to="/" class="text-2xl font-bold">
-            <span class="dark:text-white">
+            <span class=""">
               <span class="text-orange-700">E</span>VOLA
             </span>
           </nuxt-link>

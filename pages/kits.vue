@@ -1,5 +1,5 @@
 <template>
-  <div class="max-w-screen-xl mx-auto px-4 py-16 sm:py-24">
+  <div class="max-w-screen-xl mx-auto px-4 py-16 mt-5 sm:py-24">
     <h1 class="text-3xl sm:text-4xl md:text-6xl font-bold text-center mb-4 sm:mb-6">
       Комплекты для электровелосипеда
     </h1>
@@ -26,14 +26,13 @@
               onerror="this.src='https://placehold.co/600x400?text=LITE+Kit'"
             />
           </div>
-          <div class="grid grid-cols-3 gap-2 text-center">
+          <div class="grid sm:grid-cols-3 grid-cols-1 gap-2 text-center">
             <div class="p-2 bg-gray-50 rounded flex items-center">
               <svg class="w-5 h-5 mr-2 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
                   d="M13 10V3L4 14h7v7l9-11h-7z" />
               </svg>
               <div>
-                <div class="text-sm font-semibold">Мощность</div>
                 <div>250W</div>
               </div>
             </div>
@@ -43,7 +42,6 @@
                   d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
               <div>
-                <div class="text-sm font-semibold">Скорость</div>
                 <div>25 км/ч</div>
               </div>
             </div>
@@ -53,7 +51,6 @@
                   d="M19 13l-7 7-7-7m14-8l-7 7-7-7" />
               </svg>
               <div>
-                <div class="text-sm font-semibold">Запас хода</div>
                 <div>100 км</div>
               </div>
             </div>
@@ -63,7 +60,11 @@
           </p>
           <div class="flex flex-col sm:flex-row justify-between items-center gap-4">
             <span class="text-xl sm:text-2xl font-bold">2600 PLN</span>
-            <Button variant="primary" class="w-full sm:w-auto">Заказать</Button>
+            <Button  
+              variant="primary" 
+              @click="navigateTo(`/configure-kit?type=lite`)"
+              class="w-full sm:w-auto"
+            >Заказать</Button>
           </div>
         </div>
       </div>
@@ -80,14 +81,13 @@
               onerror="this.src='https://placehold.co/600x400?text=BASE+Kit'"
             />
           </div>
-          <div class="grid grid-cols-3 gap-2 text-center">
+          <div class="grid sm:grid-cols-3 grid-cols-1 gap-2 text-center">
             <div class="p-2 bg-gray-50 rounded flex items-center">
               <svg class="w-5 h-5 mr-2 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
                   d="M13 10V3L4 14h7v7l9-11h-7z" />
               </svg>
               <div>
-                <div class="text-sm font-semibold">Мощность</div>
                 <div>500W</div>
               </div>
             </div>
@@ -97,7 +97,6 @@
                   d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
               <div>
-                <div class="text-sm font-semibold">Скорость</div>
                 <div>40 км/ч</div>
               </div>
             </div>
@@ -107,7 +106,6 @@
                   d="M19 13l-7 7-7-7m14-8l-7 7-7-7" />
               </svg>
               <div>
-                <div class="text-sm font-semibold">Запас хода</div>
                 <div>70 км</div>
               </div>
             </div>
@@ -117,7 +115,11 @@
           </p>
           <div class="flex flex-col sm:flex-row justify-between items-center gap-4">
             <span class="text-xl sm:text-2xl font-bold">3200 PLN</span>
-            <Button variant="primary" class="w-full sm:w-auto">Заказать</Button>
+            <Button 
+              variant="primary" 
+              @click="navigateTo(`/configure-kit?type=base`)"
+              class="w-full sm:w-auto"
+            >Заказать</Button>
           </div>
         </div>
       </div>
@@ -134,14 +136,13 @@
               onerror="this.src='https://placehold.co/600x400?text=TURBO+Kit'"
             />
           </div>
-          <div class="grid grid-cols-3 gap-2 text-center">
+          <div class="grid sm:grid-cols-3 grid-cols-1 gap-2 text-center">
             <div class="p-2 bg-gray-50 rounded flex items-center">
               <svg class="w-5 h-5 mr-2 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
                   d="M13 10V3L4 14h7v7l9-11h-7z" />
               </svg>
               <div>
-                <div class="text-sm font-semibold">Мощность</div>
                 <div>3000W</div>
               </div>
             </div>
@@ -151,7 +152,6 @@
                   d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
               <div>
-                <div class="text-sm font-semibold">Скорость</div>
                 <div>70 км/ч</div>
               </div>
             </div>
@@ -161,7 +161,6 @@
                   d="M19 13l-7 7-7-7m14-8l-7 7-7-7" />
               </svg>
               <div>
-                <div class="text-sm font-semibold">Запас хода</div>
                 <div>70 км</div>
               </div>
             </div>
@@ -171,7 +170,11 @@
           </p>
           <div class="flex flex-col sm:flex-row justify-between items-center gap-4">
             <span class="text-xl sm:text-2xl font-bold">4500 PLN</span>
-            <Button variant="primary" class="w-full sm:w-auto">Заказать</Button>
+            <Button 
+              variant="primary" 
+              @click="navigateTo(`/configure-kit?type=lite`)"
+              class="w-full sm:w-auto"
+            >Заказать</Button>
           </div>
         </div>
       </div>

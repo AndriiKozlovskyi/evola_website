@@ -2,14 +2,13 @@
   <section class="bg-white py-8 sm:py-16">
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
       <div class="text-center mb-8">
-        <h2 class="text-3xl sm:text-4xl md:text-6xl font-bold mb-4">
+        <h2 class="text-3xl sm:text-4xl md:text-6xl mb-4">
           Готовые наборы
         </h2>
         <p class="text-base sm:text-lg mb-6">
-          Мы подготовили специальные наборы, включающие всё необходимое для сборки электровелосипеда своими руками.
-          Компоненты идеально подходят для выбранной задачи. Осталось только добавить велосипед ;
+          
           <br class="hidden sm:block" />
-          Можно также воспользоваться <a href="#configurator" class="text-red-700 underline">конфигуратором</a> для подбора компонентов.
+ 
         </p>
       </div>
 
@@ -86,23 +85,23 @@ const options = [
 const kits = {
   light: {
     description: 'Лёгкий набор для спокойных катаний в городе, парках и на природе.',
-    power: '350 Вт',
+    power: '250 Вт',
     speed: '35 км/ч',
-    range: '45 км',
+    range: '100 км',
     price: '2600'
   },
   base: {
     description: 'Базовый универсальный комплект для повседневного использования.',
     power: '500 Вт',
     speed: '40 км/ч',
-    range: '60 км',
+    range: '70 км',
     price: '3500'
   },
   turbo: {
     description: 'Максимальная мощность и дальность — для тех, кто хочет больше.',
-    power: '750 Вт',
-    speed: '50 км/ч',
-    range: '90 км',
+    power: '3000 Вт',
+    speed: '70 км/ч',
+    range: '70 км',
     price: '4000'
   }
 }
