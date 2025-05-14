@@ -22,9 +22,11 @@
         <h3 class="text-2xl font-bold mb-4">Велосипеды на заказ</h3>
         <p class="text-gray-600 text-3xl font-bold mb-2">от 3400 zl</p>
         <p class="text-base md:text-lg mb-4">Соберём электровелосипед с нуля под ваши нужды.</p>
-        <Button type="button" variant="primary" >
-          Заказать
-        </Button>
+        <a href="tel:+48789711631">
+          <Button type="button" variant="primary">
+            Заказать
+          </Button>
+        </a>
       </div>
     </div>
   </section>
