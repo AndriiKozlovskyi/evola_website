@@ -23,7 +23,7 @@
               <nuxt-link to="/kits" class="hover:text-white transition-colors">Комплекты</nuxt-link>
             </li>
             <li>
-              <nuxt-link to="/articles" class="hover:text-white transition-colors">Статьи</nuxt-link>
+              <nuxt-link to="/blog" class="hover:text-white transition-colors">Статьи</nuxt-link>
             </li>
             <li>
               <nuxt-link to="/batteries" class="hover:text-white transition-colors">Батареи</nuxt-link>

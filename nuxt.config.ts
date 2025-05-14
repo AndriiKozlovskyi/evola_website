@@ -9,12 +9,21 @@ export default defineNuxtConfig({
       }
     }
   },
+  components: {
+    global: true,
+    dirs: ['~/components']
+  },
   modules: [
     '@nuxtjs/tailwindcss',
     [
       '@storyblok/nuxt',
       {
         accessToken: 'E4OKfXbcKctTQs3gxpQCxgtt',
+        apiOptions: {
+          region: 'eu' // or 'us' depending on your Storyblok space region
+        },
+        useApiClient: true,
+        enableSudoMode: false // D
       },
     ],
     '@nuxtjs/i18n',
@@ -55,5 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>`
         'gtm-noscript': ['innerHTML']
       }
     },
-  }
+  },
+  compatibilityDate: '2025-02-21',
+
 });

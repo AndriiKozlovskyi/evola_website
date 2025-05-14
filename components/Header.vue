@@ -82,6 +82,6 @@ const isOpen = ref(false)
 const menuItems = [
   { name: 'Комплекты', href: '/kits' },
   { name: 'Батареи', href: '/batteries' },
-  { name: 'Статьи', href: '/articles' },
+  { name: 'Статьи', href: '/blog' },
 ]
 </script>

@@ -1,11 +1,9 @@
-module.exports = {
-  content: [
-    "./components/**/*.{vue,js,ts,jsx,tsx}",
-    "./pages/**/*.{vue,js,ts,jsx,tsx}",
-    "./app.vue",
-  ],
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ['./storyblok/**/*.{html,js,ts,vue}'],
   theme: {
     extend: {},
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/typography')]
 }
+
