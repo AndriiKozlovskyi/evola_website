@@ -15,7 +15,7 @@
         <div class="md:hidden">
           <button
             @click="isOpen = !isOpen"
-            class="inline-flex items-center justify-center p-2 rounded-md text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800"
+            class="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:bg-gray-100"
           >
             <span class="sr-only">Open main menu</span>
             <svg
@@ -48,7 +48,7 @@
             v-for="item in menuItems"
             :key="item.name"
             :to="item.href"
-            class="text-gray-700 dark:text-gray-200 hover:text-red-700 dark:hover:text-red-500 px-3 py-2 text-sm font-medium"
+            class="text-gray-700 hover:text-red-700 px-3 py-2 text-sm font-medium"
           >
             {{ item.name }}
           </nuxt-link>
@@ -65,7 +65,7 @@
             v-for="item in menuItems"
             :key="item.name"
             :to="item.href"
-            class="block px-3 py-2 text-base font-medium text-gray-700 dark:text-gray-200 hover:text-red-700 dark:hover:text-red-500"
+            class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-red-700"
             @click="isOpen = false"
           >
             {{ item.name }}

@@ -20,13 +20,13 @@
           <h3 class="text-white font-semibold mb-4">Навигация</h3>
           <ul class="space-y-2">
             <li>
-              <nuxt-link to="/about" class="hover:text-white transition-colors">Комплекты</nuxt-link>
+              <nuxt-link to="/kits" class="hover:text-white transition-colors">Комплекты</nuxt-link>
             </li>
             <li>
-              <nuxt-link to="/catalog" class="hover:text-white transition-colors">Статьи</nuxt-link>
+              <nuxt-link to="/articles" class="hover:text-white transition-colors">Статьи</nuxt-link>
             </li>
             <li>
-              <nuxt-link to="/contact" class="hover:text-white transition-colors">Контакты</nuxt-link>
+              <nuxt-link to="/batteries" class="hover:text-white transition-colors">Батареи</nuxt-link>
             </li>
           </ul>
         </div>
