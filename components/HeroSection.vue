@@ -1,7 +1,7 @@
 <template>
   <section class="max-w-screen-xl mx-auto flex flex-col md:flex-row-reverse items-center py-12">
     <div class="md:w-1/2 mt-6 md:mt-0">
-      <img src="/assets/default.png" alt="Батарея/Электровелосипед" class="w-full h-auto mt-10" />
+      <img src="/assets/bic.png" alt="Батарея/Электровелосипед" class="w-full h-auto mt-10" />
     </div>
     <div class="md:w-1/2 m-4">
       <h1 class="text-4xl md:text-6xl font-bold">Электровелосипед своими руками</h1>

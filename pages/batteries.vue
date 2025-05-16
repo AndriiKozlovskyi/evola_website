@@ -75,7 +75,7 @@
             обеспечивает оптимальное охлаждение.
           </p>
           <div class="flex flex-col sm:flex-row justify-between items-center gap-4">
-            <span class="text-xl sm:text-2xl font-bold text-gray-900">1900 PLN</span>
+            <span class="text-xl sm:text-2xl font-bold text-gray-900">2000 PLN</span>
             <Button variant="primary" class="w-full sm:w-auto">Заказать</Button>
           </div>
         </div>

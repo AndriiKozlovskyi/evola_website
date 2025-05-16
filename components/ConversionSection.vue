@@ -9,7 +9,7 @@
         </p>
       </div>
       <div class="md:w-1/2">
-        <img src="/assets/default.png" alt="Конверсия велосипеда" class="w-full h-auto" />
+        <img src="/assets/conversion.png" alt="Конверсия велосипеда" class="w-full h-auto" />
       </div>
     </div>
   </section>

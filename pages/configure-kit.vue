@@ -97,26 +97,30 @@ const kitsConfig = {
     name: 'LITE Kit',
     basePrice: 1200,
     baseSpeed: 25,
-    image: '/assets/lite-kit.jpg',
+    image: '/assets/con250.png',
     speedMultiplier: 1
   },
   base: {
     name: 'BASE Kit',
     basePrice: 1400,
     baseSpeed: 40,
-    image: '/assets/base-kit.jpg',
+    image: '/assets/con500.png',
     speedMultiplier: 1
   },
   turbo: {
     name: 'TURBO Kit',
     basePrice: 2000,
     baseSpeed: 70,
-    image: '/assets/turbo-kit.jpg',
+    image: '/assets/con3000.png',
     speedMultiplier: 1
   }
 }
 
 const selectedKit = computed(() => kitsConfig[kitType])
+
+onMounted(() => {
+  console.log(selectedKit.value.image)
+})
 
 const calculatedSpeed = computed(() => {
   const baseSpeed = selectedKit.value.baseSpeed
