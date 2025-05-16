@@ -13,6 +13,36 @@ export default defineNuxtConfig({
     global: true,
     dirs: ['~/components']
   },
+  i18n: {
+    locales: [
+      {
+        code: 'ru',
+        file: 'ru/ru.ts',
+        name: 'Русский'
+      },
+      {
+        code: 'pl',
+        file: 'pl/pl.ts',
+        name: 'Polski'
+      },
+      {
+        code: 'en',
+        file: 'en/en.ts',
+        name: 'English'
+      }
+    ],
+    defaultLocale: 'ru',
+    strategy: 'no_prefix',
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: 'i18n_redirected',
+      // fallbackLocale: 'en', // optional
+      alwaysRedirect: false,
+      // If you want to use localStorage instead of cookies:
+      // useLocalStorage: true,
+      // localStorageKey: 'i18n_redirected',
+    }
+  },
   modules: [
     '@nuxtjs/tailwindcss',
     [

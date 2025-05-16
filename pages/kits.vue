@@ -1,15 +1,15 @@
 <template>
   <div class="max-w-screen-xl mx-auto px-4 py-16 mt-5 sm:py-24">
     <h1 class="text-3xl sm:text-4xl md:text-6xl font-bold text-center mb-4 sm:mb-6">
-      Комплекты для электровелосипеда
+      {{$t('kits.title')}}
     </h1>
     
     <div class="text-center mb-8 sm:mb-12">
       <p class="text-lg sm:text-xl md:text-2xl text-gray-700 mb-2 sm:mb-4">
-        От городской езды до экстремального бездорожья
+        {{$t('kits.subtitle')}}
       </p>
       <p class="text-xs sm:text-sm text-gray-500">
-        Подберите комплект под свои задачи
+        {{$t('kits.selectKit')}}
       </p>
     </div>
 
@@ -20,7 +20,7 @@
           <h2 class="text-xl sm:text-2xl font-bold">LITE</h2>
           <div class="w-full aspect-video">
             <img 
-              src="/assets/default.png" 
+              src="/assets/con250.png" 
               alt="Комплект LITE" 
               class="w-full h-full object-cover rounded-lg"
               onerror="this.src='https://placehold.co/600x400?text=LITE+Kit'"
@@ -42,7 +42,7 @@
                   d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
               <div>
-                <div>25 км/ч</div>
+                <div>25 {{ $t('common.speed') }}</div>
               </div>
             </div>
             <div class="p-2 bg-gray-50 rounded flex items-center">
@@ -51,12 +51,12 @@
                   d="M19 13l-7 7-7-7m14-8l-7 7-7-7" />
               </svg>
               <div>
-                <div>100 км</div>
+                <div>100 {{ $t('common.range') }}</div>
               </div>
             </div>
           </div>
           <p class="text-gray-700 text-sm">
-            Идеальное решение для города. Легальный комплект, не требующий регистрации.
+            {{ $t('kits.liteTitle') }}
           </p>
           <div class="flex flex-col sm:flex-row justify-between items-center gap-4">
             <span class="text-xl sm:text-2xl font-bold">2600 PLN</span>
@@ -64,7 +64,7 @@
               variant="primary" 
               @click="navigateTo(`/configure-kit?type=lite`)"
               class="w-full sm:w-auto"
-            >Заказать</Button>
+            >{{$t('kits.orderLabel')}}</Button>
           </div>
         </div>
       </div>
@@ -75,7 +75,7 @@
           <h2 class="text-xl sm:text-2xl font-bold">BASE</h2>
           <div class="w-full aspect-video">
             <img 
-              src="/assets/default.png" 
+              src="/assets/con500.png" 
               alt="Комплект BASE" 
               class="w-full h-full object-cover rounded-lg"
               onerror="this.src='https://placehold.co/600x400?text=BASE+Kit'"
@@ -97,7 +97,7 @@
                   d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
               <div>
-                <div>40 км/ч</div>
+                <div>40 {{ $t('common.speed') }}</div>
               </div>
             </div>
             <div class="p-2 bg-gray-50 rounded flex items-center">
@@ -106,12 +106,12 @@
                   d="M19 13l-7 7-7-7m14-8l-7 7-7-7" />
               </svg>
               <div>
-                <div>70 км</div>
+                <div>70 {{ $t('common.range') }}</div>
               </div>
             </div>
           </div>
           <p class="text-gray-700 text-sm">
-            Универсальный комплект для города и легкого бездорожья.
+            {{ $t('kits.baseTitle') }}
           </p>
           <div class="flex flex-col sm:flex-row justify-between items-center gap-4">
             <span class="text-xl sm:text-2xl font-bold">3200 PLN</span>
@@ -119,7 +119,7 @@
               variant="primary" 
               @click="navigateTo(`/configure-kit?type=base`)"
               class="w-full sm:w-auto"
-            >Заказать</Button>
+            >{{$t('kits.orderLabel')}}</Button>
           </div>
         </div>
       </div>
@@ -130,7 +130,7 @@
           <h2 class="text-xl sm:text-2xl font-bold">TURBO</h2>
           <div class="w-full aspect-video">
             <img 
-              src="/assets/default.png" 
+              src="/assets/con3000.png" 
               alt="Комплект TURBO" 
               class="w-full h-full object-cover rounded-lg"
               onerror="this.src='https://placehold.co/600x400?text=TURBO+Kit'"
@@ -152,7 +152,7 @@
                   d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
               <div>
-                <div>70 км/ч</div>
+                <div>70 {{ $t('common.speed') }}</div>
               </div>
             </div>
             <div class="p-2 bg-gray-50 rounded flex items-center">
@@ -161,12 +161,12 @@
                   d="M19 13l-7 7-7-7m14-8l-7 7-7-7" />
               </svg>
               <div>
-                <div>70 км</div>
+                <div>70 {{ $t('common.range') }}</div>
               </div>
             </div>
           </div>
           <p class="text-gray-700 text-sm">
-            Максимальная мощность для экстремального катания и сложного рельефа.
+            {{ $t('kits.turboTitle') }}
           </p>
           <div class="flex flex-col sm:flex-row justify-between items-center gap-4">
             <span class="text-xl sm:text-2xl font-bold">4500 PLN</span>
@@ -174,7 +174,7 @@
               variant="primary" 
               @click="navigateTo(`/configure-kit?type=lite`)"
               class="w-full sm:w-auto"
-            >Заказать</Button>
+            >{{$t('kits.orderLabel')}}</Button>
           </div>
         </div>
       </div>

@@ -10,7 +10,6 @@
             </span>
           </nuxt-link>
         </div>
-
         <!-- Mobile menu button -->
         <div class="md:hidden">
           <button
@@ -50,16 +49,22 @@
             :to="item.href"
             class="text-gray-700 hover:text-red-700 px-3 py-2 text-sm font-medium"
           >
-            {{ item.name }}
+            {{ $t(item.name) }}
           </nuxt-link>
         </nav>
+        <div class="hidden sm:flex">
+          <LanguageSelector/>
+
+        </div>
+
       </div>
 
       <!-- Mobile menu -->
       <div
         v-show="isOpen"
-        class="md:hidden"
+        class="md:hidden flex flex-row justify-between"
       >
+
         <div class="px-2 pt-2 pb-3 space-y-1">
           <nuxt-link
             v-for="item in menuItems"
@@ -68,20 +73,27 @@
             class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-red-700"
             @click="isOpen = false"
           >
-            {{ item.name }}
+            {{ $t(item.name) }}
           </nuxt-link>
         </div>
+        <LanguageSelector/>
+
       </div>
     </div>
   </header>
 </template>
 
 <script setup>
+import { ref } from 'vue'
+import { useI18n } from 'vue-i18n'
+import LanguageSelector from './ui/LanguageSelector.vue'
+
+const { t } = useI18n()
 const isOpen = ref(false)
 
 const menuItems = [
-  { name: 'Комплекты', href: '/kits' },
-  { name: 'Батареи', href: '/batteries' },
-  { name: 'Статьи', href: '/blog' },
+  { name: 'menu.kits', href: '/kits' },
+  { name: 'menu.batteries', href: '/batteries' },
+  { name: 'menu.blog', href: '/blog' },
 ]
 </script>

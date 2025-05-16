@@ -17,7 +17,7 @@
         
         <!-- Battery Selection -->
         <div class="space-y-2">
-          <label class="block text-sm font-medium text-gray-700">Ёмкость батареи</label>
+          <label class="block text-sm font-medium text-gray-700">{{ $t('kits.batteryLabel') }}</label>
           <select v-model="selectedBattery" class="w-full px-3 py-2 rounded-md border-gray-300 shadow-sm">
             <option value="25">25 AH (1600 PLN)</option>
             <option value="30">30 AH (2000 PLN)</option>
@@ -26,16 +26,16 @@
 
         <!-- Motor Position -->
         <div class="space-y-2">
-          <label class="block text-sm font-medium text-gray-700">Расположение мотора</label>
+          <label class="block text-sm font-medium text-gray-700">{{ $t('kits.motorPositionLabel') }}</label>
           <select v-model="motorPosition" class="w-full px-3 py-2 rounded-md border-gray-300 shadow-sm">
-            <option value="front">Переднее колесо</option>
-            <option value="rear">Заднее колесо</option>
+            <option value="front">{{ $t('kits.frontWheel') }}</option>
+            <option value="rear">{{ $t('kits.rearWheel') }}</option>
           </select>
         </div>
 
         <!-- Wheel Size -->
         <div class="space-y-2">
-          <label class="block text-sm font-medium text-gray-700">Диаметр колеса</label>
+          <label class="block text-sm font-medium text-gray-700">{{ $t('kits.wheelSizeLabel') }}</label>
           <select v-model="wheelSize" class="w-full px-3 py-2 rounded-md border-gray-300 shadow-sm">
             <option v-for="size in [20, 24, 26, 29]" :key="size" :value="size">
               {{ size }}"
@@ -51,8 +51,8 @@
                 d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
             <div>
-              <div class="text-sm font-semibold">Скорость</div>
-              <div>{{ calculatedSpeed }} км/ч</div>
+              <div class="text-sm font-semibold">{{$t('kits.speedLabel')}}</div>
+              <div>{{ calculatedSpeed }}  {{ $t('common.speed') }}</div>
             </div>
           </div>
           
@@ -62,8 +62,8 @@
                 d="M19 13l-7 7-7-7m14-8l-7 7-7-7" />
             </svg>
             <div>
-              <div class="text-sm font-semibold">Запас хода</div>
-              <div>{{ calculatedRange }} км</div>
+              <div class="text-sm font-semibold">{{ $t('kits.rangeLabel') }}</div>
+              <div>{{ calculatedRange }} {{ $t('common.range') }}</div>
             </div>
           </div>
         </div>
@@ -71,10 +71,10 @@
         <!-- Total Price -->
         <div class="pt-6 border-t">
           <div class="flex justify-between items-center mb-4">
-            <span class="text-lg font-semibold">Итоговая стоимость:</span>
+            <span class="text-lg font-semibold">{{ $t('kits.totalPriceLabel') }}:</span>
             <span class="text-2xl font-bold">{{ totalPrice }} PLN</span>
           </div>
-          <Button variant="primary" class="w-full">Купить</Button>
+          <Button variant="primary" class="w-full">{{ $t('kits.buyButton') }}</Button>
         </div>
       </div>
     </div>
@@ -82,9 +82,15 @@
 </template>
 
 <script setup>
-import { ref, computed } from 'vue'
+import { ref, computed, onMounted } from 'vue'
+import { useRoute } from 'vue-router'
+import { useI18n } from 'vue-i18n'
 import Button from '~/components/ui/Button.vue'
+import liteImage from '~/assets/con250.png'
+import baseImage from '~/assets/con500.png'
+import turboImage from '~/assets/con3000.png'
 
+const { t } = useI18n()
 const route = useRoute()
 const kitType = route.query.type || 'lite'
 
@@ -97,21 +103,21 @@ const kitsConfig = {
     name: 'LITE Kit',
     basePrice: 1200,
     baseSpeed: 25,
-    image: '/assets/con250.png',
+    image: liteImage,
     speedMultiplier: 1
   },
   base: {
     name: 'BASE Kit',
     basePrice: 1400,
     baseSpeed: 40,
-    image: '/assets/con500.png',
+    image: baseImage,
     speedMultiplier: 1
   },
   turbo: {
     name: 'TURBO Kit',
     basePrice: 2000,
     baseSpeed: 70,
-    image: '/assets/con3000.png',
+    image: turboImage,
     speedMultiplier: 1
   }
 }
