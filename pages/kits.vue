@@ -172,7 +172,7 @@
             <span class="text-xl sm:text-2xl font-bold">4500 PLN</span>
             <Button 
               variant="primary" 
-              @click="navigateTo(`/configure-kit?type=lite`)"
+              @click="navigateTo(`/configure-kit?type=turbo`)"
               class="w-full sm:w-auto"
             >{{$t('kits.orderLabel')}}</Button>
           </div>
