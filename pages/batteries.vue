@@ -120,9 +120,6 @@ import { useI18n } from 'vue-i18n'
 const { t } = useI18n()
 
 const generateBatteryOrderText = (batteryType) => {
-  const specs = batteryType === '25' ? 
-    t('batteries.battery25.specs') : 
-    t('batteries.battery30.specs')
   
   const title = batteryType === '25' ? 
     t('batteries.battery25.title') : 
@@ -133,18 +130,11 @@ const generateBatteryOrderText = (batteryType) => {
     t('batteries.battery30.price')
 
   return `
-${t('batteries.orderLabel')}:
+${t('kits.orderLabel')}:
 ----------------
 ${title}
 
-${t('batteries.specs')}:
-• ${specs.cells}
-• ${specs.case}
-• ${specs.bms}
-• ${specs.voltage}
-• ${specs.charging}
-
-${t('batteries.totalPriceLabel')}: ${price}
+${price}
   `.trim()
 }
 
