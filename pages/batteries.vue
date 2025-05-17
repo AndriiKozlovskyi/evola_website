@@ -46,7 +46,7 @@
           </p>
           <div class="flex flex-col sm:flex-row justify-between items-center gap-4">
             <span class="text-xl sm:text-2xl font-bold text-gray-900">{{ $t('batteries.battery25.price') }}</span>
-            <Button variant="primary" class="w-full sm:w-auto">{{ $t('batteries.orderButton') }}</Button>
+            <Button variant="primary" class="w-full sm:w-auto" @click="handleBatteryOrder('25')">{{ $t('batteries.orderButton') }}</Button>
           </div>
         </div>
       </div>
@@ -75,7 +75,7 @@
           </p>
           <div class="flex flex-col sm:flex-row justify-between items-center gap-4">
             <span class="text-xl sm:text-2xl font-bold text-gray-900">{{ $t('batteries.battery30.price') }}</span>
-            <Button variant="primary" class="w-full sm:w-auto">{{ $t('batteries.orderButton') }}</Button>
+            <Button variant="primary" class="w-full sm:w-auto" @click="handleBatteryOrder('30')">{{ $t('batteries.orderButton') }}</Button>
           </div>
         </div>
       </div>
@@ -118,4 +118,58 @@ import Button from '~/components/ui/Button.vue'
 import { useI18n } from 'vue-i18n'
 
 const { t } = useI18n()
+
+const generateBatteryOrderText = (batteryType) => {
+  const specs = batteryType === '25' ? 
+    t('batteries.battery25.specs') : 
+    t('batteries.battery30.specs')
+  
+  const title = batteryType === '25' ? 
+    t('batteries.battery25.title') : 
+    t('batteries.battery30.title')
+  
+  const price = batteryType === '25' ? 
+    t('batteries.battery25.price') : 
+    t('batteries.battery30.price')
+
+  return `
+${t('batteries.orderLabel')}:
+----------------
+${title}
+
+${t('batteries.specs')}:
+• ${specs.cells}
+• ${specs.case}
+• ${specs.bms}
+• ${specs.voltage}
+• ${specs.charging}
+
+${t('batteries.totalPriceLabel')}: ${price}
+  `.trim()
+}
+
+const handleBatteryOrder = async (batteryType) => {
+  try {
+    const orderText = generateBatteryOrderText(batteryType)
+    await navigator.clipboard.writeText(orderText)
+    alert(t('kits.orderCopiedMessage'))
+    window.location.href = 'https://t.me/evola_manager'
+  } catch (err) {
+    // Fallback for older browsers
+    const textarea = document.createElement('textarea')
+    textarea.value = orderText
+    textarea.style.position = 'fixed'
+    textarea.style.opacity = '0'
+    document.body.appendChild(textarea)
+    textarea.select()
+    try {
+      document.execCommand('copy')
+      alert(t('kits.orderCopiedMessage'))
+      window.location.href = 'https://t.me/evola_manager'
+    } catch (err) {
+      alert(t('kits.orderCopyError'))
+    }
+    document.body.removeChild(textarea)
+  }
+}
 </script>

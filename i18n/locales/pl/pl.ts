@@ -17,6 +17,8 @@ export default {
     frontWheel: 'Przednie Koło',
     rearWheel: 'Tylne Koło',
     orderLabel: 'Zamów',
+    orderCopiedMessage: 'Szczegóły zamówienia skopiowane do schowka! Możesz je teraz wkleić w komunikatorze.',
+    orderCopyError: 'Nie udało się skopiować do schowka. Spróbuj ponownie.',
   },
   common: {
     range: 'km',

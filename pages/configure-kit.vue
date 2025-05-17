@@ -74,7 +74,7 @@
             <span class="text-lg font-semibold">{{ $t('kits.totalPriceLabel') }}:</span>
             <span class="text-2xl font-bold">{{ totalPrice }} PLN</span>
           </div>
-          <Button variant="primary" class="w-full">{{ $t('kits.buyButton') }}</Button>
+          <Button variant="primary" class="w-full" @click="handleOrder">{{ $t('kits.buyButton') }}</Button>
         </div>
       </div>
     </div>
@@ -143,4 +143,59 @@ const totalPrice = computed(() => {
   const batteryPrice = selectedBattery.value === '25' ? 1600 : 2000
   return selectedKit.value.basePrice + batteryPrice
 })
+
+const generateOrderText = () => {
+  const kitName = selectedKit.value.name
+  const batterySize = `${selectedBattery.value}Ah`
+  const batteryPrice = selectedBattery.value === '25' ? '1600' : '2000'
+  const position = motorPosition.value
+  const wheel = `${wheelSize.value}"`
+  const speed = `${calculatedSpeed.value} ${t('common.speed')}`
+  const range = `${calculatedRange.value} ${t('common.range')}`
+  const price = `${totalPrice.value} PLN`
+
+  return `
+${t('kits.orderLabel')}:
+----------------
+${kitName}
+${t('kits.batteryLabel')}: ${batterySize} (${batteryPrice} PLN)
+${t('kits.motorPositionLabel')}: ${position === 'front' ? t('kits.frontWheel') : t('kits.rearWheel')}
+${t('kits.wheelSizeLabel')}: ${wheel}
+${t('kits.speedLabel')}: ${speed}
+${t('kits.rangeLabel')}: ${range}
+----------------
+${t('kits.totalPriceLabel')}: ${price}
+  `.trim()
+}
+
+const handleOrder = async () => {
+  try {
+    const orderText = generateOrderText()
+    await navigator.clipboard.writeText(orderText)
+    alert(t('kits.orderCopiedMessage'))
+    // Redirect to Telegram
+    window.location.href = 'https://t.me/evola_manager'
+  } catch (err) {
+    // Fallback for older browsers
+    const textarea = document.createElement('textarea')
+    textarea.value = orderText
+    textarea.style.position = 'fixed'
+    textarea.style.opacity = '0'
+    document.body.appendChild(textarea)
+    textarea.select()
+    try {
+      document.execCommand('copy')
+      alert(t('kits.orderCopiedMessage'))
+      // Redirect to Telegram
+      window.location.href = 'https://t.me/evola_manager'
+    } catch (err) {
+      alert(t('kits.orderCopyError'))
+    }
+    document.body.removeChild(textarea)
+  }
+}
 </script>
+
+<style scoped>
+/* Add any component-specific styles here */
+</style>

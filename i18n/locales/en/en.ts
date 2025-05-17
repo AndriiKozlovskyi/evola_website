@@ -17,7 +17,8 @@ export default {
     frontWheel: 'Front Wheel',
     rearWheel: 'Rear Wheel',
     orderLabel: 'Order',
-
+    orderCopiedMessage: 'Order details copied to clipboard! You can now paste it in messenger.',
+    orderCopyError: 'Could not copy to clipboard. Please try again.',
   },
   common: {
     range: 'km',
