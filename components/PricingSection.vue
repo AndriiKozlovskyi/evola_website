@@ -22,7 +22,7 @@
         <h3 class="text-2xl font-bold mb-4">{{ $t('pricing.customBikes.title') }}</h3>
         <p class="text-gray-600 text-3xl font-bold mb-2">{{ $t('pricing.customBikes.price') }}</p>
         <p class="text-base md:text-lg mb-4">{{ $t('pricing.customBikes.description') }}</p>
-        <a href="tel:+48789711631">
+        <a href="https://t.me/evola_manager">
           <Button type="button" variant="primary">
             {{ $t('pricing.customBikes.orderButton') }}
           </Button>
