@@ -10,7 +10,7 @@
       <div class="flex flex-col md:flex-row items-center gap-8 sm:gap-12">
         <div class="w-full md:w-1/2">
           <img 
-            src="/assets/default.png" 
+            src="/assets/bicycleTemplate.png" 
             alt="Электрокомплект" 
             class="w-full max-w-sm mx-auto rounded-lg"
             loading="lazy"
