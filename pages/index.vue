@@ -2,9 +2,9 @@
   <div>
     <Header/>
     <HeroSection />
-    <BenefitsSection />
-    <ConversionSection />
     <PricingSection />
+    <BenefitsSection />
+    <!-- <ConversionSection /> -->
     <BicycleComposeSection/>
     <!-- <ContactForm /> -->
   </div>

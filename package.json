@@ -5,9 +5,9 @@
   "scripts": {
     "dev": "NODE_TLS_REJECT_UNAUTHORIZED=0 nuxt dev --https --ssl-cert localhost.pem --ssl-key localhost-key.pem",
     "build": "nuxt build",
-    "start": "nuxt start"
+    "start": "nuxt start",
+    "optimize-images": "ts-node scripts/optimize-images.ts"
   },
-
   "dependencies": {
     "@nuxtjs/i18n": "npm:@nuxtjs/i18n-edge",
     "@nuxtjs/tailwindcss": "^6.13.1",
@@ -19,5 +19,11 @@
     "vue": "latest",
     "vue-router": "latest"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.15.18",
+    "sharp": "^0.34.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
 }

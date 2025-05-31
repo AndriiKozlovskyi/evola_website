@@ -36,7 +36,6 @@
 import Button from './ui/Button.vue';
 import { navigateTo } from '#app'
 import { useI18n } from 'vue-i18n'
-
 const { t } = useI18n()
 </script>
 

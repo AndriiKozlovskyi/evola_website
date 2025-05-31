@@ -20,7 +20,7 @@
           <h2 class="text-xl sm:text-2xl font-bold">LITE</h2>
           <div class="w-full aspect-video">
             <img 
-              src="/assets/con250.png" 
+              src="/assets/con250.webp" 
               alt="Комплект LITE" 
               class="w-full h-full object-cover rounded-lg"
               onerror="this.src='https://placehold.co/600x400?text=LITE+Kit'"
@@ -75,7 +75,7 @@
           <h2 class="text-xl sm:text-2xl font-bold">BASE</h2>
           <div class="w-full aspect-video">
             <img 
-              src="/assets/con500.png" 
+              src="/assets/con500.webp" 
               alt="Комплект BASE" 
               class="w-full h-full object-cover rounded-lg"
               onerror="this.src='https://placehold.co/600x400?text=BASE+Kit'"
@@ -130,7 +130,7 @@
           <h2 class="text-xl sm:text-2xl font-bold">TURBO</h2>
           <div class="w-full aspect-video">
             <img 
-              src="/assets/con3000.png" 
+              src="/assets/con3000.webp" 
               alt="Комплект TURBO" 
               class="w-full h-full object-cover rounded-lg"
               onerror="this.src='https://placehold.co/600x400?text=TURBO+Kit'"

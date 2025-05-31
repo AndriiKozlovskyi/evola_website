@@ -4,7 +4,7 @@
       <!-- Left side - Image -->
       <div class="w-full">
         <img 
-          :src="selectedKit.image || '/assets/default.png'"
+          :src="selectedKit.image || '/assets/default.webp'"
           :alt="selectedKit.name"
           class="w-full h-auto rounded-lg shadow-lg"
           onerror="this.src='https://placehold.co/600x400?text=Kit+Image'"
@@ -86,9 +86,9 @@ import { ref, computed, onMounted } from 'vue'
 import { useRoute } from 'vue-router'
 import { useI18n } from 'vue-i18n'
 import Button from '~/components/ui/Button.vue'
-import liteImage from '~/assets/con250.png'
-import baseImage from '~/assets/con500.png'
-import turboImage from '~/assets/con3000.png'
+import liteImage from '~/assets/con250.webp'
+import baseImage from '~/assets/con500.webp'
+import turboImage from '~/assets/con3000.webp'
 
 const { t } = useI18n()
 const route = useRoute()

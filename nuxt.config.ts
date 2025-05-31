@@ -96,5 +96,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>`
     },
   },
   compatibilityDate: '2025-02-21',
-
+  plugins: [
+    '~/plugins/image-optimization'
+  ]
 });

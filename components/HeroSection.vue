@@ -2,7 +2,7 @@
   <section class="max-w-screen-xl mx-auto flex flex-col md:flex-row-reverse items-center py-12">
     <div class="md:w-1/2 mt-6 md:mt-0">
       <img 
-        src="/assets/bic.png" 
+        src="/assets/bic.webp" 
         :alt="$t('hero.imageAlt')" 
         class="w-full h-auto mt-10" 
       />

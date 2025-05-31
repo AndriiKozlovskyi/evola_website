@@ -9,7 +9,7 @@
       </div>
       <div class="md:w-1/2">
         <img 
-          src="/assets/conversion.png" 
+          src="/assets/conversion.webp" 
           :alt="$t('conversion.imageAlt')" 
           class="w-full h-auto" 
         />

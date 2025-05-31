@@ -49,6 +49,8 @@
             :to="item.href"
             class="text-gray-700 hover:text-red-700 px-3 py-2 text-sm font-medium"
           >
+          <!-- <img class="w-full h-8" :src="item.img"/> -->
+
             {{ $t(item.name) }}
           </nuxt-link>
         </nav>
@@ -64,7 +66,6 @@
         v-show="isOpen"
         class="md:hidden flex flex-row justify-between"
       >
-
         <div class="px-2 pt-2 pb-3 space-y-1">
           <nuxt-link
             v-for="item in menuItems"
@@ -74,6 +75,7 @@
             @click="isOpen = false"
           >
             {{ $t(item.name) }}
+
           </nuxt-link>
         </div>
         <LanguageSelector/>
@@ -87,13 +89,14 @@
 import { ref } from 'vue'
 import { useI18n } from 'vue-i18n'
 import LanguageSelector from './ui/LanguageSelector.vue'
+import batteryIcon from '@/assets/batteryIcon1.png'
 
 const { t } = useI18n()
 const isOpen = ref(false)
 
 const menuItems = [
-  { name: 'menu.kits', href: '/kits' },
-  { name: 'menu.batteries', href: '/batteries' },
-  { name: 'menu.blog', href: '/blog' },
+  { name: 'menu.kits', href: '/kits', img: null },
+  { name: 'menu.batteries', href: '/batteries', img: batteryIcon },
+  { name: 'menu.blog', href: '/blog', img: null },
 ]
 </script>

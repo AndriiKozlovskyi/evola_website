@@ -26,11 +26,11 @@
       <div class="border rounded-xl p-4 sm:p-6 shadow-lg">
         <div class="flex flex-col space-y-4">
           <h2 class="text-xl sm:text-2xl font-bold">{{ $t('batteries.battery25.title') }}</h2>
-          <div class="w-full max-w-sm mx-auto">
+          <div class="w-full max-w-sm mx-auto h-[300px]"> <!-- Added fixed height -->
             <img 
               src="/assets/dp5c.jpg" 
               :alt="$t('batteries.battery25.title')" 
-              class="w-full rounded-lg object-cover"
+              class="w-full rounded-lg object-cover" 
               onerror="this.src='https://placehold.co/300x400?text=Battery+25Ah'"
             />
           </div>
@@ -55,7 +55,7 @@
       <div class="border rounded-xl p-4 sm:p-6 shadow-lg">
         <div class="flex flex-col space-y-4">
           <h2 class="text-xl sm:text-2xl font-bold">{{ $t('batteries.battery30.title') }}</h2>
-          <div class="w-full max-w-sm mx-auto">
+          <div class="w-full max-w-sm mx-auto h-[300px]"> <!-- Added fixed height -->
             <img 
               src="/assets/dp7.jpg" 
               :alt="$t('batteries.battery30.title')" 
