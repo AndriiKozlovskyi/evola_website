@@ -31,14 +31,14 @@ export default defineNuxtConfig({
         name: 'English'
       }
     ],
-    defaultLocale: 'ru',
+    defaultLocale: 'pl',
     strategy: 'no_prefix',
     detectBrowserLanguage: {
       useCookie: true,
       cookieKey: 'i18n_redirected',
       // fallbackLocale: 'en', // optional
-      alwaysRedirect: false,
-      // If you want to use localStorage instead of cookies:
+      alwaysRedirect: true,
+      fallbackLocale: 'pl'      // If you want to use localStorage instead of cookies:
       // useLocalStorage: true,
       // localStorageKey: 'i18n_redirected',
     }
@@ -66,9 +66,18 @@ export default defineNuxtConfig({
     head: {
       title: 'Evola E-bicycles', // Set the page title
       link: [
-        { rel: 'icon', type: 'image/png', href: '/evola1.png' }, // Set the favicon
+        { rel: 'icon', type: 'image/png', href: '/evola1.png' },
+        { 
+          rel: 'alternate', 
+          hreflang: 'pl', 
+          href: 'https://evola.pl' 
+        } // Set the favicon
       ],
       meta: [
+        { 
+          name: 'description', 
+          content: 'Zestawy do konwersji roweru na elektryczny. Montaż rowerów elektrycznych na zamówienie. Baterie do rowerów elektrycznych.' 
+        },
         { name: 'google-site-verification', content: 'OjyVwoCIZV8NVzGNM5kQGwwk1GJRU3Wul9mJTOiIPx8' }
       ],
       script: [

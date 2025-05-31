@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://evola.tech/</loc>
+  <lastmod>2025-05-31T13:38:21+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://evola.tech/kits</loc>
+  <lastmod>2025-05-31T13:38:21+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://evola.tech/batteries</loc>
+  <lastmod>2025-05-31T13:38:21+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://evola.tech/blog</loc>
+  <lastmod>2025-05-31T13:38:21+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://evola.tech/blog/kak-vybrat-elektrovelosiped</loc>
+  <lastmod>2025-05-31T13:38:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>

@@ -119,6 +119,16 @@ import { useI18n } from 'vue-i18n'
 
 const { t } = useI18n()
 
+useHead({
+  title: 'Baterie do rowerów elektrycznych | Evola E-bicycles',
+  meta: [
+    {
+      name: 'description',
+      content: 'Wysokiej jakości baterie do rowerów elektrycznych. Pojemność 25Ah i 30Ah. Smart BMS z Bluetooth. Obudowy Polly DP5C i DP7. Gwarancja 12 miesięcy.'
+    }
+  ]
+})
+
 const generateBatteryOrderText = (batteryType) => {
   
   const title = batteryType === '25' ? 

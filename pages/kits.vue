@@ -184,4 +184,13 @@
 
 <script setup>
 import Button from '~/components/ui/Button.vue'
+useHead({
+  title: 'Zestawy do konwersji roweru na elektryczny | Evola E-bicycles',
+  meta: [
+    {
+      name: 'description',
+      content: 'Profesjonalne zestawy do konwersji roweru na elektryczny. Dostępne moce: 250W, 500W, 3000W. Zasięg do 100km. Montaż w przednim lub tylnym kole. Gwarancja 12 miesięcy.'
+    }
+  ]
+})
 </script>
