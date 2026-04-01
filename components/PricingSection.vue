@@ -1,8 +1,8 @@
 <template>
-  <section class="max-w-screen-xl mx-auto py-10">
-    <h2 class="text-4xl md:text-6xl text-center mb-8">{{ $t('pricing.title') }}</h2>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mx-4">
-      <div class="border rounded-lg p-6 text-center">
+  <section class="max-w-screen-xl mx-auto py-4">
+    <h2 class="text-3xl sm:text-4xl md:text-6xl text-center mb-7 md:mb-10">{{ $t('pricing.title') }}</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mx-1 sm:mx-2">
+      <div class="border border-orange-100 rounded-2xl p-5 sm:p-6 text-center bg-white shadow-md hover:shadow-xl transition-shadow duration-300">
         <h3 class="text-2xl font-bold mb-4">{{ $t('pricing.batteries.title') }}</h3>
         <p class="text-gray-600 text-3xl font-bold mb-2">{{ $t('pricing.batteries.price') }}</p>
         <p class="text-base md:text-lg mb-4">{{ $t('pricing.batteries.description') }}</p>
@@ -10,7 +10,7 @@
           {{ $t('pricing.batteries.orderButton') }}
         </Button>
       </div>
-      <div class="border rounded-lg p-6 text-center">
+      <div class="border border-orange-200 rounded-2xl p-5 sm:p-6 text-center bg-gradient-to-b from-orange-50 to-white shadow-lg hover:shadow-2xl transition-shadow duration-300">
         <h3 class="text-2xl font-bold mb-4">{{ $t('pricing.kits.title') }}</h3>
         <p class="text-gray-600 text-3xl font-bold mb-2">{{ $t('pricing.kits.price') }}</p>
         <p class="text-base md:text-lg mb-4">{{ $t('pricing.kits.description') }}</p>
@@ -18,7 +18,7 @@
           {{ $t('pricing.kits.orderButton') }}
         </Button>
       </div>
-      <div class="border rounded-lg p-6 text-center">
+      <div class="border border-orange-100 rounded-2xl p-5 sm:p-6 text-center bg-white shadow-md hover:shadow-xl transition-shadow duration-300">
         <h3 class="text-2xl font-bold mb-4">{{ $t('pricing.customBikes.title') }}</h3>
         <p class="text-gray-600 text-3xl font-bold mb-2">{{ $t('pricing.customBikes.price') }}</p>
         <p class="text-base md:text-lg mb-4">{{ $t('pricing.customBikes.description') }}</p>

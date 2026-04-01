@@ -1,5 +1,17 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
+  css: ['~/assets/css/main.css'],
+  nitro: {
+    compressPublicAssets: true,
+  },
+  routeRules: {
+    '/**': {
+      headers: {
+        'X-Content-Type-Options': 'nosniff',
+        'Referrer-Policy': 'strict-origin-when-cross-origin',
+      },
+    },
+  },
   runtimeConfig: {
     public: {
       i18n: {
@@ -67,6 +79,12 @@ export default defineNuxtConfig({
       title: 'Evola E-bicycles', // Set the page title
       link: [
         { rel: 'icon', type: 'image/png', href: '/evola1.png' },
+        { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
+        { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' },
+        {
+          rel: 'stylesheet',
+          href: 'https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap'
+        },
         { 
           rel: 'alternate', 
           hreflang: 'pl', 
@@ -74,10 +92,30 @@ export default defineNuxtConfig({
         } // Set the favicon
       ],
       meta: [
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         { 
           name: 'description', 
           content: 'Zestawy do konwersji roweru na elektryczny. Montaż rowerów elektrycznych na zamówienie. Baterie do rowerów elektrycznych.' 
         },
+        { name: 'robots', content: 'index, follow, max-image-preview:large' },
+        { name: 'theme-color', content: '#d35400' },
+        { property: 'og:type', content: 'website' },
+        { property: 'og:site_name', content: 'Evola E-bicycles' },
+        { property: 'og:locale', content: 'pl_PL' },
+        { property: 'og:title', content: 'Evola E-bicycles' },
+        {
+          property: 'og:description',
+          content: 'Konwersja rowerow na elektryczne, gotowe zestawy i wydajne baterie dla codziennej jazdy.'
+        },
+        { property: 'og:image', content: 'https://evola.pl/assets/bic.webp' },
+        { property: 'og:url', content: 'https://evola.pl' },
+        { name: 'twitter:card', content: 'summary_large_image' },
+        { name: 'twitter:title', content: 'Evola E-bicycles' },
+        {
+          name: 'twitter:description',
+          content: 'Konwersja rowerow na elektryczne, gotowe zestawy i wydajne baterie.'
+        },
+        { name: 'twitter:image', content: 'https://evola.pl/assets/bic.webp' },
         { name: 'google-site-verification', content: 'OjyVwoCIZV8NVzGNM5kQGwwk1GJRU3Wul9mJTOiIPx8' }
       ],
       script: [

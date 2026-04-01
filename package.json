@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "A responsive landing page built with Nuxt 3, Vue 3, and Tailwind CSS.",
   "scripts": {
-    "dev": "NODE_TLS_REJECT_UNAUTHORIZED=0 nuxt dev --https --ssl-cert localhost.pem --ssl-key localhost-key.pem",
+    "dev": "nuxt dev",
     "build": "nuxt build",
     "start": "nuxt start",
     "optimize-images": "ts-node scripts/optimize-images.ts"

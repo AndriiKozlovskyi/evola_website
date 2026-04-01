@@ -1,21 +1,21 @@
 <template>
-  <section class="max-w-screen-xl sm:mx-auto mx-4 py-10">
-    <h2 class="text-4xl md:text-6xl text-center mb-8">{{ $t('benefits.title') }}</h2>
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
-      <div class="flex flex-col items-center">
-        <img src="/assets/distance.webp" alt="Range" class="mb-4" />
+  <section class="max-w-screen-xl sm:mx-auto mx-1 py-4">
+    <h2 class="text-3xl sm:text-4xl md:text-6xl text-center mb-7">{{ $t('benefits.title') }}</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
+      <div class="flex flex-col items-center bg-white rounded-2xl p-5 ring-1 ring-black/5 shadow-sm hover:shadow-md transition-shadow duration-300">
+        <img src="/assets/distance.webp" alt="Range" class="mb-4" width="120" height="120" loading="lazy" decoding="async" />
         <p class="text-base md:text-lg">{{ $t('benefits.items.range') }}</p>
       </div>
-      <div class="flex flex-col items-center">
-        <img src="/assets/compose.webp" alt="Assembly" class="mb-4" />
+      <div class="flex flex-col items-center bg-white rounded-2xl p-5 ring-1 ring-black/5 shadow-sm hover:shadow-md transition-shadow duration-300">
+        <img src="/assets/compose.webp" alt="Assembly" class="mb-4" width="120" height="120" loading="lazy" decoding="async" />
         <p class="text-base md:text-lg">{{ $t('benefits.items.assembly') }}</p>
       </div>
-      <div class="flex flex-col items-center">
-        <img src="/assets/place.webp" alt="Compact" class="mb-4" />
+      <div class="flex flex-col items-center bg-white rounded-2xl p-5 ring-1 ring-black/5 shadow-sm hover:shadow-md transition-shadow duration-300">
+        <img src="/assets/place.webp" alt="Compact" class="mb-4" width="120" height="120" loading="lazy" decoding="async" />
         <p class="text-base md:text-lg">{{ $t('benefits.items.compact') }}</p>
       </div>
-      <div class="flex flex-col items-center">
-        <img src="/assets/guarantee.webp" alt="Warranty" class="mb-4" />
+      <div class="flex flex-col items-center bg-white rounded-2xl p-5 ring-1 ring-black/5 shadow-sm hover:shadow-md transition-shadow duration-300">
+        <img src="/assets/guarantee.webp" alt="Warranty" class="mb-4" width="120" height="120" loading="lazy" decoding="async" />
         <p class="text-base md:text-lg">{{ $t('benefits.items.warranty') }}</p>
       </div>
     </div>

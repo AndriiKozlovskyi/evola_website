@@ -1,0 +1,50 @@
+:root {
+  --brand-ink: #121212;
+  --brand-soft-ink: #2b2b2b;
+  --brand-accent: #d35400;
+  --brand-accent-strong: #b23d00;
+  --brand-surface: #fffaf4;
+  --brand-surface-alt: #f4f7f8;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Manrope', 'Segoe UI', sans-serif;
+  color: var(--brand-ink);
+  background:
+    radial-gradient(1000px 500px at 90% -10%, rgba(211, 84, 0, 0.12), transparent 55%),
+    radial-gradient(800px 400px at 0% 20%, rgba(18, 18, 18, 0.06), transparent 50%),
+    linear-gradient(180deg, #fffefc 0%, #f7f9fa 100%);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Sora', 'Manrope', sans-serif;
+  letter-spacing: -0.02em;
+}
+
+.section-shell {
+  background-color: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(16, 24, 40, 0.08);
+  backdrop-filter: blur(4px);
+}
+
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.28s ease, transform 0.28s ease;
+}
+
+.page-enter-from,
+.page-leave-to {
+  opacity: 0;
+  transform: translateY(8px);
+}

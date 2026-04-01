@@ -1,6 +1,6 @@
 <template>
-  <div class="max-w-screen-xl mx-auto px-4 py-16 mt-5 sm:py-24">
-    <h1 class="text-3xl sm:text-4xl md:text-6xl font-bold text-center mb-4 sm:mb-6">
+  <div class="max-w-screen-xl mx-auto px-4 py-12 mt-4 sm:py-20 sm:mt-5 pb-28 sm:pb-20">
+    <h1 class="text-2xl sm:text-4xl md:text-6xl font-bold text-center mb-4 sm:mb-6">
       {{$t('kits.title')}}
     </h1>
     
@@ -15,7 +15,7 @@
 
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
       <!-- Lite Kit -->
-      <div class="border rounded-xl p-6 shadow-lg">
+      <div class="border rounded-xl p-4 sm:p-6 shadow-lg">
         <div class="flex flex-col space-y-4">
           <h2 class="text-xl sm:text-2xl font-bold">LITE</h2>
           <div class="w-full aspect-video">
@@ -27,7 +27,7 @@
             />
           </div>
           <div class="grid sm:grid-cols-3 grid-cols-1 gap-2 text-center">
-            <div class="p-2 bg-gray-50 rounded flex items-center">
+            <div class="p-2 bg-gray-50 rounded flex items-start sm:items-center">
               <svg class="w-5 h-5 mr-2 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
                   d="M13 10V3L4 14h7v7l9-11h-7z" />
@@ -36,7 +36,7 @@
                 <div>250W</div>
               </div>
             </div>
-            <div class="p-2 bg-gray-50 rounded flex items-center">
+            <div class="p-2 bg-gray-50 rounded flex items-start sm:items-center">
               <svg class="w-5 h-5 mr-2 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
                   d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -45,7 +45,7 @@
                 <div>25 {{ $t('common.speed') }}</div>
               </div>
             </div>
-            <div class="p-2 bg-gray-50 rounded flex items-center">
+            <div class="p-2 bg-gray-50 rounded flex items-start sm:items-center">
               <svg class="w-5 h-5 mr-2 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
                   d="M19 13l-7 7-7-7m14-8l-7 7-7-7" />
@@ -70,7 +70,7 @@
       </div>
 
       <!-- Base Kit -->
-      <div class="border rounded-xl p-6 shadow-lg">
+      <div class="border rounded-xl p-4 sm:p-6 shadow-lg">
         <div class="flex flex-col space-y-4">
           <h2 class="text-xl sm:text-2xl font-bold">BASE</h2>
           <div class="w-full aspect-video">
@@ -82,7 +82,7 @@
             />
           </div>
           <div class="grid sm:grid-cols-3 grid-cols-1 gap-2 text-center">
-            <div class="p-2 bg-gray-50 rounded flex items-center">
+            <div class="p-2 bg-gray-50 rounded flex items-start sm:items-center">
               <svg class="w-5 h-5 mr-2 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
                   d="M13 10V3L4 14h7v7l9-11h-7z" />
@@ -91,7 +91,7 @@
                 <div>500W</div>
               </div>
             </div>
-            <div class="p-2 bg-gray-50 rounded flex items-center">
+            <div class="p-2 bg-gray-50 rounded flex items-start sm:items-center">
               <svg class="w-5 h-5 mr-2 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
                   d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -100,7 +100,7 @@
                 <div>40 {{ $t('common.speed') }}</div>
               </div>
             </div>
-            <div class="p-2 bg-gray-50 rounded flex items-center">
+            <div class="p-2 bg-gray-50 rounded flex items-start sm:items-center">
               <svg class="w-5 h-5 mr-2 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
                   d="M19 13l-7 7-7-7m14-8l-7 7-7-7" />
@@ -125,7 +125,7 @@
       </div>
 
       <!-- Turbo Kit -->
-      <div class="border rounded-xl p-6 shadow-lg">
+      <div class="border rounded-xl p-4 sm:p-6 shadow-lg">
         <div class="flex flex-col space-y-4">
           <h2 class="text-xl sm:text-2xl font-bold">TURBO</h2>
           <div class="w-full aspect-video">
@@ -137,7 +137,7 @@
             />
           </div>
           <div class="grid sm:grid-cols-3 grid-cols-1 gap-2 text-center">
-            <div class="p-2 bg-gray-50 rounded flex items-center">
+            <div class="p-2 bg-gray-50 rounded flex items-start sm:items-center">
               <svg class="w-5 h-5 mr-2 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
                   d="M13 10V3L4 14h7v7l9-11h-7z" />
@@ -146,7 +146,7 @@
                 <div>3000W</div>
               </div>
             </div>
-            <div class="p-2 bg-gray-50 rounded flex items-center">
+            <div class="p-2 bg-gray-50 rounded flex items-start sm:items-center">
               <svg class="w-5 h-5 mr-2 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
                   d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -155,7 +155,7 @@
                 <div>70 {{ $t('common.speed') }}</div>
               </div>
             </div>
-            <div class="p-2 bg-gray-50 rounded flex items-center">
+            <div class="p-2 bg-gray-50 rounded flex items-start sm:items-center">
               <svg class="w-5 h-5 mr-2 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
                   d="M19 13l-7 7-7-7m14-8l-7 7-7-7" />

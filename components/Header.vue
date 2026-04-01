@@ -1,10 +1,10 @@
 <template>
-  <header class="fixed w-full bg-white shadow-md z-50">
+  <header class="sticky top-0 w-full bg-white/85 backdrop-blur-md shadow-md z-50 border-b border-black/5">
     <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between h-16">
+      <div class="flex items-center justify-between h-14 sm:h-16">
         <!-- Logo -->
         <div class="flex-shrink-0">
-          <nuxt-link to="/" class="text-2xl font-bold">
+          <nuxt-link to="/" class="text-xl sm:text-2xl font-bold">
             <span class="">
               <span class="text-orange-700">E</span>VOLA
             </span>
@@ -14,7 +14,7 @@
         <div class="md:hidden">
           <button
             @click="isOpen = !isOpen"
-            class="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:bg-gray-100"
+            class="inline-flex items-center justify-center p-2.5 rounded-md text-gray-700 hover:bg-gray-100"
           >
             <span class="sr-only">Open main menu</span>
             <svg
@@ -42,12 +42,12 @@
         </div>
 
         <!-- Desktop menu -->
-        <nav class="hidden md:flex space-x-8">
+        <nav class="hidden md:flex space-x-4 lg:space-x-8">
           <nuxt-link
             v-for="item in menuItems"
             :key="item.name"
             :to="item.href"
-            class="text-gray-700 hover:text-red-700 px-3 py-2 text-sm font-medium"
+            class="text-gray-700 hover:text-red-700 px-3 py-2 text-sm font-medium transition-colors duration-200"
           >
           <!-- <img class="w-full h-8" :src="item.img"/> -->
 
@@ -64,22 +64,23 @@
       <!-- Mobile menu -->
       <div
         v-show="isOpen"
-        class="md:hidden flex flex-row justify-between"
+        class="md:hidden border-t border-black/5 py-3"
       >
-        <div class="px-2 pt-2 pb-3 space-y-1">
+        <div class="flex flex-col gap-2 px-1">
           <nuxt-link
             v-for="item in menuItems"
             :key="item.name"
             :to="item.href"
-            class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-red-700"
+            class="block px-3 py-3 text-base font-medium text-gray-700 hover:text-red-700 hover:bg-black/5 rounded-lg transition-colors duration-200"
             @click="isOpen = false"
           >
             {{ $t(item.name) }}
 
           </nuxt-link>
+          <div class="px-3 pt-1">
+            <LanguageSelector/>
+          </div>
         </div>
-        <LanguageSelector/>
-
       </div>
     </div>
   </header>

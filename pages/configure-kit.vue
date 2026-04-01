@@ -1,6 +1,6 @@
 <template>
-  <div class="max-w-screen-xl mx-auto px-4 py-16 mt-5 sm:py-24">
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+  <div class="max-w-screen-xl mx-auto px-4 py-12 mt-4 sm:py-20 sm:mt-5 pb-28 sm:pb-20">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
       <!-- Left side - Image -->
       <div class="w-full">
         <img 
@@ -13,12 +13,12 @@
 
       <!-- Right side - Configuration -->
       <div class="space-y-6">
-        <h1 class="text-2xl sm:text-3xl font-bold">{{ selectedKit.name }}</h1>
+        <h1 class="text-xl sm:text-3xl font-bold">{{ selectedKit.name }}</h1>
         
         <!-- Battery Selection -->
         <div class="space-y-2">
           <label class="block text-sm font-medium text-gray-700">{{ $t('kits.batteryLabel') }}</label>
-          <select v-model="selectedBattery" class="w-full px-3 py-2 rounded-md border-gray-300 shadow-sm">
+          <select v-model="selectedBattery" class="w-full px-3 py-3 rounded-md border-gray-300 shadow-sm">
             <option value="25">25 AH (1600 PLN)</option>
             <option value="30">30 AH (2000 PLN)</option>
           </select>
@@ -27,7 +27,7 @@
         <!-- Motor Position -->
         <div class="space-y-2">
           <label class="block text-sm font-medium text-gray-700">{{ $t('kits.motorPositionLabel') }}</label>
-          <select v-model="motorPosition" class="w-full px-3 py-2 rounded-md border-gray-300 shadow-sm">
+          <select v-model="motorPosition" class="w-full px-3 py-3 rounded-md border-gray-300 shadow-sm">
             <option value="front">{{ $t('kits.frontWheel') }}</option>
             <option value="rear">{{ $t('kits.rearWheel') }}</option>
           </select>
@@ -36,7 +36,7 @@
         <!-- Wheel Size -->
         <div class="space-y-2">
           <label class="block text-sm font-medium text-gray-700">{{ $t('kits.wheelSizeLabel') }}</label>
-          <select v-model="wheelSize" class="w-full px-3 py-2 rounded-md border-gray-300 shadow-sm">
+          <select v-model="wheelSize" class="w-full px-3 py-3 rounded-md border-gray-300 shadow-sm">
             <option v-for="size in [20, 24, 26, 29]" :key="size" :value="size">
               {{ size }}"
             </option>
@@ -44,7 +44,7 @@
         </div>
 
         <!-- Specifications -->
-        <div class="grid grid-cols-2 gap-4 pt-6">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 pt-6">
           <div class="p-3 bg-gray-50 rounded-lg flex items-center">
             <svg class="w-5 h-5 mr-2 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
@@ -70,7 +70,7 @@
 
         <!-- Total Price -->
         <div class="pt-6 border-t">
-          <div class="flex justify-between items-center mb-4">
+          <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-4 gap-2">
             <span class="text-lg font-semibold">{{ $t('kits.totalPriceLabel') }}:</span>
             <span class="text-2xl font-bold">{{ totalPrice }} PLN</span>
           </div>

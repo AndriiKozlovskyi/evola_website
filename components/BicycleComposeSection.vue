@@ -2,8 +2,8 @@
   <section class="bg-white py-8 sm:py-16">
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
       <div class="text-center mb-8">
-        <h2 class="text-3xl sm:text-4xl md:text-6xl mb-4">
-          {{ $t('bicycleCompose.title') }}
+        <h2 class="text-2xl sm:text-4xl md:text-6xl mb-4">
+          {{ t('bicycleCompose.title') }}
         </h2>
       </div>
 
@@ -33,7 +33,7 @@
 
         <div class="w-full md:w-1/2 text-left">
           <p class="mb-4 text-gray-700 text-base sm:text-lg">
-            {{ $t(`bicycleCompose.kits.${selected.value}.description`) }}
+            {{ t(`bicycleCompose.kits.${selected.value}.description`) }}
           </p>
           
           <div class="mb-6 flex flex-wrap gap-3 sm:gap-4 justify-start">
@@ -44,37 +44,37 @@
               @click="selected = option"
               class="flex-1 sm:flex-none text-sm sm:text-base"
             >
-              {{ $t(`bicycleCompose.kits.${option.value}.label`) }}
+              {{ t(`bicycleCompose.kits.${option.value}.label`) }}
             </Button>
           </div>
 
-          <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 text-left text-gray-700">
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4 text-left text-gray-700">
             <div class="p-3 bg-gray-50 rounded-lg">
-              <div class="font-semibold text-sm sm:text-base">{{ $t('bicycleCompose.specs.power') }}</div>
-              <div class="text-lg sm:text-xl">{{ $t(`bicycleCompose.kits.${selected.value}.power`) }}</div>
+              <div class="font-semibold text-sm sm:text-base">{{ t('bicycleCompose.specs.power') }}</div>
+              <div class="text-lg sm:text-xl">{{ t(`bicycleCompose.kits.${selected.value}.power`) }}</div>
             </div>
             <div class="p-3 bg-gray-50 rounded-lg">
-              <div class="font-semibold text-sm sm:text-base">{{ $t('bicycleCompose.specs.speed') }}</div>
-              <div class="text-lg sm:text-xl">{{ $t(`bicycleCompose.kits.${selected.value}.speed`) }}</div>
+              <div class="font-semibold text-sm sm:text-base">{{ t('bicycleCompose.specs.speed') }}</div>
+              <div class="text-lg sm:text-xl">{{ t(`bicycleCompose.kits.${selected.value}.speed`) }}</div>
             </div>
-            <div class="p-3 bg-gray-50 rounded-lg col-span-2 sm:col-span-1">
-              <div class="font-semibold text-sm sm:text-base">{{ $t('bicycleCompose.specs.range') }}</div>
-              <div class="text-lg sm:text-xl text-red-700">{{ $t(`bicycleCompose.kits.${selected.value}.range`) }}</div>
+            <div class="p-3 bg-gray-50 rounded-lg">
+              <div class="font-semibold text-sm sm:text-base">{{ t('bicycleCompose.specs.range') }}</div>
+              <div class="text-lg sm:text-xl text-red-700">{{ t(`bicycleCompose.kits.${selected.value}.range`) }}</div>
             </div>
           </div>
 
           <p class="mt-2 text-xs sm:text-sm text-gray-500">
-            {{ $t('bicycleCompose.rangeNote') }}
+            {{ t('bicycleCompose.rangeNote') }}
           </p>
 
           <div class="mt-6 flex flex-col sm:flex-row items-center gap-4">
-            <div class="text-xl sm:text-2xl font-bold">{{ $t(`bicycleCompose.kits.${selected.value}.price`) }} zl</div>
+            <div class="text-xl sm:text-2xl font-bold">{{ t(`bicycleCompose.kits.${selected.value}.price`) }} zl</div>
             <Button 
               variant="primary" 
               class="w-full sm:w-auto"
               @click="navigateTo(`/configure-kit?type=${selected.value}`)"
             >
-              {{ $t('bicycleCompose.orderButton') }}
+              {{ t('bicycleCompose.orderButton') }}
             </Button>
           </div>
         </div>

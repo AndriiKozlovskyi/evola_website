@@ -1,8 +1,8 @@
 <template>
-  <section class="max-w-screen-xl sm:mx-auto mx-4 py-16">
+  <section class="max-w-screen-xl sm:mx-auto mx-4 py-10 sm:py-16">
     <div class="flex flex-col md:flex-row items-center">
       <div class="md:w-1/2">
-        <h2 class="text-4xl md:text-6xl mb-4">{{ $t('conversion.title') }}</h2>
+        <h2 class="text-3xl sm:text-4xl md:text-6xl mb-4">{{ $t('conversion.title') }}</h2>
         <p class="text-base md:text-lg mb-6">
           {{ $t('conversion.description') }}
         </p>

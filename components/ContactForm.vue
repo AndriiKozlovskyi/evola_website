@@ -1,6 +1,6 @@
 <template>
-  <div class="max-w-screen-xl mx-auto p-6">
-    <h2 class="text-4xl md:text-6xl mb-4">Contact Us</h2>
+  <div class="max-w-screen-xl mx-auto px-4 sm:px-6 py-8 sm:py-12">
+    <h2 class="text-3xl sm:text-4xl md:text-6xl mb-4">Contact Us</h2>
     <form class="space-y-4">
       <div>
         <label for="name" class="block text-base md:text-lg">Name</label>
