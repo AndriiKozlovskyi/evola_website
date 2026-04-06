@@ -1,26 +1,26 @@
 <template>
-  <div>
+  <div class="overflow-hidden">
     <HeroSection />
 
-    <div class="max-w-screen-xl mx-auto px-4 sm:px-6">
+    <div class=" px-4 sm:px-6">
       <div class="divider-glow my-4"></div>
     </div>
 
     <PricingSection />
 
-    <div class="max-w-screen-xl mx-auto px-4 sm:px-6">
+    <div class="  px-4 sm:px-6">
       <div class="divider-glow"></div>
     </div>
 
     <BicycleComposeSection />
 
-    <div class="max-w-screen-xl mx-auto px-4 sm:px-6">
+    <div class=" px-4 sm:px-6">
       <div class="divider-glow"></div>
     </div>
 
     <BenefitsSection />
 
-    <div class="max-w-screen-xl mx-auto px-4 sm:px-6">
+    <div class="px-4 sm:px-6">
       <div class="divider-glow"></div>
     </div>
 
