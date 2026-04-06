@@ -1,10 +1,16 @@
 :root {
-  --brand-ink: #121212;
-  --brand-soft-ink: #2b2b2b;
-  --brand-accent: #d35400;
-  --brand-accent-strong: #b23d00;
-  --brand-surface: #fffaf4;
-  --brand-surface-alt: #f4f7f8;
+  --bg:          #080e1a;
+  --bg-2:        #0d1626;
+  --bg-card:     rgba(255, 255, 255, 0.035);
+  --bg-card-hover: rgba(255, 255, 255, 0.06);
+  --border:      rgba(255, 255, 255, 0.08);
+  --border-accent: rgba(240, 91, 4, 0.35);
+  --accent:      #f05b04;
+  --accent-2:    #d44d03;
+  --accent-glow: rgba(240, 91, 4, 0.18);
+  --text-1:      #f0f4f8;
+  --text-2:      #8fa3bb;
+  --text-3:      #566a7f;
 }
 
 html {
@@ -13,38 +19,221 @@ html {
 
 body {
   font-family: 'Manrope', 'Segoe UI', sans-serif;
-  color: var(--brand-ink);
-  background:
-    radial-gradient(1000px 500px at 90% -10%, rgba(211, 84, 0, 0.12), transparent 55%),
-    radial-gradient(800px 400px at 0% 20%, rgba(18, 18, 18, 0.06), transparent 50%),
-    linear-gradient(180deg, #fffefc 0%, #f7f9fa 100%);
+  color: var(--text-1);
+  background-color: var(--bg);
+  background-image:
+    radial-gradient(ellipse 80vw 60vh at 70% -5%, rgba(240, 91, 4, 0.09) 0%, transparent 60%),
+    radial-gradient(ellipse 60vw 50vh at -10% 40%, rgba(30, 60, 120, 0.12) 0%, transparent 60%);
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   font-family: 'Sora', 'Manrope', sans-serif;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.025em;
+  color: var(--text-1);
 }
 
+/* ── Reusable Section Shell ── */
 .section-shell {
-  background-color: rgba(255, 255, 255, 0.75);
-  border: 1px solid rgba(16, 24, 40, 0.08);
-  backdrop-filter: blur(4px);
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  backdrop-filter: blur(6px);
 }
 
+/* ── Premium Card ── */
+.card-premium {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  backdrop-filter: blur(10px);
+  border-radius: 1.25rem;
+  transition: background 0.22s ease, border-color 0.22s ease, box-shadow 0.22s ease, transform 0.22s ease;
+}
+.card-premium:hover {
+  border-color: rgba(255, 255, 255, 0.14);
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.38);
+  transform: translateY(-2px);
+}
+
+/* ── Accent / Highlight Card ── */
+.card-accent {
+  background: linear-gradient(135deg, rgba(240,91,4,0.14) 0%, rgba(240,91,4,0.06) 100%);
+  border: 1px solid var(--border-accent);
+  border-radius: 1.25rem;
+}
+
+/* ── Neon Glow Button ── */
+.btn-glow {
+  box-shadow: 0 0 20px var(--accent-glow), 0 4px 12px rgba(0,0,0,0.4);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+.btn-glow:hover {
+  box-shadow: 0 0 30px rgba(240,91,4,0.35), 0 6px 18px rgba(0,0,0,0.4);
+  transform: translateY(-1px);
+}
+
+/* ── Section Label Pill ── */
+.label-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  background: rgba(240,91,4,0.12);
+  border: 1px solid rgba(240,91,4,0.25);
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+}
+
+/* ── Gradient Divider ── */
+.divider-glow {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--accent), transparent);
+  opacity: 0.35;
+}
+
+section[id] {
+  scroll-margin-top: 6rem;
+}
+
+/* ── Input Field ── */
+.input-dark {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid var(--border);
+  color: var(--text-1);
+  border-radius: 0.75rem;
+  padding: 0.75rem 1rem;
+  width: 100%;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  outline: none;
+}
+.input-dark::placeholder {
+  color: var(--text-3);
+}
+.input-dark:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(240,91,4,0.12);
+}
+
+/* ── Page Transitions ── */
 .page-enter-active,
 .page-leave-active {
   transition: opacity 0.28s ease, transform 0.28s ease;
 }
-
 .page-enter-from,
 .page-leave-to {
   opacity: 0;
-  transform: translateY(8px);
+  transform: translateY(10px);
 }
+
+/* ── Spec Badge ── */
+.spec-badge {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid var(--border);
+  border-radius: 0.75rem;
+  padding: 0.75rem 1rem;
+}
+
+.feature-tile {
+  background:
+    linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.025)),
+    rgba(8, 14, 26, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 1rem;
+  backdrop-filter: blur(10px);
+}
+
+.icon-dot {
+  width: 0.45rem;
+  height: 0.45rem;
+  border-radius: 9999px;
+  background: var(--accent);
+  box-shadow: 0 0 12px rgba(240, 91, 4, 0.4);
+  flex-shrink: 0;
+}
+
+.icon-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.icon-badge-accent {
+  color: var(--accent);
+  background: rgba(240, 91, 4, 0.12);
+  border-color: rgba(240, 91, 4, 0.22);
+}
+
+.pricing-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.pricing-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(255,255,255,0.035), transparent 38%);
+  pointer-events: none;
+}
+
+.variant-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.9rem 1rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.035);
+}
+
+.benefit-icon-shell {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.75rem;
+  height: 3.75rem;
+  border-radius: 1.25rem;
+  color: #ffd8b5;
+  background:
+    radial-gradient(circle at 30% 20%, rgba(240, 91, 4, 0.24), transparent 60%),
+    rgba(255,255,255,0.04);
+  border: 1px solid rgba(240, 91, 4, 0.16);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.08);
+}
+
+@media (max-width: 639px) {
+  .label-pill {
+    max-width: 100%;
+    justify-content: center;
+    text-align: center;
+    line-height: 1.3;
+    white-space: normal;
+  }
+
+  .variant-card {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .benefit-icon-shell {
+    width: 3.25rem;
+    height: 3.25rem;
+    border-radius: 1rem;
+  }
+}
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.1); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(255,255,255,0.18); }

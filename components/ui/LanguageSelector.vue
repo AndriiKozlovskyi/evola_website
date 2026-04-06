@@ -47,7 +47,9 @@ onMounted(() => {
     <!-- Circular Language Button -->
     <button
       @click="toggleDropdown"
-      class="w-10 h-10 text-black text-xs font-semibold rounded-full border border-black shadow hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-red-700 flex items-center justify-center transition"
+      class="w-9 h-9 text-xs font-black rounded-xl flex items-center justify-center transition-all duration-150 focus:outline-none"
+      style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); color: #8fa3bb;"
+      :style="isOpen ? 'border-color: rgba(240,91,4,0.4); color: #f05b04;' : ''"
     >
       {{ shortLabels[language] }}
     </button>
@@ -63,16 +65,18 @@ onMounted(() => {
     >
       <ul
         v-if="isOpen"
-        class="absolute z-30 mt-2 left-1/2 -translate-x-1/2 w-[3rem] rounded-full bg-gray-900 shadow-lg border-2 border-gray-700 ring-opacity-5 py-1 text-m text-white"
+        class="absolute z-30 mt-2 left-1/2 -translate-x-1/2 w-12 rounded-xl py-1 overflow-hidden"
+        style="background: #0d1626; border: 1px solid rgba(255,255,255,0.1); box-shadow: 0 8px 32px rgba(0,0,0,0.5);"
       >
       <li
-  v-for="code in availableCodes"
-  :key="code"
-  @click="selectLanguage(code)"
-  class="cursor-pointer px-2 py-1 rounded-full text-center transition-colors duration-200 ease-in-out border border-transparent hover:border-gray-800 hover:bg-gray-800 hover:text-white"
->
-  {{ shortLabels[code] }}
-</li>
+        v-for="code in availableCodes"
+        :key="code"
+        @click="selectLanguage(code)"
+        class="cursor-pointer px-2 py-1.5 text-center text-xs font-bold transition-colors"
+        :class="code === language ? 'text-[#f05b04]' : 'text-[#8fa3bb] hover:text-white hover:bg-white/5'"
+      >
+        {{ shortLabels[code] }}
+      </li>
       </ul>
     </transition>
   </div>

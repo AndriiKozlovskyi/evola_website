@@ -95,7 +95,7 @@ export default defineNuxtConfig({
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         { 
           name: 'description', 
-          content: 'Zestawy do konwersji roweru na elektryczny. Montaż rowerów elektrycznych na zamówienie. Baterie do rowerów elektrycznych.' 
+          content: 'Wynajem rowerow elektrycznych we Wroclawiu. Full suspension 30Ah za 250 zl tygodniowo, hardtail 30Ah za 220 zl i osobny wynajem baterii od 1 tygodnia.' 
         },
         { name: 'robots', content: 'index, follow, max-image-preview:large' },
         { name: 'theme-color', content: '#d35400' },
@@ -105,7 +105,7 @@ export default defineNuxtConfig({
         { property: 'og:title', content: 'Evola E-bicycles' },
         {
           property: 'og:description',
-          content: 'Konwersja rowerow na elektryczne, gotowe zestawy i wydajne baterie dla codziennej jazdy.'
+          content: 'Wynajem rowerow elektrycznych i baterii we Wroclawiu z serwisem 2 razy w tygodniu w cenie.'
         },
         { property: 'og:image', content: 'https://evola.pl/assets/bic.webp' },
         { property: 'og:url', content: 'https://evola.pl' },
@@ -113,7 +113,7 @@ export default defineNuxtConfig({
         { name: 'twitter:title', content: 'Evola E-bicycles' },
         {
           name: 'twitter:description',
-          content: 'Konwersja rowerow na elektryczne, gotowe zestawy i wydajne baterie.'
+          content: 'Wynajem rowerow elektrycznych i baterii we Wroclawiu z serwisem w cenie.'
         },
         { name: 'twitter:image', content: 'https://evola.pl/assets/bic.webp' },
         { name: 'google-site-verification', content: 'OjyVwoCIZV8NVzGNM5kQGwwk1GJRU3Wul9mJTOiIPx8' }

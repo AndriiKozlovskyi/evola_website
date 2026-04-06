@@ -1,26 +1,13 @@
 <template>
-  <div class="pb-14">
-    <HeroSection />
-    <div class="max-w-screen-xl mx-auto px-4 space-y-10 md:space-y-14">
-      <div class="section-shell rounded-3xl p-4 sm:p-6 md:p-8">
-        <PricingSection />
-      </div>
-      <div class="section-shell rounded-3xl p-4 sm:p-6 md:p-8">
-        <BenefitsSection />
-      </div>
-      <div class="section-shell rounded-3xl p-4 sm:p-6 md:p-8">
-        <BicycleComposeSection/>
-      </div>
-    </div>
-  </div>
+  <RentalLanding />
 </template>
 
 <script setup>
 useSeoMeta({
-  title: 'Evola E-bicycles | Konwersja rowerow na elektryczne',
-  description: 'Konwersja rowerow na elektryczne, zestawy z montazem oraz wydajne baterie dla codziennej jazdy i dlugich tras.',
-  ogTitle: 'Evola E-bicycles | Konwersja rowerow na elektryczne',
-  ogDescription: 'Poznaj gotowe zestawy EVOLA, porownaj moce i skonfiguruj swoj rower elektryczny online.',
+  title: 'Wynajem rowerow elektrycznych Wroclaw | EVOLA',
+  description: 'Wynajem rowerow elektrycznych we Wroclawiu. Full suspension 30Ah za 250 zl tygodniowo, hardtail 30Ah za 220 zl tygodniowo i osobny wynajem baterii od 1 tygodnia.',
+  ogTitle: 'Wynajem rowerow elektrycznych Wroclaw | EVOLA',
+  ogDescription: 'Arenda e-bike we Wroclawiu: full suspension 250 zl tydzien, hardtail 220 zl tydzien, dodatkowe baterie i serwis 2 razy w tygodniu w cenie.',
   ogImage: 'https://evola.pl/assets/bic.webp',
   twitterCard: 'summary_large_image',
 })
@@ -35,9 +22,26 @@ useHead({
         name: 'Evola E-bicycles',
         url: 'https://evola.pl',
         image: 'https://evola.pl/assets/bic.webp',
+        description: 'Wynajem rowerow elektrycznych we Wroclawiu z serwisem w cenie.',
         telephone: '+48789711631',
         email: 'evolateam@gmail.com',
         areaServed: 'PL',
+        makesOffer: [
+          {
+            '@type': 'Offer',
+            name: 'Full suspension 30Ah',
+            price: '250',
+            priceCurrency: 'PLN',
+            description: 'Wynajem roweru elektrycznego full suspension na tydzien.'
+          },
+          {
+            '@type': 'Offer',
+            name: 'Hardtail 30Ah',
+            price: '220',
+            priceCurrency: 'PLN',
+            description: 'Wynajem roweru elektrycznego hardtail na tydzien.'
+          }
+        ],
         sameAs: [
           'https://t.me/evola_manager',
           'https://www.facebook.com/profile.php?id=61572740802927'
@@ -47,10 +51,5 @@ useHead({
   ]
 })
 
-import HeroSection from '@/components/HeroSection.vue'
-import BenefitsSection from '@/components/BenefitsSection.vue'
-import PricingSection from '@/components/PricingSection.vue'
+import RentalLanding from '@/components/RentalLanding.vue'
 </script>
-
-<style scoped>
-</style>
