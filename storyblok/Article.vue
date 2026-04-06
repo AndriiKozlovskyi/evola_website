@@ -20,11 +20,11 @@
         loading="lazy"
       />
     </picture>
-    <div class="container mx-auto max-w-screen-md mb-12">
-      <h1 class="text-4xl md:text-6xl text-gray-800 font-bold mt-8 md:mt-12 mb-4">
+    <div class="container mx-auto max-w-screen-md mb-10 sm:mb-12">
+      <h1 class="text-3xl sm:text-4xl md:text-6xl text-gray-800 font-bold mt-6 sm:mt-8 md:mt-12 mb-4">
         {{ blok.title }}
       </h1>
-      <h2 class="text-xl md:text-2xl text-gray-500 font-bold mb-4">
+      <h2 class="text-lg sm:text-xl md:text-2xl text-gray-500 font-bold mb-4">
         {{ blok.description }}
       </h2>
       <div class="text-gray-600 mb-3">Автор: <b>{{ blok.author }}</b></div>
