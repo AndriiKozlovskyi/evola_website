@@ -32,18 +32,24 @@ export default {
   },
   hero: {
     kicker: 'E-bike Rental Wroclaw',
-    title: 'Electric bike rental without the usual hassle',
-    subtitle: 'We match the bike to city riding, work, and longer routes. Clear terms, solid equipment, and a fast start.',
+    title: 'Electric bike rental',
+    subtitle: 'Tired of riding a stuffy hardtail and want to try a comfortable full suspension? Or just want something cheaper? We have it all.',
     points: {
-      one: 'Full suspension 30Ah for 250 zl per week or hardtail 30Ah for 220 zl.',
-      two: 'Service, core accessories, and bike preparation are already included.',
-      three: 'Minimum rental term is 1 week and the conditions are clear from the start.'
+      one: 'Top full-suspension bikes with courier-ready setup available now.',
+      two: 'Cheaper hardtails for everyday work.',
+      three: 'Free scheduled service twice a week.'
     },
-    locationLine: 'E-bike rental · contract · service twice a week · minimum 1 week',
+    locationLine: 'E-bike rental · service twice a week · minimum 1 week',
     orderButton: 'Reserve a bike',
     viewOffers: 'View rental options',
-    badgeTitle: 'Full suspension bikes worth taking seriously',
-    badgeSubtitle: 'More comfort on rough pavement, forest tracks, and long shifts',
+    badgeTitle: 'Give comfort a chance. Try full suspension.',
+    badgeSubtitle: 'And your back side will thank you.',
+    statValues: {
+      fullSuspension: '250 zl',
+      hardtail: '220 zl',
+      service: '2x/week',
+      minimum: '1 week'
+    },
     stats: {
       fullSuspension: 'Full suspension / week',
       hardtail: 'Hardtail / week',
@@ -53,20 +59,20 @@ export default {
     imageAlt: 'Electric bike rental'
   },
   benefits: {
-    kicker: 'What is included',
-    title: 'Rental without unnecessary hassle',
-    description: 'You do not have to piece together the basics or chase support later. We hand over a ready setup and stay available.',
+    kicker: 'What is included in the price',
+    title: 'Rental terms',
+    description: 'We provide the bike with a full accessory setup and include regular service in the price, so you can ride comfortably without worrying about the technical side.',
     titles: {
-      service: 'Service with no extra pricing trap',
-      gear: 'A setup that already makes sense',
-      contract: 'Clear terms from day one',
-      care: 'Fast contact, normal attitude'
+      service: 'Service with no separate price list',
+      gear: 'Proper equipment',
+      contract: 'Clear terms from the start',
+      care: 'We value our clients'
     },
     items: {
-      service: 'Repairs, adjustments, and technical checkups are included. Scheduled service happens twice a week.',
-      gear: 'The bike comes with a soft saddle, fenders, a strong light, lock, alarm, and phone holder.',
-      contract: 'No vague promises and no hidden catches. We sign the contract and lock the terms in from 1 week.',
-      care: 'If something needs to be clarified or handled quickly, we respond fast and stay involved after pickup.'
+      service: 'Repairs, adjustments, and maintenance are already included in the price. Scheduled service happens twice a week.',
+      gear: 'We hand over the bike with a soft saddle, fenders, a light, a lock, an alarm, and a phone holder.',
+      contract: 'Rental contract with clear terms, no hidden charges or penalties.',
+      care: 'If anything needs to be clarified or changed, just call us.'
     },
     stats: {
       service: '2x / week',
@@ -76,28 +82,30 @@ export default {
     }
   },
   conversion: {
-    kicker: 'How rental works',
-    title: 'From message to ready ride',
-    description: 'No chaos and no wasted steps. We agree on the bike, sign the contract, and hand over equipment that is ready to ride.',
+    kicker: 'Conversion and sales',
+    title: 'Custom-built electric bike',
+    description: 'We convert standard bicycles into electric bikes by selecting the right motor, battery, and components for the intended use. We also offer fully assembled ready-to-ride e-bikes if you want a finished setup without converting your own bike.',
+    cta: 'Discuss your conversion',
+    ctaNote: 'Call us if you want to convert your own bike or choose a ready-made electric one.',
     steps: {
       choose: {
-        title: 'Choose your option',
-        description: 'Pick full suspension, hardtail, or battery-only based on your route and budget.'
+        title: 'We assess the base',
+        description: 'We inspect your current bicycle or build one from scratch.'
       },
       sign: {
-        title: 'We sign the contract',
-        description: 'We set the rental term from 1 week and confirm transparent conditions.'
+        title: 'We choose the setup',
+        description: 'We choose the motor, battery, controls, and configuration for your needs, speed, and budget.'
       },
       pickup: {
-        title: 'You pick up a ready setup',
-        description: 'You get the bike with the battery, accessories, and everything needed to start immediately.'
+        title: 'We build and tune it',
+        description: 'We build the e-bike, tune it, and hand it over for a test ride.'
       },
       service: {
-        title: 'You ride, we handle service',
-        description: 'Repairs are included in the price, and service happens twice a week.'
+        title: 'We hand over the finished bike',
+        description: 'Ride and enjoy. If anything needs adjustment later, just call us.'
       }
     },
-    imageAlt: 'Electric bike rental'
+    imageAlt: 'Bike conversion to electric'
   },
   pricing: {
     kicker: 'Rental offers',
@@ -114,7 +122,7 @@ export default {
       fullService: 'Repairs included in the price',
       fullGear: 'Ready bike with all extras',
       batteryExtra: '4 options: 20Ah, 25Ah, 30Ah, 35Ah',
-      batterySeparate: 'Weekly rate from 50 to 100 PLN',
+      batterySeparate: 'Weekly rate from 40 to 90 PLN',
       batteryMinimum: 'Add one to a bike or rent it separately',
       batteryContract: 'We match the option to your route and budget'
     },
@@ -122,28 +130,28 @@ export default {
       hardtail: {
         title: 'Hardtail 30Ah',
         price: '220 zl / week',
-        description: 'A practical everyday option with a lower rate, lighter feel, and no compromise on core range.',
+        description: 'They say there is nothing wrong with a hardtail... if money is the main thing in your life...',
         orderButton: 'Reserve hardtail'
       },
       fullSuspension: {
         title: 'Full suspension 30Ah',
-        slogan: 'Two suspensions. Zero excuses.',
+        slogan: 'Drive, Courage & Rock\'n\'Roll',
         price: '250 zl / week',
-        description: 'The most comfortable rental option. It handles rough surfaces better and keeps long rides less tiring.',
+        description: 'They say some potholes in Wroclaw flattened themselves when Rock Shox approached under the relentless run of the electric motor... hopefully that is not fake...',
         orderButton: 'Reserve full suspension'
       },
       battery: {
         title: 'Batteries for rent',
         price: '50-100 PLN / week',
-        description: 'If you need more range without changing the bike, you can rent a separate battery in one of 4 capacity options.',
+        description: 'A battery for every taste and color can be rented by you, assuming it is actually available...',
         orderButton: 'Ask about batteries'
       }
     }
   },
   bicycleCompose: {
     kicker: 'Compare before booking',
-    title: 'Compare rental options before you book',
-    description: 'This section shows not just the price, but what you actually get. It makes the right choice easier before any back-and-forth messages.',
+    title: 'Compare rental options before booking',
+    description: 'The so-called details.',
     priceFrom: 'Package',
     variantLabel: 'Available options',
     rangeNote: 'Included with the bike: soft saddle, fenders, powerful light, lock, alarm, and phone holder.',
@@ -151,79 +159,79 @@ export default {
       fullSuspension: {
         label: 'Full suspension',
         meta: '250 zl / week',
-        description: 'If you want maximum comfort and less fatigue on rough surfaces, this is the strongest rental option.',
+        description: 'A proper full suspension for those who want maximum comfort and are not afraid to pay a little more for it. Work with pleasure.',
         highlights: {
-          one: 'Works well in the city, on forest paths, and through long shifts.',
-          two: 'Takes the edge off rough terrain where a hardtail starts feeling too harsh.'
+          one: 'Works in the city, on forest paths, and through Wroclaw potholes.',
+          two: 'Smooths out roughness where a hardtail already leaves your back destroyed.'
         },
         primary: '30Ah',
         secondary: '250 zl / week',
         tertiary: 'Service 2x / week',
         priceNote: '30Ah + service + accessories',
         checklist: {
-          one: 'Two suspensions. Zero excuses.',
-          two: 'Repairs and tune-ups included',
-          three: 'Contract and clear pickup rules',
-          four: 'Ready to ride from minute one'
+          one: 'You definitely should take this one.',
+          two: 'We will fix everything.',
+          three: 'Riding is fun now.',
+          four: 'This is exactly what you were dreaming about.'
         }
       },
       hardtail: {
         label: 'Hardtail',
         meta: '220 zl / week',
-        description: 'A sensible option if you want a capable city bike for work and regular routes at a lower rate.',
+        description: 'This is possible too, but for that you need 29-inch wheels. And we will give you 29-inch wheels.',
         highlights: {
           one: 'Good for daily work and standard routes around the city.',
-          two: 'Keeps the 30Ah battery without paying extra for softer suspension.'
+          two: 'Gives you 30Ah without paying extra for softer suspension.'
         },
         primary: '30Ah',
         secondary: '220 zl / week',
         tertiary: 'Minimum 1 week',
         priceNote: '30Ah + accessory package',
         checklist: {
-          one: 'Light and fast for city rides and routes',
-          two: 'Service twice a week included',
-          three: 'Contract with transparent terms',
-          four: 'Ready for work from day one'
+          one: 'It is cheaper.',
+          two: 'It has big wheels.',
+          three: 'This is a good place to start.',
+          four: 'Maybe this is all you need.'
         }
       },
       battery: {
         label: 'Extra battery',
-        meta: '50-100 PLN / week',
+        meta: '40-100 PLN / week',
         description: 'A separate battery works well if you need more range or want a battery without renting a bike.',
         highlights: {
           one: 'There are 4 capacities available: 20Ah, 25Ah, 30Ah, and 35Ah.',
-          two: 'The weekly price depends on capacity and ranges from 50 to 100 PLN.'
+          two: 'The weekly price depends on capacity and ranges from 40 to 90 PLN.'
         },
         primary: '20-35Ah',
-        secondary: '50-100 PLN / week',
+        secondary: '40-90 PLN / week',
         tertiary: '4 options',
         priceNote: 'Separate rental or add-on battery',
         checklist: {
           one: 'Add a battery to your rental bike',
           two: 'Rent a battery on its own',
-          three: 'We will tell you what makes sense for your route',
-          four: 'Clear terms without unnecessary confusion'
+          three: 'Even 20Ah can noticeably increase your range.',
+          four: 'Separate battery contract if you do not rent a bike.'
         },
         variants: {
           v20: {
             capacity: '20Ah',
             price: '50 PLN',
-            note: 'Base range for short and medium routes'
+            note: 'A good option as an extra battery'
           },
           v25: {
             capacity: '25Ah',
             price: '70 PLN',
-            note: 'Balanced option for intensive city use'
+            note: 'Almost courier-grade base, enough for 4-5 hours of riding'
           },
           v30: {
             capacity: '30Ah',
             price: '90 PLN',
-            note: 'Better for long shifts and steady range'
+            note: 'Courier-grade base'
           },
           v35: {
             capacity: '35Ah',
             price: '100 PLN',
-            note: 'Maximum range for the longest routes'
+            note: 'Hyper-battery'
           }
         }
       }
@@ -237,8 +245,6 @@ export default {
   },
   menu: {
     rent: 'Rent',
-    kits: 'Kits',
-    batteries: 'Batteries',
     blog: 'Blog'
   },
   header: {
@@ -247,7 +253,7 @@ export default {
   contact: {
     kicker: 'Reservation',
     title: 'Reserve a bike or battery',
-    description: 'Tell us whether you want full suspension, hardtail, or a battery. We will respond quickly and confirm the rental terms.',
+    description: 'Tell us whether you need a full suspension, hardtail, or battery. We will respond quickly and confirm the rental terms.',
     nameLabel: 'Your Name',
     namePlaceholder: 'John Smith',
     phoneLabel: 'Phone Number',
@@ -265,7 +271,6 @@ export default {
     navigation: {
       title: 'Navigation',
       rent: 'Rent',
-      kits: 'Kits',
       blog: 'Blog',
       batteries: 'Batteries'
     },

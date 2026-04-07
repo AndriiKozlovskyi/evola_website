@@ -169,30 +169,7 @@ ${t('kits.totalPriceLabel')}: ${price}
 }
 
 const handleOrder = async () => {
-  try {
-    const orderText = generateOrderText()
-    await navigator.clipboard.writeText(orderText)
-    alert(t('kits.orderCopiedMessage'))
-    // Redirect to Telegram
-    window.location.href = 'https://t.me/evola_manager'
-  } catch (err) {
-    // Fallback for older browsers
-    const textarea = document.createElement('textarea')
-    textarea.value = orderText
-    textarea.style.position = 'fixed'
-    textarea.style.opacity = '0'
-    document.body.appendChild(textarea)
-    textarea.select()
-    try {
-      document.execCommand('copy')
-      alert(t('kits.orderCopiedMessage'))
-      // Redirect to Telegram
-      window.location.href = 'https://t.me/evola_manager'
-    } catch (err) {
-      alert(t('kits.orderCopyError'))
-    }
-    document.body.removeChild(textarea)
-  }
+  window.location.href = 'tel:+48789711631'
 }
 </script>
 

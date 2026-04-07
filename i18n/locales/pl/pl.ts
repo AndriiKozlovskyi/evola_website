@@ -32,18 +32,24 @@ export default {
   },
   hero: {
     kicker: 'Wynajem E-bike Wrocław',
-    title: 'Wynajem rowerów elektrycznych bez zbędnego zamieszania',
-    subtitle: 'Dobieramy rower pod miasto, pracę i dłuższe trasy. Konkretny sprzęt, jasne zasady i szybki start bez przepychanek.',
+    title: 'Wynajem rowerów elektrycznych',
+    subtitle: 'Masz dość jazdy na dusznym hardtailu i chcesz spróbować komfortowego full suspension? A może po prostu chcesz wziąć coś tańszego? Mamy wszystko.',
     points: {
-      one: 'Full suspension 30Ah za 250 zł tygodniowo albo hardtail 30Ah za 220 zł.',
-      two: 'Serwis, podstawowe akcesoria i przygotowanie roweru są już w cenie.',
-      three: 'Minimum wynajmu to 1 tydzień, a warunki ustalamy od razu.'
+      one: 'Topowe full suspension z kurierowym osprzętem dostępne od ręki.',
+      two: 'Tańsze hardtaile do codziennej pracy.',
+      three: 'Darmowy serwis 2 razy w tygodniu.'
     },
-    locationLine: 'Wypożyczalnia e-bike · umowa · serwis 2 razy w tygodniu · minimum 1 tydzień',
+    locationLine: 'Wypożyczalnia e-bike · serwis 2 razy w tygodniu · minimum 1 tydzień',
     orderButton: 'Zarezerwuj rower',
     viewOffers: 'Zobacz opcje wynajmu',
-    badgeTitle: 'Full suspension, które naprawdę warto brać',
-    badgeSubtitle: 'Więcej komfortu na kostce, w lesie i na długiej zmianie',
+    badgeTitle: 'Daj szansę komfortowi, dotknij full suspension.',
+    badgeSubtitle: 'A Twój tyłek powie Ci: dziękuję.',
+    statValues: {
+      fullSuspension: '250 zł',
+      hardtail: '220 zł',
+      service: '2x/tydz.',
+      minimum: '1 tydz.'
+    },
     stats: {
       fullSuspension: 'Full suspension / tydz.',
       hardtail: 'Hardtail / tydz.',
@@ -53,20 +59,20 @@ export default {
     imageAlt: 'Wynajem roweru elektrycznego'
   },
   benefits: {
-    kicker: 'Co dostajesz w cenie',
-    title: 'Wynajem bez zbędnej spiny',
-    description: 'Nie musisz osobno kompletować podstaw ani potem szukać serwisu. Wydajemy gotowy zestaw i normalnie jesteśmy w kontakcie.',
+    kicker: 'Co wchodzi w cenę',
+    title: 'Warunki wynajmu',
+    description: 'Dajemy rower z pełnym kompletem akcesoriów i wliczamy w cenę regularny serwis, żeby było Ci wygodnie i żebyś nie musiał martwić się stroną techniczną.',
     titles: {
       service: 'Serwis bez osobnej dopłaty',
-      gear: 'Sensowny zestaw od razu',
+      gear: 'Normalne wyposażenie',
       contract: 'Jasne warunki na starcie',
-      care: 'Szybki kontakt po ludzku'
+      care: 'Cenimy swoich klientów'
     },
     items: {
       service: 'Naprawy, regulacje i przeglądy techniczne są w cenie. Planowy serwis robimy 2 razy w tygodniu.',
-      gear: 'Rower oddajemy z miękkim siodełkiem, błotnikami, latarką, zamkiem, alarmem i uchwytem na telefon.',
-      contract: 'Bez kręcenia i bez drobnego druku: podpisujemy umowę i od razu spisujemy warunki od 1 tygodnia.',
-      care: 'Jeśli trzeba coś doprecyzować albo ogarnąć szybciej, odpowiadamy sprawnie i nie znikamy po wydaniu roweru.'
+      gear: 'Od razu oddajemy rower z miękkim siodełkiem, błotnikami, lampką, zamkiem, alarmem i uchwytem na telefon.',
+      contract: 'Umowa wynajmu z jasnymi warunkami, bez ukrytych opłat i kar.',
+      care: 'Jeśli trzeba coś doprecyzować albo zmienić, po prostu zadzwoń.'
     },
     stats: {
       service: '2x / tydz.',
@@ -76,28 +82,30 @@ export default {
     }
   },
   conversion: {
-    kicker: 'Jak działa wynajem',
-    title: 'Od wiadomości do gotowej jazdy',
-    description: 'Nie sprzedajemy chaosu. Umawiamy konkretny sprzęt, podpisujemy umowę i wydajemy rower przygotowany do jazdy.',
+    kicker: 'Konwersja i sprzedaż',
+    title: 'Rower elektryczny na zamówienie',
+    description: 'Zajmujemy się konwersją zwykłych rowerów na elektryczne: dobieramy silnik, baterię i osprzęt, składamy wszystko pod konkretną jazdę i oddajemy gotowy rower elektryczny. Jeśli nie chcesz przerabiać swojego roweru, możesz kupić już złożony i wyregulowany model.',
+    cta: 'Porozmawiaj o konwersji',
+    ctaNote: 'Zadzwoń, jeśli chcesz przerobić swój rower albo wybrać gotowy elektryczny.',
     steps: {
       choose: {
-        title: 'Wybierz opcję',
-        description: 'Wybierz full suspension, hardtail albo samą baterię pod swoją trasę i budżet.'
+        title: 'Oceniamy bazę',
+        description: 'Sprawdzamy Twój zwykły rower albo robimy od zera.'
       },
       sign: {
-        title: 'Podpisujemy umowę',
-        description: 'Ustalamy termin od minimum 1 tygodnia i spisujemy jasne warunki wynajmu.'
+        title: 'Dobieramy zestaw',
+        description: 'Wybieramy silnik, baterię, sterowanie i konfigurację pod Twoje potrzeby, prędkość i budżet.'
       },
       pickup: {
-        title: 'Odbierasz gotowy sprzęt',
-        description: 'Dostajesz rower z baterią, dodatkami i wszystkim, czego potrzebujesz na start.'
+        title: 'Składamy i ustawiamy',
+        description: 'Robimy rower elektryczny, ustawiamy go i oddajemy Ci na jazdę próbną.'
       },
       service: {
-        title: 'Jeździsz, a my ogarniamy serwis',
-        description: 'Naprawy wchodzą w cenę, a obsługę techniczną robimy 2 razy w tygodniu.'
+        title: 'Oddajemy gotowy rower',
+        description: 'Jeździj na zdrowie. Jeśli później będzie trzeba coś wyregulować, po prostu zadzwoń.'
       }
     },
-    imageAlt: 'Wynajem roweru elektrycznego'
+    imageAlt: 'Konwersja roweru na elektryczny'
   },
   pricing: {
     kicker: 'Oferta wynajmu',
@@ -114,7 +122,7 @@ export default {
       fullService: 'Naprawy wliczone w cenę',
       fullGear: 'Gotowy rower z dodatkami',
       batteryExtra: '4 warianty: 20Ah, 25Ah, 30Ah, 35Ah',
-      batterySeparate: 'Stawka od 50 do 100 PLN za tydzień',
+      batterySeparate: 'Stawka od 40 do 90 PLN za tydzień',
       batteryMinimum: 'Możesz dobrać do roweru albo wziąć osobno',
       batteryContract: 'Dobierzemy opcję do trasy i budżetu'
     },
@@ -122,20 +130,20 @@ export default {
       hardtail: {
         title: 'Hardtail 30Ah',
         price: '220 zł / tydzień',
-        description: 'Praktyczna opcja na co dzień: lżejsza w odczuciu, tańsza w stawce i dalej z dobrym zasięgiem.',
+        description: 'Mówią, że nie ma nic złego w hardtailu... jeśli najważniejsze w życiu są pieniądze...',
         orderButton: 'Rezerwuj hardtail'
       },
       fullSuspension: {
         title: 'Full suspension 30Ah',
-        slogan: 'Dwa zawieszenia. Zero wymówek.',
+        slogan: 'Drive, Kuraż & Rock\'n\'Roll',
         price: '250 zł / tydzień',
-        description: 'Najwygodniejsza opcja w wynajmie. Lepiej wybiera nierówności i mniej męczy na dłuższej trasie.',
+        description: 'Mówią, że niektóre dziury we Wrocławiu, czując zbliżającego się Rock Shoxa, same się wyrównywały pod nieubłaganym biegiem silnika elektrycznego... oby to nie był fejk...',
         orderButton: 'Rezerwuj full suspension'
       },
       battery: {
         title: 'Baterie na wynajem',
         price: '50-100 PLN / tydzień',
-        description: 'Jeśli potrzebujesz większego zasięgu bez zmiany roweru, możesz dobrać osobną baterię w jednym z 4 wariantów pojemności.',
+        description: 'Bateria na każdy gust i kolor może zostać przez Ciebie wynajęta, o ile oczywiście jest na stanie...',
         orderButton: 'Zapytaj o baterie'
       }
     }
@@ -143,7 +151,7 @@ export default {
   bicycleCompose: {
     kicker: 'Porównanie przed rezerwacją',
     title: 'Porównaj opcje wynajmu przed rezerwacją',
-    description: 'W tym miejscu od razu widzisz nie tylko cenę, ale też co dokładnie dostajesz. Dzięki temu łatwiej wybrać opcję bez zbędnych wiadomości tam i z powrotem.',
+    description: 'Tak zwane detale.',
     priceFrom: 'Pakiet',
     variantLabel: 'Dostępne warianty',
     rangeNote: 'W cenie roweru: miękkie siodełko, błotniki, mocna latarka, zamek, alarm i uchwyt na telefon.',
@@ -151,26 +159,26 @@ export default {
       fullSuspension: {
         label: 'Full suspension',
         meta: '250 zł / tydz.',
-        description: 'Jeśli chcesz maksimum komfortu i mniej zmęczenia na gorszej nawierzchni, to najlepsza opcja w wynajmie.',
+        description: 'Porządny full suspension dla tych, którzy chcą maksymalnego komfortu i nie boją się zapłacić za to trochę więcej. Pracuj z przyjemnością.',
         highlights: {
-          one: 'Sprawdza się w mieście, na leśnych odcinkach i podczas długich zmian.',
-          two: 'Lepiej tłumi nierówności tam, gdzie hardtail robi się już zbyt sztywny.'
+          one: 'Nadaje się do miasta, leśnych ścieżek i wrocławskich dziur.',
+          two: 'Dobrze wygładza nierówności tam, gdzie na hardtailu plecy są już wybite.'
         },
         primary: '30Ah',
         secondary: '250 zł / tydz.',
         tertiary: 'Serwis 2x / tydz.',
         priceNote: '30Ah + serwis + akcesoria',
         checklist: {
-          one: 'Dwa zawieszenia. Zero wymówek.',
-          two: 'Naprawy i regulacje w cenie',
-          three: 'Umowa i jasne zasady odbioru',
-          four: 'Gotowy do jazdy od pierwszej minuty'
+          one: 'To zdecydowanie trzeba brać.',
+          two: 'Wszystko naprawimy.',
+          three: 'Teraz jazda jest przyjemna.',
+          four: 'To dokładnie to, o czym marzyłeś.'
         }
       },
       hardtail: {
         label: 'Hardtail',
         meta: '220 zł / tydz.',
-        description: 'Rozsądny wybór, jeśli potrzebujesz sprawnego roweru do miasta i pracy, ale chcesz zejść ze stawki.',
+        description: 'Tak też można, ale do tego potrzebne są koła 29. I my damy Ci koła 29.',
         highlights: {
           one: 'Dobry do codziennej pracy i standardowych tras po mieście.',
           two: 'Daje 30Ah bez dopłaty za bardziej miękkie zawieszenie.'
@@ -180,50 +188,50 @@ export default {
         tertiary: 'Minimum 1 tydzień',
         priceNote: '30Ah + komplet akcesoriów',
         checklist: {
-          one: 'Lekki i szybki na miasto oraz trasy',
-          two: 'Serwis dwa razy w tygodniu w cenie',
-          three: 'Umowa i przejrzyste warunki',
-          four: 'Gotowy do pracy od pierwszego dnia'
+          one: 'To jest tańsze.',
+          two: 'To ma duże koła.',
+          three: 'Od tego dobrze zacząć.',
+          four: 'Możliwe, że to wszystko, czego potrzebujesz.'
         }
       },
       battery: {
         label: 'Dodatkowa bateria',
-        meta: '50-100 PLN / tydz.',
+        meta: '40-100 PLN / tydz.',
         description: 'Osobna bateria sprawdzi się, gdy chcesz zwiększyć zasięg albo potrzebujesz samego akumulatora bez wynajmu roweru.',
         highlights: {
           one: 'Do wyboru są 4 pojemności: 20Ah, 25Ah, 30Ah i 35Ah.',
-          two: 'Cena zależy od wariantu i wynosi od 50 do 100 PLN tygodniowo.'
+          two: 'Stawka zależy od pojemności: od 40 do 90 PLN za tydzień.'
         },
         primary: '20-35Ah',
-        secondary: '50-100 PLN / tydz.',
+        secondary: '40-90 PLN / tydz.',
         tertiary: '4 warianty',
         priceNote: 'Osobno albo jako dodatkowa bateria',
         checklist: {
           one: 'Możesz dobrać baterię do wynajmowanego roweru',
           two: 'Możesz wziąć samą baterię',
-          three: 'Od razu podpowiemy, co ma sens na Twoją trasę',
-          four: 'Jasne warunki bez niepotrzebnego mieszania'
+          three: 'Nawet 20Ah może wyraźnie zwiększyć zasięg',
+          four: 'Osobna umowa na baterię, jeśli nie wynajmujesz roweru'
         },
         variants: {
           v20: {
             capacity: '20Ah',
             price: '50 PLN',
-            note: 'Podstawowy zapas na krótsze i średnie trasy'
+            note: 'Dobry wariant jako dodatkowa bateria'
           },
           v25: {
             capacity: '25Ah',
             price: '70 PLN',
-            note: 'Dobry balans do intensywnej jazdy po mieście'
+            note: 'Prawie kurierowa baza, 4-5 godzin jazdy'
           },
           v30: {
             capacity: '30Ah',
             price: '90 PLN',
-            note: 'Na dłuższe zmiany i pewniejszy zasięg'
+            note: 'Kurierska baza'
           },
           v35: {
             capacity: '35Ah',
             price: '100 PLN',
-            note: 'Maksymalny zapas na najdłuższe trasy'
+            note: 'Hyperbateria'
           }
         }
       }
@@ -237,8 +245,6 @@ export default {
   },
   menu: {
     rent: 'Wynajem',
-    kits: 'Zestawy',
-    batteries: 'Baterie',
     blog: 'Blog'
   },
   header: {
@@ -247,7 +253,7 @@ export default {
   contact: {
     kicker: 'Rezerwacja',
     title: 'Zarezerwuj rower albo baterię',
-    description: 'Napisz, czy chcesz full suspension, hardtail czy baterię. Odpowiemy szybko i potwierdzimy warunki wynajmu.',
+    description: 'Napisz, czy potrzebujesz full suspension, hardtaila czy baterii. Odpowiemy szybko i potwierdzimy warunki wynajmu.',
     nameLabel: 'Twoje imię',
     namePlaceholder: 'Jan Kowalski',
     phoneLabel: 'Numer telefonu',
@@ -265,7 +271,6 @@ export default {
     navigation: {
       title: 'Nawigacja',
       rent: 'Wynajem',
-      kits: 'Zestawy',
       blog: 'Blog',
       batteries: 'Baterie'
     },

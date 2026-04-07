@@ -24,7 +24,7 @@
             {{ $t('hero.subtitle') }}
           </p>
 
-          <div class="grid gap-3 mb-4 sm:grid-cols-3">
+          <div class="grid gap-3 mb-4">
             <div
               v-for="point in heroPoints"
               :key="point"
@@ -47,13 +47,13 @@
               type="button"
               variant="primary"
               class="w-full sm:w-auto text-base px-8 py-3.5"
-              @click="scrollToSection('contact')"
+              @click="redirectToCall()"
             >
               {{ $t('hero.orderButton') }}
             </Button>
             <button
               class="inline-flex w-full sm:w-auto justify-center sm:justify-start items-center gap-2 text-sm font-medium text-[#8fa3bb] hover:text-white transition-colors"
-              @click="scrollToSection('rent-offers')"
+              @click="redirectToCall()"
             >
               <span>{{ $t('hero.viewOffers') }}</span>
               <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -72,7 +72,7 @@
         </div>
 
         <!-- Image Block -->
-        <div class="relative">
+        <div class="hidden md:block relative">
           <div class="absolute inset-0 rounded-3xl " style="background: radial-gradient(ellipse at center, rgba(240,91,4,0.15) 0%, transparent 70%);"></div>
           <img
             src="/assets/bic.webp"
@@ -114,13 +114,13 @@ const heroPoints = computed(() => [
 ])
 
 const stats = computed(() => [
-  { value: '250 zl', label: t('hero.stats.fullSuspension') },
-  { value: '220 zl', label: t('hero.stats.hardtail') },
-  { value: '2x/tydz.', label: t('hero.stats.service') },
-  { value: '1 tydz.', label: t('hero.stats.minimum') },
+  { value: t('hero.statValues.fullSuspension'), label: t('hero.stats.fullSuspension') },
+  { value: t('hero.statValues.hardtail'), label: t('hero.stats.hardtail') },
+  { value: t('hero.statValues.service'), label: t('hero.stats.service') },
+  { value: t('hero.statValues.minimum'), label: t('hero.stats.minimum') },
 ])
 
-function scrollToSection(id) {
-  document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+function redirectToCall() {
+  window.location.href = 'tel:+48789711631'
 }
 </script>

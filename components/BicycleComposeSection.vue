@@ -124,7 +124,7 @@
             <Button
               variant="primary"
               class="w-full sm:w-auto flex-1 sm:flex-none text-base py-3.5"
-              @click="scrollToContact()"
+              @click="redirectToCall()"
             >
               {{ t('bicycleCompose.orderButton') }}
               <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
@@ -143,14 +143,15 @@
 import { computed, ref } from 'vue'
 import Button from './ui/Button.vue'
 import { useI18n } from 'vue-i18n'
+import bicycleMain from '@/assets/bicycle_main.webp'
 
 const { t } = useI18n()
 const selected = ref('fullSuspension')
 
-const rentalOptions = computed(() => [
+const rentalOptions = computed(()=> [
   {
     value: 'fullSuspension',
-    image: '/assets/bic.webp',
+    image: bicycleMain,
     label: t('bicycleCompose.options.fullSuspension.label'),
     meta: t('bicycleCompose.options.fullSuspension.meta'),
     description: t('bicycleCompose.options.fullSuspension.description'),
@@ -237,8 +238,8 @@ const rentalOptions = computed(() => [
 
 const activeOption = computed(() => rentalOptions.value.find((option) => option.value === selected.value) ?? rentalOptions.value[0])
 
-function scrollToContact() {
-  document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+function redirectToCall() {
+  window.location.href = 'tel:+48789711631'
 }
 </script>
 

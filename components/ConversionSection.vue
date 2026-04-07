@@ -25,6 +25,18 @@
               </div>
             </li>
           </ol>
+
+          <div class="mt-8 flex flex-col sm:flex-col sm:items-center gap-4">
+            <a
+              href="tel:+48789711631"
+              class="inline-flex items-center w-full justify-center gap-2 font-semibold rounded-xl px-6 py-3 text-sm tracking-wide transition-all duration-200 bg-[#f05b04] text-white hover:bg-[#d44d03] shadow-lg shadow-orange-900/30 hover:shadow-orange-900/50 hover:-translate-y-px btn-glow"
+            >
+              {{ $t('conversion.cta') }}
+            </a>
+            <p class="text-sm text-[#566a7f]">
+              {{ $t('conversion.ctaNote') }}
+            </p>
+          </div>
         </div>
 
         <!-- Image -->

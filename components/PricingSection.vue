@@ -32,7 +32,7 @@
               {{ item }}
             </li>
           </ul>
-          <Button type="button" variant="outline" class="w-full mt-auto" @click="scrollToContact()">
+          <Button type="button" variant="outline" class="w-full mt-auto" @click="redirectToCall()">
             {{ $t('pricing.cards.hardtail.orderButton') }}
           </Button>
         </div>
@@ -57,7 +57,7 @@
               {{ item }}
             </li>
           </ul>
-          <Button type="button" variant="primary" class="w-full mt-auto" @click="scrollToContact()">
+          <Button type="button" variant="primary" class="w-full mt-auto" @click="redirectToCall()">
             {{ $t('pricing.cards.fullSuspension.orderButton') }}
           </Button>
         </div>
@@ -78,7 +78,7 @@
               {{ item }}
             </li>
           </ul>
-          <Button type="button" variant="outline" class="w-full mt-auto" @click="scrollToContact()">
+          <Button type="button" variant="outline" class="w-full mt-auto" @click="redirectToCall()">
             {{ $t('pricing.cards.battery.orderButton') }}
           </Button>
         </div>
@@ -113,7 +113,7 @@ const batteryFeatures = [
   t('pricing.features.batteryContract'),
 ]
 
-function scrollToContact() {
-  document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+function redirectToCall() {
+  window.location.href = 'tel:+48789711631'
 }
 </script>

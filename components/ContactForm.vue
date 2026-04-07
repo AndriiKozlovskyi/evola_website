@@ -100,7 +100,6 @@ const form = reactive({
 })
 
 function handleSubmit() {
-  const text = `${t('contact.inquiryTitle')}:\n${t('contact.nameLabel')}: ${form.name}\n${t('contact.phoneLabel')}: ${form.phone}\n${t('contact.messageLabel')}: ${form.message || '—'}`
-  window.open(`https://t.me/evola_manager?text=${encodeURIComponent(text)}`, '_blank', 'noopener')
+  window.location.href = 'tel:+48789711631'
 }
 </script>

@@ -3,7 +3,7 @@
     <div class="max-w-screen-xl mx-auto px-4 sm:px-6 py-16">
 
       <!-- Top row -->
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-10 pb-12" style="border-bottom: 1px solid rgba(255,255,255,0.06);">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10 pb-12" style="border-bottom: 1px solid rgba(255,255,255,0.06);">
 
         <!-- Brand -->
         <div class="md:col-span-2">
@@ -36,17 +36,6 @@
               </svg>
             </a>
           </div>
-        </div>
-
-        <!-- Navigation -->
-        <div>
-          <h3 class="text-white text-sm font-black uppercase tracking-widest mb-5">{{ $t('footer.navigation.title') }}</h3>
-          <ul class="space-y-3">
-            <li><nuxt-link to="/rent" class="text-sm text-[#566a7f] hover:text-white transition-colors">{{ $t('footer.navigation.rent') }}</nuxt-link></li>
-            <li><nuxt-link to="/kits" class="text-sm text-[#566a7f] hover:text-white transition-colors">{{ $t('footer.navigation.kits') }}</nuxt-link></li>
-            <li><nuxt-link to="/batteries" class="text-sm text-[#566a7f] hover:text-white transition-colors">{{ $t('footer.navigation.batteries') }}</nuxt-link></li>
-            <li><nuxt-link to="/blog" class="text-sm text-[#566a7f] hover:text-white transition-colors">{{ $t('footer.navigation.blog') }}</nuxt-link></li>
-          </ul>
         </div>
 
         <!-- Contact -->

@@ -11,20 +11,7 @@
           <span class="hidden sm:inline-block text-[10px] font-semibold tracking-widest uppercase text-[#f05b04]/70 border border-[#f05b04]/25 rounded-full px-2 py-0.5">{{ $t('footer.brandTagline') }}</span>
         </nuxt-link>
 
-        <!-- Desktop nav -->
-        <nav class="hidden md:flex items-center gap-1">
-          <nuxt-link
-            v-for="item in menuItems"
-            :key="item.name"
-            :to="item.href"
-            class="px-4 py-2 text-sm font-medium text-[#8fa3bb] hover:text-white rounded-lg hover:bg-white/[0.05] transition-all duration-150"
-            active-class="text-white bg-white/[0.07]"
-          >
-            {{ $t(item.name) }}
-          </nuxt-link>
-        </nav>
-
-        <div class="hidden md:flex items-center gap-3">
+        <div class="flex items-center gap-3">
           <LanguageSelector />
           <a
             href="tel:+48789711631"
@@ -36,56 +23,11 @@
             +48 789 711 631
           </a>
         </div>
-
-        <!-- Mobile hamburger -->
-        <div class="flex items-center gap-3 md:hidden">
-          <LanguageSelector />
-          <button
-            @click="isOpen = !isOpen"
-            class="p-2 rounded-lg text-[#8fa3bb] hover:text-white hover:bg-white/[0.06] transition-colors"
-          >
-            <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-              <path v-if="!isOpen" stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-              <path v-else stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-            </svg>
-          </button>
-        </div>
-      </div>
-
-      <!-- Mobile menu -->
-      <div
-        v-show="isOpen"
-        class="md:hidden border-t border-white/[0.06] py-4"
-      >
-        <div class="flex flex-col gap-1">
-          <nuxt-link
-            v-for="item in menuItems"
-            :key="item.name"
-            :to="item.href"
-            class="px-4 py-3 text-sm font-medium text-[#8fa3bb] hover:text-white rounded-xl hover:bg-white/[0.05] transition-all"
-            @click="isOpen = false"
-          >
-            {{ $t(item.name) }}
-          </nuxt-link>
-          <a href="tel:+48789711631" class="mt-2 mx-4 inline-flex items-center justify-center gap-2 text-sm font-semibold text-white bg-[#f05b04] hover:bg-[#d44d03] px-4 py-3 rounded-xl transition-colors">
-            {{ $t('header.callUs') }}: +48 789 711 631
-          </a>
-        </div>
       </div>
     </div>
   </header>
 </template>
 
 <script setup>
-import { ref } from 'vue'
 import LanguageSelector from './ui/LanguageSelector.vue'
-
-const isOpen = ref(false)
-
-const menuItems = [
-  { name: 'menu.rent', href: '/rent' },
-  { name: 'menu.kits', href: '/kits' },
-  { name: 'menu.batteries', href: '/batteries' },
-  { name: 'menu.blog', href: '/blog' },
-]
 </script>

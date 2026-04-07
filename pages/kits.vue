@@ -36,7 +36,7 @@
           <p class="text-sm text-[#8fa3bb] flex-1">{{ $t(`kits.liteTitle`) }}</p>
           <div class="flex items-center justify-between pt-4" style="border-top: 1px solid var(--border);">
             <div class="text-2xl font-black text-white">2600 <span class="text-base text-[#8fa3bb]">PLN</span></div>
-            <Button variant="primary" @click="navigateTo(`/configure-kit?type=lite`)">{{$t(`kits.orderLabel`)}}</Button>
+            <Button variant="primary" @click="redirectToCall()">{{$t(`kits.orderLabel`)}}</Button>
           </div>
         </div>
       </div>
@@ -60,7 +60,7 @@
           <p class="text-sm text-[#8fa3bb] flex-1">{{ $t(`kits.baseTitle`) }}</p>
           <div class="flex items-center justify-between pt-4" style="border-top: 1px solid rgba(240,91,4,0.2);">
             <div class="text-2xl font-black text-white">3200 <span class="text-base text-[#8fa3bb]">PLN</span></div>
-            <Button variant="primary" @click="navigateTo(`/configure-kit?type=base`)">{{$t(`kits.orderLabel`)}}</Button>
+            <Button variant="primary" @click="redirectToCall()">{{$t(`kits.orderLabel`)}}</Button>
           </div>
         </div>
       </div>
@@ -84,7 +84,7 @@
           <p class="text-sm text-[#8fa3bb] flex-1">{{ $t(`kits.turboTitle`) }}</p>
           <div class="flex items-center justify-between pt-4" style="border-top: 1px solid var(--border);">
             <div class="text-2xl font-black text-white">4500 <span class="text-base text-[#8fa3bb]">PLN</span></div>
-            <Button variant="primary" @click="navigateTo(`/configure-kit?type=turbo`)">{{$t(`kits.orderLabel`)}}</Button>
+            <Button variant="primary" @click="redirectToCall()">{{$t(`kits.orderLabel`)}}</Button>
           </div>
         </div>
       </div>
@@ -95,11 +95,14 @@
 
 <script setup>
 import Button from '~/components/ui/Button.vue'
-import { navigateTo } from '#app'
 useHead({
   title: 'Zestawy do konwersji roweru na elektryczny | Evola E-bicycles',
   meta: [
     { name: 'description', content: 'Profesjonalne zestawy do konwersji roweru na elektryczny. Dostepne moce: 250W, 500W, 3000W. Zasieg do 100km. Gwarancja 12 miesiecy.' }
   ]
 })
+
+function redirectToCall() {
+  window.location.href = 'tel:+48789711631'
+}
 </script>
