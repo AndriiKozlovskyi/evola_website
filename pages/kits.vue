@@ -96,7 +96,7 @@
 <script setup>
 import Button from '~/components/ui/Button.vue'
 useHead({
-  title: 'Zestawy do konwersji roweru na elektryczny | Evola E-bicycles',
+  title: 'Аренда Велосипедов Вроцлав',
   meta: [
     { name: 'description', content: 'Profesjonalne zestawy do konwersji roweru na elektryczny. Dostepne moce: 250W, 500W, 3000W. Zasieg do 100km. Gwarancja 12 miesiecy.' }
   ]

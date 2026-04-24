@@ -60,7 +60,7 @@ export default defineNuxtConfig({
     [
       '@storyblok/nuxt',
       {
-        accessToken: 'E4OKfXbcKctTQs3gxpQCxgtt',
+        accessToken: 'x8OQGRiQnr2U1BjroDQ6aAtt',
         apiOptions: {
           region: 'eu' // or 'us' depending on your Storyblok space region
         },
@@ -76,9 +76,9 @@ export default defineNuxtConfig({
   },
   app: {
     head: {
-      title: 'Evola E-bicycles', // Set the page title
+      title: 'Аренда Велосипедов Вроцлав',
       link: [
-        { rel: 'icon', type: 'image/png', href: '/evola1.png' },
+        { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
         { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
         { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' },
         {
@@ -100,9 +100,9 @@ export default defineNuxtConfig({
         { name: 'robots', content: 'index, follow, max-image-preview:large' },
         { name: 'theme-color', content: '#d35400' },
         { property: 'og:type', content: 'website' },
-        { property: 'og:site_name', content: 'Evola E-bicycles' },
+        { property: 'og:site_name', content: 'Аренда Велосипедов Вроцлав' },
         { property: 'og:locale', content: 'pl_PL' },
-        { property: 'og:title', content: 'Evola E-bicycles' },
+        { property: 'og:title', content: 'Аренда Велосипедов Вроцлав' },
         {
           property: 'og:description',
           content: 'Wynajem rowerow elektrycznych i baterii we Wroclawiu z serwisem 2 razy w tygodniu w cenie.'
@@ -110,7 +110,7 @@ export default defineNuxtConfig({
         { property: 'og:image', content: 'https://evola.pl/assets/bic.webp' },
         { property: 'og:url', content: 'https://evola.pl' },
         { name: 'twitter:card', content: 'summary_large_image' },
-        { name: 'twitter:title', content: 'Evola E-bicycles' },
+        { name: 'twitter:title', content: 'Аренда Велосипедов Вроцлав' },
         {
           name: 'twitter:description',
           content: 'Wynajem rowerow elektrycznych i baterii we Wroclawiu z serwisem w cenie.'
@@ -140,6 +140,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>`
         'gtm-script': ['innerHTML'],
         'gtm-noscript': ['innerHTML']
       }
+    },
+  },
+  devServer: {
+    https: {
+      key: './certs/localhost-key.pem',
+      cert: './certs/localhost.pem',
     },
   },
   compatibilityDate: '2025-02-21',

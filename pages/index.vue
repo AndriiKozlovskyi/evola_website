@@ -4,9 +4,9 @@
 
 <script setup>
 useSeoMeta({
-  title: 'Wynajem rowerow elektrycznych Wroclaw | EVOLA',
+  title: 'Аренда Велосипедов Вроцлав',
   description: 'Wynajem rowerow elektrycznych we Wroclawiu. Full suspension 30Ah za 250 zl tygodniowo, hardtail 30Ah za 220 zl tygodniowo i osobny wynajem baterii od 1 tygodnia.',
-  ogTitle: 'Wynajem rowerow elektrycznych Wroclaw | EVOLA',
+  ogTitle: 'Аренда Велосипедов Вроцлав',
   ogDescription: 'Arenda e-bike we Wroclawiu: full suspension 250 zl tydzien, hardtail 220 zl tydzien, dodatkowe baterie i serwis 2 razy w tygodniu w cenie.',
   ogImage: 'https://evola.pl/assets/bic.webp',
   twitterCard: 'summary_large_image',

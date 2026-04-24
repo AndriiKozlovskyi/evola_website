@@ -118,7 +118,7 @@ const { t } = useI18n()
 const advantages = ['warranty', 'cells', 'temperature', 'monitoring']
 
 useHead({
-  title: 'Baterie do rowerów elektrycznych | Evola E-bicycles',
+  title: 'Аренда Велосипедов Вроцлав',
   meta: [
     { name: 'description', content: 'Wysokiej jakości baterie do rowerów elektrycznych. Pojemność 25Ah i 30Ah. Smart BMS z Bluetooth. Gwarancja 12 miesięcy.' }
   ]
