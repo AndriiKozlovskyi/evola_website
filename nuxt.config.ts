@@ -116,7 +116,7 @@ export default defineNuxtConfig({
           content: 'Wynajem rowerow elektrycznych i baterii we Wroclawiu z serwisem w cenie.'
         },
         { name: 'twitter:image', content: 'https://evola.pl/assets/bic.webp' },
-        { name: 'google-site-verification', content: 'OjyVwoCIZV8NVzGNM5kQGwwk1GJRU3Wul9mJTOiIPx8' }
+        { name: 'google-site-verification', content: 'KcLmVDC3N39Va81b0fzPIAXqIM8RhhGlxUYuTX9a2rk' }
       ],
       script: [
         {
