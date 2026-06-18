@@ -26,6 +26,12 @@
 
     <ConversionSection />
 
+    <div class="px-4 sm:px-6">
+      <div class="divider-glow"></div>
+    </div>
+
+    <FaqSection />
+
   </div>
 </template>
 
@@ -36,4 +42,5 @@ import PricingSection from '@/components/PricingSection.vue'
 import BicycleComposeSection from '@/components/BicycleComposeSection.vue'
 import ConversionSection from '@/components/ConversionSection.vue'
 import ContactForm from '@/components/ContactForm.vue'
+import FaqSection from '@/components/FaqSection.vue'
 </script>

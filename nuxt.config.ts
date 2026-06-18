@@ -26,31 +26,35 @@ export default defineNuxtConfig({
     dirs: ['~/components']
   },
   i18n: {
+    baseUrl: 'https://evola.pl',
     locales: [
       {
         code: 'ru',
         file: 'ru/ru.ts',
-        name: 'Русский'
+        name: 'Русский',
+        language: 'ru-RU'
       },
       {
         code: 'pl',
         file: 'pl/pl.ts',
-        name: 'Polski'
+        name: 'Polski',
+        language: 'pl-PL'
       },
       {
         code: 'en',
         file: 'en/en.ts',
-        name: 'English'
+        name: 'English',
+        language: 'en-US'
       }
     ],
-    defaultLocale: 'pl',
-    strategy: 'no_prefix',
+    defaultLocale: 'ru',
+    strategy: 'prefix_except_default',
     detectBrowserLanguage: {
       useCookie: true,
       cookieKey: 'i18n_redirected',
-      // fallbackLocale: 'en', // optional
-      alwaysRedirect: true,
-      fallbackLocale: 'pl'      // If you want to use localStorage instead of cookies:
+      alwaysRedirect: false,
+      fallbackLocale: 'ru'
+      // If you want to use localStorage instead of cookies:
       // useLocalStorage: true,
       // localStorageKey: 'i18n_redirected',
     }
@@ -84,12 +88,7 @@ export default defineNuxtConfig({
         {
           rel: 'stylesheet',
           href: 'https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap'
-        },
-        { 
-          rel: 'alternate', 
-          hreflang: 'pl', 
-          href: 'https://evola.pl' 
-        } // Set the favicon
+        }
       ],
       meta: [
         { name: 'viewport', content: 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' },

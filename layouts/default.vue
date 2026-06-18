@@ -23,6 +23,14 @@
 <script setup>
 import Header from '@/components/Header.vue'
 import Footer from '@/components/Footer.vue'
+
+const i18nHead = useLocaleHead({ addSeoAttributes: true })
+
+useHead({
+  htmlAttrs: computed(() => i18nHead.value.htmlAttrs),
+  link: computed(() => i18nHead.value.link),
+  meta: computed(() => i18nHead.value.meta),
+})
 </script>
 
 <style scoped>

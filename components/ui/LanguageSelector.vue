@@ -1,12 +1,12 @@
 <script setup lang="ts">
-import { ref, onMounted, computed } from 'vue';
+import { ref, computed } from 'vue';
 import { useI18n } from 'vue-i18n';
 
 const { locales, locale, setLocale } = useI18n();
 
 type LanguageCode = 'en' | 'ru' | 'pl';
 
-const language = ref(locale.value as LanguageCode);
+const language = computed(() => locale.value as LanguageCode);
 const isOpen = ref(false);
 
 const shortLabels: Record<LanguageCode, string> = {
@@ -28,18 +28,9 @@ const toggleDropdown = () => {
 };
 
 const selectLanguage = (code: LanguageCode) => {
-  language.value = code;
   setLocale(code);
-  localStorage.setItem('lang', code);
   isOpen.value = false;
 };
-
-onMounted(() => {
-  const saved = localStorage.getItem('lang');
-  if (saved && availableCodes.value.includes(saved as LanguageCode)) {
-    selectLanguage(saved as LanguageCode);
-  }
-});
 </script>
 
 <template>

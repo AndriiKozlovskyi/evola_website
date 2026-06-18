@@ -276,7 +276,7 @@ export default {
     },
     contact: {
       title: 'Contact',
-      address: 'ul. Norweska 20, Wroclaw'
+      address: 'ul. Kwiska 20, Wroclaw'
     },
     copyright: '© {year} EVOLA. All rights reserved.',
     socialLinks: {
@@ -328,5 +328,36 @@ export default {
     },
     
     orderButton: 'Order'
+  },
+  faq: {
+    kicker: 'Questions and answers',
+    title: 'Frequently asked questions',
+    description: 'We collected answers to the questions we get asked most often before renting an e-bike.',
+    items: {
+      minTerm: {
+        question: 'What is the minimum rental period?',
+        answer: 'The minimum rental period for a bike or battery is 1 week. You can extend it week by week with no limit.'
+      },
+      service: {
+        question: 'What does the twice-a-week service include?',
+        answer: 'Service includes repairs, adjustments, and scheduled maintenance of the bike. It is already included in the rental price, no extra charge.'
+      },
+      whatIncluded: {
+        question: 'What comes with the bike?',
+        answer: 'Along with the bike you get a soft saddle, fenders, a light, a lock, an alarm, and a phone holder.'
+      },
+      battery: {
+        question: 'Can I rent only a battery?',
+        answer: 'Yes, a battery can be rented separately from a bike. Capacities of 20Ah, 25Ah, 30Ah, and 35Ah are available at a weekly rate from 40 to 90 PLN.'
+      },
+      contract: {
+        question: 'Do you sign a rental contract?',
+        answer: 'Yes, a rental agreement with clear terms is signed for every rental, with no hidden fees or penalties.'
+      },
+      conversion: {
+        question: 'Can you convert my own bike into an electric one?',
+        answer: 'Yes, we convert standard bicycles into electric ones: we select the motor, battery, and components to match your needs and budget.'
+      }
+    }
   }
 }

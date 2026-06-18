@@ -1,0 +1,33 @@
+# EVOLA
+
+> EVOLA rents electric bikes (e-bikes) and spare batteries in Wroclaw, Poland, and converts standard bicycles into electric ones. Rental periods start at 1 week, with bike service included twice a week.
+
+EVOLA offers two e-bike models for weekly rental (full suspension and hardtail, both with 30Ah batteries), standalone battery rentals (20-35Ah), custom e-bike conversion/build services, and ready-made e-bike kits (250W-3000W). The site is available in three languages by path: Russian at `/` (default), English at `/en`, and Polish at `/pl`.
+
+## Site (Russian, default)
+- [Главная — Аренда электровелосипедов](https://evola.pl/): Hero, pricing, comparison, benefits, conversion offer, and FAQ.
+- [Аренда](https://evola.pl/rent): Full rental landing page.
+- [Батареи](https://evola.pl/batteries): Standalone battery rental, specs, and pricing.
+- [Электрокомплекты](https://evola.pl/kits): E-bike conversion kits (LITE 250W, BASE 500W, TURBO 3000W).
+
+## Site (English)
+- [Home — Electric bike rental](https://evola.pl/en): Hero, pricing, comparison, benefits, conversion offer, and FAQ.
+- [Rent](https://evola.pl/en/rent): Full rental landing page.
+- [Batteries](https://evola.pl/en/batteries): Standalone battery rental, specs, and pricing.
+- [Kits](https://evola.pl/en/kits): E-bike conversion kits (LITE 250W, BASE 500W, TURBO 3000W).
+
+## Site (Polish)
+- [Strona główna — Wynajem rowerów elektrycznych](https://evola.pl/pl): Hero, pricing, comparison, benefits, conversion offer, and FAQ.
+- [Wynajem](https://evola.pl/pl/rent): Full rental landing page.
+- [Baterie](https://evola.pl/pl/batteries): Standalone battery rental, specs, and pricing.
+- [Zestawy](https://evola.pl/pl/kits): E-bike conversion kits (LITE 250W, BASE 500W, TURBO 3000W).
+
+## Contact
+- Phone: +48 789 711 631
+- Email: evolateam@gmail.com
+- Address: ul. Kwiska 20, Wroclaw, Poland
+- Telegram: https://t.me/evola_manager
+- Facebook: https://www.facebook.com/profile.php?id=61572740802927
+
+## Optional
+- [llms-full.txt](https://evola.pl/llms-full.txt): Full pricing, specs, and FAQ content in all three languages.

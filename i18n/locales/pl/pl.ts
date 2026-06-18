@@ -276,7 +276,7 @@ export default {
     },
     contact: {
       title: 'Kontakt',
-      address: 'ul. Norweska 20, Wrocław'
+      address: 'ul. Kwiska 20, Wrocław'
     },
     copyright: '© {year} EVOLA. Wszelkie prawa zastrzeżone.',
     socialLinks: {
@@ -328,5 +328,36 @@ export default {
     },
     
     orderButton: 'Zamów'
+  },
+  faq: {
+    kicker: 'Pytania i odpowiedzi',
+    title: 'Najczęściej zadawane pytania',
+    description: 'Zebraliśmy odpowiedzi na pytania, które najczęściej padają przed wynajmem roweru elektrycznego.',
+    items: {
+      minTerm: {
+        question: 'Jaki jest minimalny okres wynajmu?',
+        answer: 'Minimalny okres wynajmu roweru lub baterii to 1 tydzień. Później można przedłużać tydzień po tygodniu bez ograniczeń.'
+      },
+      service: {
+        question: 'Co obejmuje serwis 2 razy w tygodniu?',
+        answer: 'Serwis obejmuje naprawy, regulacje i planowy przegląd techniczny roweru. Jest już wliczony w cenę wynajmu, bez dodatkowych opłat.'
+      },
+      whatIncluded: {
+        question: 'Co wchodzi w skład wyposażenia roweru?',
+        answer: 'Razem z rowerem otrzymujesz miękkie siodełko, błotniki, lampkę, zamek, alarm i uchwyt na telefon.'
+      },
+      battery: {
+        question: 'Czy można wynająć samą baterię?',
+        answer: 'Tak, baterię można wynająć osobno od roweru. Dostępne są warianty 20Ah, 25Ah, 30Ah i 35Ah w stawce od 40 do 90 PLN za tydzień.'
+      },
+      contract: {
+        question: 'Czy podpisujecie umowę wynajmu?',
+        answer: 'Tak, przy wynajmie podpisywana jest umowa z jasnymi warunkami, bez ukrytych opłat i kar.'
+      },
+      conversion: {
+        question: 'Czy można przerobić mój rower na elektryczny?',
+        answer: 'Tak, zajmujemy się konwersją zwykłych rowerów na elektryczne: dobieramy silnik, baterię i osprzęt pod Twoje potrzeby i budżet.'
+      }
+    }
   }
 }
