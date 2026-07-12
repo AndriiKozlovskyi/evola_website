@@ -5,6 +5,9 @@ export default defineNuxtConfig({
     compressPublicAssets: true,
   },
   routeRules: {
+    '/rent': { redirect: { to: '/', statusCode: 301 } },
+    '/en/rent': { redirect: { to: '/en', statusCode: 301 } },
+    '/pl/rent': { redirect: { to: '/pl', statusCode: 301 } },
     '/**': {
       headers: {
         'X-Content-Type-Options': 'nosniff',

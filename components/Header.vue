@@ -80,7 +80,7 @@ const { t } = useI18n()
 const isMobileMenuOpen = ref(false)
 
 const navItems = computed(() => [
-  { to: '/rent', label: t('menu.rent') },
+  { to: '/', label: t('menu.rent') },
   { to: '/batteries', label: t('menu.batteries') },
   { to: '/blog', label: t('menu.blog') }
 ])

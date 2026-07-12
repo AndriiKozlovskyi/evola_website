@@ -8,89 +8,52 @@
 
 <!-- Russian (default) -->
 <url>
-  <loc>https://evola.pl/</loc>
-  <xhtml:link rel="alternate" hreflang="ru" href="https://evola.pl/"/>
-  <xhtml:link rel="alternate" hreflang="en" href="https://evola.pl/en"/>
-  <xhtml:link rel="alternate" hreflang="pl" href="https://evola.pl/pl"/>
-  <xhtml:link rel="alternate" hreflang="x-default" href="https://evola.pl/"/>
+  <loc>https://evola-bikes.com/</loc>
+  <xhtml:link rel="alternate" hreflang="ru" href="https://evola-bikes.com/"/>
+  <xhtml:link rel="alternate" hreflang="en" href="https://evola-bikes.com/en"/>
+  <xhtml:link rel="alternate" hreflang="pl" href="https://evola-bikes.com/pl"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://evola-bikes.com/"/>
   <lastmod>2026-07-12</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://evola.pl/batteries</loc>
-  <xhtml:link rel="alternate" hreflang="ru" href="https://evola.pl/batteries"/>
-  <xhtml:link rel="alternate" hreflang="en" href="https://evola.pl/en/batteries"/>
-  <xhtml:link rel="alternate" hreflang="pl" href="https://evola.pl/pl/batteries"/>
+  <loc>https://evola-bikes.com/batteries</loc>
+  <xhtml:link rel="alternate" hreflang="ru" href="https://evola-bikes.com/batteries"/>
+  <xhtml:link rel="alternate" hreflang="en" href="https://evola-bikes.com/en/batteries"/>
+  <xhtml:link rel="alternate" hreflang="pl" href="https://evola-bikes.com/pl/batteries"/>
   <lastmod>2026-07-12</lastmod>
   <priority>0.90</priority>
 </url>
 <url>
-  <loc>https://evola.pl/rent</loc>
-  <xhtml:link rel="alternate" hreflang="ru" href="https://evola.pl/rent"/>
-  <xhtml:link rel="alternate" hreflang="en" href="https://evola.pl/en/rent"/>
-  <xhtml:link rel="alternate" hreflang="pl" href="https://evola.pl/pl/rent"/>
-  <lastmod>2026-07-12</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://evola.pl/kits</loc>
-  <xhtml:link rel="alternate" hreflang="ru" href="https://evola.pl/kits"/>
-  <xhtml:link rel="alternate" hreflang="en" href="https://evola.pl/en/kits"/>
-  <xhtml:link rel="alternate" hreflang="pl" href="https://evola.pl/pl/kits"/>
-  <lastmod>2026-07-12</lastmod>
-  <priority>0.70</priority>
-</url>
-<url>
-  <loc>https://evola.pl/blog</loc>
-  <xhtml:link rel="alternate" hreflang="ru" href="https://evola.pl/blog"/>
-  <xhtml:link rel="alternate" hreflang="en" href="https://evola.pl/en/blog"/>
-  <xhtml:link rel="alternate" hreflang="pl" href="https://evola.pl/pl/blog"/>
+  <loc>https://evola-bikes.com/blog</loc>
+  <xhtml:link rel="alternate" hreflang="ru" href="https://evola-bikes.com/blog"/>
+  <xhtml:link rel="alternate" hreflang="en" href="https://evola-bikes.com/en/blog"/>
+  <xhtml:link rel="alternate" hreflang="pl" href="https://evola-bikes.com/pl/blog"/>
   <lastmod>2026-07-12</lastmod>
   <priority>0.60</priority>
 </url>
 
 <!-- English (/en) -->
 <url>
-  <loc>https://evola.pl/en</loc>
+  <loc>https://evola-bikes.com/en</loc>
   <lastmod>2026-07-12</lastmod>
   <priority>0.90</priority>
 </url>
 <url>
-  <loc>https://evola.pl/en/batteries</loc>
+  <loc>https://evola-bikes.com/en/batteries</loc>
   <lastmod>2026-07-12</lastmod>
   <priority>0.85</priority>
-</url>
-<url>
-  <loc>https://evola.pl/en/rent</loc>
-  <lastmod>2026-07-12</lastmod>
-  <priority>0.75</priority>
-</url>
-<url>
-  <loc>https://evola.pl/en/kits</loc>
-  <lastmod>2026-07-12</lastmod>
-  <priority>0.65</priority>
 </url>
 
 <!-- Polish (/pl) -->
 <url>
-  <loc>https://evola.pl/pl</loc>
+  <loc>https://evola-bikes.com/pl</loc>
   <lastmod>2026-07-12</lastmod>
   <priority>0.90</priority>
 </url>
 <url>
-  <loc>https://evola.pl/pl/batteries</loc>
+  <loc>https://evola-bikes.com/pl/batteries</loc>
   <lastmod>2026-07-12</lastmod>
   <priority>0.85</priority>
 </url>
-<url>
-  <loc>https://evola.pl/pl/rent</loc>
-  <lastmod>2026-07-12</lastmod>
-  <priority>0.75</priority>
-</url>
-<url>
-  <loc>https://evola.pl/pl/kits</loc>
-  <lastmod>2026-07-12</lastmod>
-  <priority>0.65</priority>
-</url>
-
 </urlset>
