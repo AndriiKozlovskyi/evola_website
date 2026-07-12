@@ -16,14 +16,23 @@
              style="background: radial-gradient(ellipse at 60% 40%, rgba(240,91,4,0.22) 0%, transparent 65%);"></div>
       </div>
 
-      <!-- Mobile orange glow (bottom) -->
-      <div class="absolute bottom-0 inset-x-0 h-64 md:hidden"
-           style="background: radial-gradient(ellipse at 50% 100%, rgba(240,91,4,0.14) 0%, transparent 70%);"></div>
+      <!-- Mobile: diagonal orange panel (bottom portion, diagonal top edge) -->
+      <div class="absolute inset-x-0 bottom-0 md:hidden pointer-events-none"
+           style="top: 30%; clip-path: polygon(0% 60%, 100% 0%, 100% 100%, 10% 100%); background: linear-gradient(160deg, rgba(240,91,4,0.17) 0%, rgba(160,50,0,0.10) 50%, rgba(80,20,0,0.05) 100%);">
+        <div class="absolute inset-0"
+             style="background: radial-gradient(ellipse at 50% 60%, rgba(240,91,4,0.18) 0%, transparent 65%);"></div>
+      </div>
+      <!-- Mobile: diagonal border line -->
+      <div class="absolute inset-x-0 bottom-0 md:hidden pointer-events-none" style="top: 30%;">
+        <svg class="absolute top-0 left-0 w-full" style="height: 60px;" preserveAspectRatio="none" viewBox="0 0 100 10">
+          <line x1="0" y1="1.8" x2="100" y2="0"
+                stroke="rgba(240,91,4,0.30)" stroke-width="0.25" vector-effect="non-scaling-stroke"/>
+        </svg>
+      </div>
 
-      <!-- subtle noise / top edge highlight on the diagonal -->
+      <!-- Desktop: diagonal border line -->
       <div class="absolute inset-y-0 right-0 hidden md:block pointer-events-none"
            style="width: 52%;">
-        <!-- diagonal border line -->
         <svg class="absolute inset-0 w-full h-full" preserveAspectRatio="none" viewBox="0 0 100 100">
           <line x1="12" y1="0" x2="0" y2="100"
                 stroke="rgba(240,91,4,0.25)" stroke-width="0.3" vector-effect="non-scaling-stroke"/>
@@ -33,7 +42,7 @@
       <div class="relative z-10 flex-1 max-w-screen-xl mx-auto w-full px-4 sm:px-6 lg:px-8 pt-10 pb-10 sm:pt-14 sm:pb-14 md:py-24 flex flex-col justify-center">
 
         <!-- Title — always at the very top on mobile, hidden inside grid on desktop -->
-        <div class="md:hidden mb-4">
+        <div class="md:hidden">
           <div class="label-pill mb-4 self-start inline-flex">
             <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="currentColor">
               <path d="M15.67 4H14V2h-4v2H8.33C7.6 4 7 4.6 7 5.33v15.33C7 21.4 7.6 22 8.33 22h7.33c.74 0 1.34-.6 1.34-1.33V5.33C17 4.6 16.4 4 15.67 4z"/>
@@ -45,7 +54,7 @@
           </h1>
         </div>
 
-        <div class="grid md:grid-cols-2 gap-6 md:gap-0 items-center w-full">
+        <div class="grid md:grid-cols-2 md:gap-0 items-center w-full">
 
           <!-- Left: text -->
           <div class="flex flex-col md:pr-10 lg:pr-16">
@@ -107,42 +116,44 @@
             <img
               src="/assets/battery_hero.png"
               alt="E-bike battery EVOLA"
-              class="relative z-10 w-auto object-contain drop-shadow-2xl select-none"
-              style="max-height: 940px; max-width: 100%; filter: drop-shadow(0 20px 60px rgba(240,91,4,0.25)) drop-shadow(0 8px 24px rgba(0,0,0,0.6));"
+              class="mb-20 relative z-10 w-auto object-contain drop-shadow-2xl select-none"
+              style="max-height: 340px; max-width: 100%; filter: drop-shadow(0 20px 60px rgba(240,91,4,0.25)) drop-shadow(0 8px 24px rgba(0,0,0,0.6));"
 
               decoding="async"
               fetchpriority="high"
             />
 
             <!-- Bottom price strip (mobile) -->
-            <div class="absolute bottom-0 inset-x-0 md:hidden flex justify-center gap-4 pb-2">
+            <div class="bottom-0 absolute inset-x-0 md:hidden flex justify-center gap-2.5 pb-3">
               <div v-for="b in batteryData.slice(1)" :key="`m-${b.key}`"
-                   class="flex flex-col items-center rounded-xl px-3 py-2"
-                   style="background: rgba(0,0,0,0.6); backdrop-filter: blur(6px); border: 1px solid rgba(255,255,255,0.08);">
-                <span class="text-xs font-black text-white">{{ $t(`batteries.${b.key}.label`) }}</span>
-                <span class="text-[10px] text-[#f05b04] font-bold">{{ $t(`batteries.${b.key}.rentPrice`) }}</span>
+                   class="flex flex-col items-center rounded-xl px-3 py-2.5 gap-0.5"
+                   :style="b.key === 'b30'
+                     ? 'background: rgba(240,91,4,0.15); backdrop-filter: blur(6px); border: 1px solid rgba(240,91,4,0.35);'
+                     : 'background: rgba(0,0,0,0.6); backdrop-filter: blur(6px); border: 1px solid rgba(255,255,255,0.08);'">
+                <span class="text-[14px] font-black text-white leading-none">{{ $t(`batteries.${b.key}.label`) }}</span>
+                <span class="text-[13px] font-bold leading-none" :class="b.key === 'b30' ? 'text-[#f05b04]' : 'text-[#f07040]'">{{ $t(`batteries.${b.key}.rentPrice`) }}</span>
+                <span class="text-[12px] text-[#566a7f] leading-none mt-0.5">{{ $t(`batteries.${b.key}.buyPrice`) }}</span>
               </div>
             </div>
           </div>
-
-              <!-- CTA buttons -->
-            <div class="flex flex-col sm:flex-row gap-3 items-stretch sm:items-center mb-6 md:mb-10">
-              <a href="tel:+48789711631"
-                class="inline-flex items-center justify-center gap-2 text-sm font-bold text-white bg-[#f05b04] hover:bg-[#d44d03] px-6 py-3.5 rounded-xl transition-colors">
-                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M3 5.5C3 4.67 3.67 4 4.5 4H7.28C8.04 4 8.69 4.53 8.83 5.28L9.45 8.37C9.56 8.94 9.35 9.53 8.89 9.9L7.09 11.37C8.09 13.83 10.05 15.79 12.51 16.79L13.98 14.98C14.35 14.53 14.93 14.31 15.51 14.43L18.6 15.04C19.34 15.19 19.88 15.84 19.88 16.6V19.38C19.88 20.2 19.2 20.88 18.38 20.88H17.25C9.38 20.88 3 14.5 3 6.63V5.5Z"/>
-                </svg>
-                {{ $t('header.callUs') }}
-              </a>
-              <a href="https://t.me/evola_manager" target="_blank" rel="noopener"
-                class="inline-flex items-center justify-center gap-2 text-sm font-semibold text-[#8fa3bb] hover:text-white transition-colors px-6 py-3.5 rounded-xl"
-                style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1);">
-                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
-                </svg>
-                Telegram
-              </a>
-            </div>
+          <!-- CTA buttons -->
+          <div class="mt-10 flex flex-col sm:flex-row gap-3 items-center justify-center sm:items-center mb-6 md:mb-10">
+            <a href="tel:+48789711631"
+              class="inline-flex items-center justify-center w-full gap-2 text-sm font-bold text-white bg-[#f05b04] hover:bg-[#d44d03] px-6 py-3.5 rounded-xl transition-colors">
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 5.5C3 4.67 3.67 4 4.5 4H7.28C8.04 4 8.69 4.53 8.83 5.28L9.45 8.37C9.56 8.94 9.35 9.53 8.89 9.9L7.09 11.37C8.09 13.83 10.05 15.79 12.51 16.79L13.98 14.98C14.35 14.53 14.93 14.31 15.51 14.43L18.6 15.04C19.34 15.19 19.88 15.84 19.88 16.6V19.38C19.88 20.2 19.2 20.88 18.38 20.88H17.25C9.38 20.88 3 14.5 3 6.63V5.5Z"/>
+              </svg>
+              {{ $t('header.callUs') }}
+            </a>
+            <a href="https://t.me/evola_manager" target="_blank" rel="noopener"
+              class="inline-flex items-center justify-center w-full gap-2 text-sm font-semibold text-[#8fa3bb] hover:text-white transition-colors px-6 py-3.5 rounded-xl"
+              style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1);">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+              </svg>
+              Telegram
+            </a>
+          </div>
 
         </div>
       </div>
@@ -165,7 +176,7 @@
           <p class="text-[#8fa3bb] text-sm mt-2 max-w-lg">{{ $t('batteries.rentDescription') }}</p>
         </div>
         <a href="tel:+48789711631"
-          class="inline-flex items-center gap-2 text-sm font-bold text-white bg-[#f05b04] hover:bg-[#d44d03] px-5 py-2.5 rounded-xl transition-colors flex-shrink-0">
+          class="inline-flex hidden items-center gap-2 text-sm font-bold text-white bg-[#f05b04] hover:bg-[#d44d03] px-5 py-2.5 rounded-xl transition-colors flex-shrink-0">
           <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3 5.5C3 4.67 3.67 4 4.5 4H7.28C8.04 4 8.69 4.53 8.83 5.28L9.45 8.37C9.56 8.94 9.35 9.53 8.89 9.9L7.09 11.37C8.09 13.83 10.05 15.79 12.51 16.79L13.98 14.98C14.35 14.53 14.93 14.31 15.51 14.43L18.6 15.04C19.34 15.19 19.88 15.84 19.88 16.6V19.38C19.88 20.2 19.2 20.88 18.38 20.88H17.25C9.38 20.88 3 14.5 3 6.63V5.5Z"/>
           </svg>
