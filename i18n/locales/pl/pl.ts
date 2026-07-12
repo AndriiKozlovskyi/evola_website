@@ -56,7 +56,13 @@ export default {
       service: 'Serwis w cenie',
       minimum: 'Minimum wynajmu'
     },
-    imageAlt: 'Wynajem roweru elektrycznego'
+    imageAlt: 'Wynajem roweru elektrycznego',
+    priceChips: {
+      fullSuspensionLabel: 'Full suspension',
+      fullSuspensionPrice: '250 zł / tydz.',
+      hardtailPrice: '220 zł / tydz.',
+      hardtailNote: '30Ah · serwis'
+    }
   },
   benefits: {
     kicker: 'Co wchodzi w cenę',
@@ -287,26 +293,27 @@ export default {
   },
   batteries: {
     kicker: 'Baterie do E-bike',
-    title: 'Wynajem akumulatorów Wrocław',
+    title: 'Wynajem i sprzedaż akumulatorów Wrocław',
+    sectionTitle: 'Akumulatory 22–35Ah — wynajem i sprzedaż',
     subtitle: 'od 50 zł / tydz. · zakup z gwarancją 1 rok · serwis w cenie',
-    description: 'Akumulatory do rowerów elektrycznych do wynajęcia tygodniowo lub do kupienia. Od 22 do 35Ah.',
+    description: 'Wynajem i sprzedaż akumulatorów do rowerów elektrycznych we Wrocławiu. Pojemność 22Ah, 25Ah, 30Ah, 35Ah — 48V, ogniwa 21700 M58T, Smart BMS. Wynajem od 50 zł/tydzień, zakup z gwarancją 12 miesięcy.',
     rentTitle: 'Baterie do wynajęcia',
     rentDescription: 'Minimum 1 tydzień. Serwis 2 razy w tygodniu jest wliczony w cenę.',
     buyTitle: 'Kup akumulator',
     buyDescription: 'Nowe akumulatory z gwarancją 12 miesięcy. Oryginalne ogniwa 21700 M58T, Smart BMS z Bluetooth.',
-    serviceNote: 'Serwis 2x / tydz. · Gwarancja 1 rok · Min. 1 tydzień',
+    serviceNote: 'Wszystkie akumulatory — 48V, ogniwa 21700 M58T, Smart BMS z monitoringiem Bluetooth. Wynajem od 50 zł/tydzień, zakup od 1200 PLN z gwarancją 12 miesięcy.',
     priceLabel: 'Cena',
     bestValueBadge: 'Popularny',
     rangeTitle: 'Do 100 km na jednym ładowaniu*',
-    rangeNote: '* Przy średniej prędkości 25 km/h na płaskiej drodze',
+    rangeNote: '* Przy średniej prędkości 25 km/h na płaskiej drodze. Zależy od masy ładunku, terenu i trybu wspomagania.',
     appButton: 'Aplikacja do sterowania BMS',
     orderButton: 'Zamów',
     rentButton: 'Wynajmij',
     buyButton: 'Kup',
     points: {
-      one: 'Od 22 do 35Ah — dopasowane do każdej trasy i ładunku',
-      two: 'Serwis akumulatora 2 razy w tygodniu — wliczony w wynajem',
-      three: 'Gwarancja 12 miesięcy na wszystkie akumulatory przy zakupie'
+      one: '22–35Ah — dopasowane do każdej trasy i ładunku, dostępne od ręki',
+      two: 'Serwis 2 razy w tygodniu wliczony w cenę wynajmu — nic extra',
+      three: 'Gwarancja 12 miesięcy na każdy akumulator przy zakupie'
     },
     statCapacity: 'Pojemność',
     statRent: 'Wynajem / tydz.',
@@ -316,64 +323,64 @@ export default {
       label: '22Ah',
       rentPrice: '50 zł / tydz.',
       buyPrice: '1200 PLN',
-      desc: 'Kompaktowy i lekki. Dobry jako dodatkowy akumulator do głównego.'
+      desc: 'Lekki dodatkowy akumulator na 3–4 godziny pracy. Idealny jako drugi do głównego. 48V, ogniwa 21700.'
     },
     b25: {
       label: '25Ah',
       rentPrice: '70 zł / tydz.',
       buyPrice: '1400 PLN',
-      desc: 'Miejski standard. Wystarczy na pełny dzień pracy przy umiarkowanym obciążeniu.'
+      desc: 'Miejski standard: 4–5 godzin bez ładowania przy normalnym obciążeniu. Wystarczy na pełną zmianę roboczą.'
     },
     b30: {
       label: '30Ah',
       badge: 'Popularny',
       rentPrice: '90 zł / tydz.',
       buyPrice: '1600 PLN',
-      desc: 'Kurierska podstawa. Pełny dzień pracy bez ładowania.'
+      desc: 'Podstawa dla kuriera. Pełny dzień pracy bez ładowania, do 85 km przy średniej prędkości.'
     },
     b35: {
       label: '35Ah',
       rentPrice: '130 zł / tydz.',
       buyPrice: '2000 PLN',
-      desc: 'Maksymalna pojemność. Do długich tras, ciężkich ładunków i pagórkowatego terenu.'
+      desc: 'Maksymalna pojemność: 10+ godzin pracy lub długie trasy z ładunkiem. Sprawdza się na pagórkowatym terenie.'
     },
     advantages: {
       title: 'Co jest wliczone w wynajem i zakup:',
-      warranty: '12 miesięcy gwarancji',
+      warranty: 'Gwarancja 12 miesięcy',
       service: 'Serwis 2x / tydz. w cenie',
-      cells: 'Oryginalne ogniwa 21700',
-      temperature: 'Kontrola temperatury',
-      monitoring: 'Monitoring przez Bluetooth'
+      cells: 'Ogniwa 21700 M58T · 48V',
+      temperature: 'Ochrona przed przegrzaniem i nadmiernym rozładowaniem',
+      monitoring: 'Monitoring Bluetooth, iOS i Android'
     }
   },
   batteriesFaq: {
     kicker: 'Pytania o baterie',
     title: 'Najczęściej zadawane pytania',
-    description: 'Odpowiedzi na najczęstsze pytania o wynajem i zakup akumulatorów do E-bike.',
+    description: 'Odpowiedzi na najczęstsze pytania o wynajem i zakup akumulatorów do roweru elektrycznego we Wrocławiu.',
     items: {
       sizes: {
         question: 'Jakie pojemności są dostępne do wynajmu i zakupu?',
-        answer: 'Do wynajmu i zakupu dostępne są cztery warianty: 22Ah, 25Ah, 30Ah i 35Ah. Tygodniowe stawki wynajmu: od 50 do 130 zł; ceny zakupu: od 1200 do 2000 PLN.'
+        answer: 'Dostępne są cztery warianty: 22Ah, 25Ah, 30Ah i 35Ah — wszystkie 48V, ogniwa 21700 M58T, Smart BMS. Wynajem od 50 do 130 zł/tydzień, zakup od 1200 do 2000 PLN z gwarancją 12 miesięcy.'
       },
       standalone: {
-        question: 'Czy można wynająć baterię bez roweru?',
-        answer: 'Tak. Baterię można wziąć osobno, bez wynajmu roweru. Minimalny okres to 1 tydzień i podpisywana jest osobna umowa.'
+        question: 'Czy można wynająć akumulator bez roweru?',
+        answer: 'Tak. Akumulator do roweru elektrycznego można wynająć osobno — bez roweru. Minimalny okres to 1 tydzień, podpisywana jest osobna umowa. Dobre rozwiązanie, jeśli masz już własny e-bike.'
       },
       serviceInBattery: {
         question: 'Co obejmuje serwis przy wynajmie akumulatora?',
-        answer: 'Przegląd techniczny i konserwacja akumulatora są wliczone w cenę wynajmu i wykonywane 2 razy w tygodniu.'
+        answer: 'Obsługa techniczna akumulatora — diagnostyka, sprawdzenie ogniw, styków i BMS — jest wliczona w cenę wynajmu. Planowy serwis 2 razy w tygodniu, awaryjny na żądanie bez dodatkowych opłat.'
       },
       warranty: {
-        question: 'Jaka jest gwarancja przy zakupie akumulatora?',
-        answer: 'Na wszystkie akumulatory kupione u nas obowiązuje gwarancja 12 miesięcy. Jeśli pojawi się problem – wymienimy lub naprawimy.'
+        question: 'Jaka jest gwarancja przy zakupie akumulatora do roweru elektrycznego?',
+        answer: 'Na wszystkie akumulatory kupione u nas obowiązuje gwarancja 12 miesięcy. Jeśli w tym czasie pojawi się problem — wymienimy lub naprawimy na nasz koszt.'
       },
       minTerm: {
-        question: 'Jaki jest minimalny okres wynajmu?',
-        answer: 'Minimalny okres wynajmu akumulatora to 1 tydzień. Później można przedłużać tydzień po tygodniu bez ograniczeń.'
+        question: 'Jaki jest minimalny okres wynajmu akumulatora?',
+        answer: 'Minimalny okres wynajmu to 1 tydzień. Później przedłużasz tydzień po tygodniu bez ograniczeń i bez kar umownych.'
       },
       range: {
-        question: 'Jaki zasięg daje akumulator 30Ah?',
-        answer: 'Przy średniej prędkości 25 km/h na płaskiej drodze akumulator 30Ah daje około 70–90 km zasięgu. Rzeczywisty zasięg zależy od ładunku, terenu i stylu jazdy.'
+        question: 'Jaki zasięg daje akumulator 48V 30Ah?',
+        answer: 'Przy średniej prędkości 25 km/h na płaskiej drodze akumulator 30Ah daje około 70–90 km zasięgu. Przy ładunku 20–30 kg i podjeździe należy liczyć na 50–65 km. Zależy od terenu, obciążenia i poziomu wspomagania.'
       }
     }
   },

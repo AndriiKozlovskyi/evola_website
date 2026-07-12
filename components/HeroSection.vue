@@ -61,9 +61,12 @@
               </svg>
               {{ $t('hero.kicker') }}
             </div>
-            <h1 class="text-3xl sm:text-5xl lg:text-[3.8rem] font-black leading-[1.08] mb-5 sm:mb-6" style="color: var(--text-1);">
+            <h1 class="text-3xl sm:text-5xl lg:text-[3.8rem] font-black leading-[1.08] mb-4 sm:mb-5" style="color: var(--text-1);">
               {{ $t('hero.title') }}
             </h1>
+            <p class="text-base text-[#8fa3bb] leading-relaxed mb-6">
+              {{ $t('hero.subtitle') }}
+            </p>
           </div>
 
           <!-- Desktop-only bullet points -->
@@ -115,7 +118,7 @@
           <img
             src="/assets/bike_hero.png"
             :alt="$t('hero.imageAlt')"
-            class="mb-20 md:mb-0 relative z-10 object-contain select-none w-full"
+            class="mb-20 md:mb-20 relative z-10 object-contain select-none w-full"
             style="max-height: 420px; filter: drop-shadow(0 20px 60px rgba(240,91,4,0.22)) drop-shadow(0 8px 24px rgba(0,0,0,0.5));"
             decoding="async"
             fetchpriority="high"
@@ -125,15 +128,15 @@
           <div class="absolute bottom-0 inset-x-0 flex justify-center gap-2.5 pb-3 md:pb-4">
             <div class="flex flex-col items-center rounded-xl px-4 py-2.5 gap-0.5"
                  style="background: rgba(240,91,4,0.15); backdrop-filter: blur(6px); border: 1px solid rgba(240,91,4,0.35);">
-              <span class="text-[14px] font-black text-white leading-none">Full suspension</span>
-              <span class="text-[13px] font-bold text-[#f05b04] leading-none">250 zł / нед.</span>
+              <span class="text-[14px] font-black text-white leading-none">{{ $t('hero.priceChips.fullSuspensionLabel') }}</span>
+              <span class="text-[13px] font-bold text-[#f05b04] leading-none">{{ $t('hero.priceChips.fullSuspensionPrice') }}</span>
               <span class="text-[12px] text-[#566a7f] leading-none mt-0.5">{{ $t('hero.stats.service') }}</span>
             </div>
             <div class="flex flex-col items-center rounded-xl px-4 py-2.5 gap-0.5"
                  style="background: rgba(0,0,0,0.6); backdrop-filter: blur(6px); border: 1px solid rgba(255,255,255,0.08);">
               <span class="text-[14px] font-black text-white leading-none">Hardtail</span>
-              <span class="text-[13px] font-bold text-[#f07040] leading-none">220 zł / нед.</span>
-              <span class="text-[12px] text-[#566a7f] leading-none mt-0.5">30Ah · сервис</span>
+              <span class="text-[13px] font-bold text-[#f07040] leading-none">{{ $t('hero.priceChips.hardtailPrice') }}</span>
+              <span class="text-[12px] text-[#566a7f] leading-none mt-0.5">{{ $t('hero.priceChips.hardtailNote') }}</span>
             </div>
           </div>
         </div>
@@ -141,7 +144,7 @@
       </div>
 
       <!-- Mobile CTAs — pinned to bottom of hero -->
-      <div class="md:hidden relative z-10 flex flex-col gap-3 px-4 pb-8 pt-10">
+      <div class="md:hidden relative z-10 flex flex-col gap-3 px-4 pt-10 pb-4">
         <a href="tel:+48789711631"
           class="inline-flex items-center justify-center gap-2 text-sm font-bold text-white bg-[#f05b04] hover:bg-[#d44d03] w-full py-3.5 rounded-xl transition-colors">
           <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
@@ -158,6 +161,11 @@
           Telegram
         </a>
       </div>
+
+      <!-- Mobile description — after CTAs -->
+      <p class="md:hidden text-sm text-[#8fa3bb] leading-relaxed px-4 pb-8">
+        {{ $t('hero.subtitle') }}
+      </p>
 
     </div>
   </section>

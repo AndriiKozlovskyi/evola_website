@@ -71,21 +71,35 @@
               </h1>
             </div>
 
-            <p class="text-base sm:text-lg text-[#8fa3bb] leading-relaxed mb-6">
-              {{ $t('batteries.description') }}
-            </p>
-
             <!-- Bullet points -->
-            <div class="hidden md:grid gap-2.5 mb-8">
+            <div class="hidden md:grid gap-2.5 mb-4">
               <div v-for="pt in heroPoints" :key="pt" class="flex items-start gap-3 text-sm text-[#d7e1ec]">
                 <span class="icon-dot mt-1.5 flex-shrink-0"></span>
                 <span>{{ pt }}</span>
               </div>
             </div>
 
+            <!-- Desktop CTAs -->
+            <div class="hidden md:flex flex-row flex-wrap gap-3 items-center mb-10">
+              <a href="tel:+48789711631"
+                class="inline-flex items-center justify-center gap-2 text-sm font-bold text-white bg-[#f05b04] hover:bg-[#d44d03] px-6 py-3.5 rounded-xl transition-colors">
+                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3 5.5C3 4.67 3.67 4 4.5 4H7.28C8.04 4 8.69 4.53 8.83 5.28L9.45 8.37C9.56 8.94 9.35 9.53 8.89 9.9L7.09 11.37C8.09 13.83 10.05 15.79 12.51 16.79L13.98 14.98C14.35 14.53 14.93 14.31 15.51 14.43L18.6 15.04C19.34 15.19 19.88 15.84 19.88 16.6V19.38C19.88 20.2 19.2 20.88 18.38 20.88H17.25C9.38 20.88 3 14.5 3 6.63V5.5Z"/>
+                </svg>
+                {{ $t('header.callUs') }}
+              </a>
+              <a href="https://t.me/evola_manager" target="_blank" rel="noopener"
+                class="inline-flex items-center justify-center gap-2 text-sm font-semibold text-[#8fa3bb] hover:text-white transition-colors px-6 py-3.5 rounded-xl"
+                style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1);">
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+                </svg>
+                Telegram
+              </a>
+            </div>
 
             <!-- Stats row -->
-            <div class="hidden md:grid grid-cols-4 gap-x-6 gap-y-5">
+          <div class="hidden md:grid mt-10 sm:mt-12 grid-cols-2 sm:flex sm:flex-wrap gap-x-6 sm:gap-x-8 gap-y-5">
               <div v-for="stat in heroStats" :key="stat.label" class="flex flex-col">
                 <span class="text-xl sm:text-2xl font-black text-white">{{ stat.value }}</span>
                 <span class="text-xs text-[#566a7f] mt-0.5">{{ stat.label }}</span>
@@ -96,35 +110,19 @@
           <!-- Right: battery image over diagonal panel (image before text on mobile) -->
           <div class="relative flex items-center justify-center min-h-[280px] md:min-h-[480px]">
 
-            <!-- floating spec chips (desktop) -->
-            <div class="absolute top-6 right-6 hidden md:flex flex-col gap-2 z-20">
-              <div class="flex items-center gap-2 rounded-xl px-3 py-2"
-                   style="background: rgba(0,0,0,0.55); backdrop-filter: blur(8px); border: 1px solid rgba(240,91,4,0.25);">
-                <div class="w-2 h-2 rounded-full bg-[#f05b04] animate-pulse flex-shrink-0"></div>
-                <span class="text-xs font-bold text-white">Smart BMS</span>
-              </div>
-              <div class="flex items-center gap-2 rounded-xl px-3 py-2"
-                   style="background: rgba(0,0,0,0.55); backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,0.1);">
-                <svg class="w-3.5 h-3.5 text-[#f05b04]" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
-                </svg>
-                <span class="text-xs text-[#8fa3bb]">Bluetooth · 48V</span>
-              </div>
-            </div>
-
             <!-- Battery image — centered, large, no container box -->
             <img
               src="/assets/battery_hero.png"
               alt="E-bike battery EVOLA"
-              class="mb-20 relative z-10 w-auto object-contain drop-shadow-2xl select-none"
+              class="mb-20 md:mb-0 relative z-10 w-auto object-contain drop-shadow-2xl select-none"
               style="max-height: 340px; max-width: 100%; filter: drop-shadow(0 20px 60px rgba(240,91,4,0.25)) drop-shadow(0 8px 24px rgba(0,0,0,0.6));"
 
               decoding="async"
               fetchpriority="high"
             />
 
-            <!-- Bottom price strip (mobile) -->
-            <div class="bottom-0 absolute inset-x-0 md:hidden flex justify-center gap-2.5 pb-3">
+            <!-- Bottom price strip -->
+            <div class="bottom-0 absolute inset-x-0 flex justify-center gap-2.5 pb-3 md:pb-4">
               <div v-for="b in batteryData.slice(1)" :key="`m-${b.key}`"
                    class="flex flex-col items-center rounded-xl px-3 py-2.5 gap-0.5"
                    :style="b.key === 'b30'
@@ -155,6 +153,9 @@
           Telegram
         </a>
       </div>
+        <p class="md:hidden text-sm text-[#8fa3bb] leading-relaxed px-4 pb-8">
+          {{ $t('batteries.description') }}
+        </p>
 
         </div>
       </div>
@@ -162,61 +163,56 @@
 
     <div class="max-w-screen-xl mx-auto px-4 sm:px-6"><div class="divider-glow"></div></div>
 
-    <!-- ═══ RENT SECTION ═══ -->
+    <!-- ═══ BATTERIES SECTION (rent + buy merged) ═══ -->
     <section class="max-w-screen-xl mx-auto px-4 sm:px-6 py-14 sm:py-20">
 
-      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-10">
-        <div>
-          <div class="label-pill mb-3 inline-flex">
-            <svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
-            </svg>
-            {{ $t('batteries.rentTitle') }}
-          </div>
-          <h2 class="text-2xl sm:text-4xl font-black text-white">{{ $t('batteries.rentTitle') }}</h2>
-          <p class="text-[#8fa3bb] text-sm mt-2 max-w-lg">{{ $t('batteries.rentDescription') }}</p>
-        </div>
-        <a href="tel:+48789711631"
-          class="inline-flex hidden items-center gap-2 text-sm font-bold text-white bg-[#f05b04] hover:bg-[#d44d03] px-5 py-2.5 rounded-xl transition-colors flex-shrink-0">
-          <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M3 5.5C3 4.67 3.67 4 4.5 4H7.28C8.04 4 8.69 4.53 8.83 5.28L9.45 8.37C9.56 8.94 9.35 9.53 8.89 9.9L7.09 11.37C8.09 13.83 10.05 15.79 12.51 16.79L13.98 14.98C14.35 14.53 14.93 14.31 15.51 14.43L18.6 15.04C19.34 15.19 19.88 15.84 19.88 16.6V19.38C19.88 20.2 19.2 20.88 18.38 20.88H17.25C9.38 20.88 3 14.5 3 6.63V5.5Z"/>
+      <div class="mb-10">
+        <div class="label-pill mb-3 inline-flex">
+          <svg class="w-3 h-3" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M15.67 4H14V2h-4v2H8.33C7.6 4 7 4.6 7 5.33v15.33C7 21.4 7.6 22 8.33 22h7.33c.74 0 1.34-.6 1.34-1.33V5.33C17 4.6 16.4 4 15.67 4z"/>
           </svg>
-          {{ $t('header.callUs') }}
-        </a>
+          {{ $t('batteries.kicker') }}
+        </div>
+        <h2 class="text-2xl sm:text-4xl font-black text-white">{{ $t('batteries.sectionTitle') }}</h2>
+        <p class="text-[#8fa3bb] text-sm mt-2 max-w-lg">{{ $t('batteries.serviceNote') }}</p>
       </div>
 
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
         <div
           v-for="b in batteryData"
-          :key="`rent-${b.key}`"
+          :key="b.key"
           class="rounded-2xl flex flex-col overflow-hidden relative"
           :class="b.key === 'b30' ? 'card-accent' : 'card-premium'"
           :style="b.key === 'b30' ? 'border-color: rgba(240,91,4,0.4);' : ''"
         >
-          <!-- Image zone -->
-          <div class="relative flex flex-col items-center justify-end pt-6 pb-4 px-6"
+          <!-- Visual zone: vertical battery icon -->
+          <div class="relative flex flex-col items-center pt-6 pb-4 px-6"
                :style="b.key === 'b30'
-                 ? 'min-height: 200px; background: linear-gradient(160deg, rgba(240,91,4,0.14) 0%, rgba(240,91,4,0.04) 100%);'
-                 : 'min-height: 200px; background: rgba(255,255,255,0.015);'"
+                 ? 'background: linear-gradient(160deg, rgba(240,91,4,0.14) 0%, rgba(240,91,4,0.04) 100%);'
+                 : 'background: rgba(255,255,255,0.015);'"
           >
             <div v-if="b.key === 'b30'" class="absolute top-3 right-3">
               <span class="text-[10px] font-black uppercase tracking-widest text-white bg-[#f05b04] px-2.5 py-0.5 rounded-full">
                 {{ $t(`batteries.${b.key}.badge`) }}
               </span>
             </div>
-            <!-- Battery SVG -->
-            <div class="mb-3 flex justify-center">
-              <svg :viewBox="`0 0 ${b.key === 'b35' ? 90 : 80} 44`" class="w-20 h-12" style="filter: drop-shadow(0 0 6px rgba(240,91,4,0.3));">
-                <rect x="1" y="4" width="72" height="36" rx="5" fill="none"
-                      :stroke="b.key === 'b30' ? '#f05b04' : 'rgba(255,255,255,0.15)'" stroke-width="1.5"/>
-                <rect x="73" y="16" width="6" height="12" rx="2"
-                      :fill="b.key === 'b30' ? '#f05b04' : 'rgba(255,255,255,0.15)'"/>
-                <rect x="3" y="6" :width="b.fillW" height="32" rx="3"
-                      :fill="b.key === 'b30' ? '#f05b04' : '#1e4a8a'" opacity="0.85"/>
-                <text x="37" y="27" text-anchor="middle" font-size="12" fill="white" font-weight="900" opacity="0.9">{{ b.fillLabel }}</text>
-              </svg>
-            </div>
-            <div class="text-4xl font-black" :class="b.key === 'b30' ? 'text-[#f05b04]' : 'text-white'">
+            <svg viewBox="0 0 44 80" class="w-14 h-24" style="filter: drop-shadow(0 0 8px rgba(240,91,4,0.2));">
+              <rect x="15" y="0" width="14" height="7" rx="3"
+                    :fill="b.key === 'b30' ? '#f05b04' : 'rgba(255,255,255,0.2)'"/>
+              <rect x="2" y="7" width="40" height="71" rx="6" fill="none"
+                    :stroke="b.key === 'b30' ? '#f05b04' : 'rgba(255,255,255,0.15)'" stroke-width="1.5"/>
+              <rect x="4"
+                    :y="71 - Math.round((b.fillW / 68) * 61)"
+                    width="36"
+                    :height="Math.round((b.fillW / 68) * 61)"
+                    rx="4"
+                    :fill="b.key === 'b30' ? '#f05b04' : '#1e4a8a'"
+                    opacity="0.85"/>
+              <text x="22" y="53" text-anchor="middle" font-size="11" fill="white" font-weight="900" opacity="0.9">
+                {{ b.fillLabel }}Ah
+              </text>
+            </svg>
+            <div class="text-3xl font-black mt-2" :class="b.key === 'b30' ? 'text-[#f05b04]' : 'text-white'">
               {{ $t(`batteries.${b.key}.label`) }}
             </div>
           </div>
@@ -225,7 +221,7 @@
           <div class="p-5 flex flex-col gap-3 flex-1">
             <p class="text-xs text-[#8fa3bb] leading-relaxed flex-1">{{ $t(`batteries.${b.key}.desc`) }}</p>
 
-            <!-- Range pill -->
+            <!-- Range -->
             <div class="flex items-center gap-2">
               <svg class="w-3.5 h-3.5 text-[#f05b04] flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/>
@@ -233,17 +229,34 @@
               <span class="text-xs text-[#566a7f]">~{{ b.rangeEst }} km</span>
             </div>
 
-            <div class="pt-3" style="border-top: 1px solid rgba(255,255,255,0.07);">
-              <div class="text-[10px] text-[#566a7f] uppercase tracking-widest mb-1">{{ $t('batteries.priceLabel') }}</div>
-              <div class="text-2xl font-black mb-3" :class="b.key === 'b30' ? 'text-[#f05b04]' : 'text-white'">
-                {{ $t(`batteries.${b.key}.rentPrice`) }}
+            <!-- Rent price block -->
+            <div class="pt-3 flex flex-col gap-2" style="border-top: 1px solid rgba(255,255,255,0.07);">
+              <div class="flex items-center justify-between">
+                <span class="text-[10px] text-[#566a7f] uppercase tracking-widest">{{ $t('batteries.statRent') }}</span>
+                <span class="text-sm font-black" :class="b.key === 'b30' ? 'text-[#f05b04]' : 'text-white'">
+                  {{ $t(`batteries.${b.key}.rentPrice`) }}
+                </span>
               </div>
               <a href="tel:+48789711631"
-                class="block w-full text-center text-xs font-bold py-2.5 rounded-xl transition-colors"
+                class="block w-full text-center text-xs font-bold py-2 rounded-xl transition-colors"
                 :class="b.key === 'b30' ? 'bg-[#f05b04] text-white hover:bg-[#d44d03]' : 'text-white hover:bg-white/10'"
                 :style="b.key !== 'b30' ? 'background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1);' : ''"
               >
                 {{ $t('batteries.rentButton') }}
+              </a>
+            </div>
+
+            <!-- Buy price block -->
+            <div class="pt-3 flex flex-col gap-2" style="border-top: 1px solid rgba(255,255,255,0.07);">
+              <div class="flex items-center justify-between">
+                <span class="text-[10px] text-[#566a7f] uppercase tracking-widest">{{ $t('batteries.statBuy') }}</span>
+                <span class="text-sm font-black text-white">{{ $t(`batteries.${b.key}.buyPrice`) }}</span>
+              </div>
+              <a href="tel:+48789711631"
+                class="block w-full text-center text-xs font-bold py-2 rounded-xl transition-colors text-white hover:bg-white/10"
+                style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1);"
+              >
+                {{ $t('batteries.buyButton') }}
               </a>
             </div>
           </div>
@@ -257,92 +270,6 @@
             <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>
           </svg>
           {{ tag.text }}
-        </div>
-      </div>
-    </section>
-
-    <div class="max-w-screen-xl mx-auto px-4 sm:px-6"><div class="divider-glow"></div></div>
-
-    <!-- ═══ BUY SECTION ═══ -->
-    <section class="max-w-screen-xl mx-auto px-4 sm:px-6 py-14 sm:py-20">
-
-      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-10">
-        <div>
-          <div class="label-pill mb-3 inline-flex">
-            <svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
-            </svg>
-            {{ $t('batteries.advantages.warranty') }}
-          </div>
-          <h2 class="text-2xl sm:text-4xl font-black text-white">{{ $t('batteries.buyTitle') }}</h2>
-          <p class="text-[#8fa3bb] text-sm mt-2 max-w-lg">{{ $t('batteries.buyDescription') }}</p>
-        </div>
-        <a href="https://t.me/evola_manager" target="_blank" rel="noopener"
-          class="inline-flex items-center gap-2 hidden text-sm font-semibold text-[#8fa3bb] hover:text-white transition-colors px-5 py-2.5 rounded-xl flex-shrink-0"
-          style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1);">
-          <svg class="w-4 h-4 text-[#f05b04]" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
-          </svg>
-          Telegram
-        </a>
-      </div>
-
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-        <div
-          v-for="b in batteryData"
-          :key="`buy-${b.key}`"
-          class="card-premium rounded-2xl flex flex-col overflow-hidden"
-        >
-          <!-- Battery icon zone -->
-          <div class="flex items-center justify-center px-6 pt-6 pb-4"
-               :style="b.key === 'b30'
-                 ? 'background: linear-gradient(160deg, rgba(240,91,4,0.10) 0%, rgba(240,91,4,0.03) 100%);'
-                 : 'background: rgba(255,255,255,0.015);'">
-            <svg viewBox="0 0 44 80" class="w-14 h-24" style="filter: drop-shadow(0 0 8px rgba(240,91,4,0.2));">
-              <!-- terminal nub -->
-              <rect x="15" y="0" width="14" height="7" rx="3"
-                    :fill="b.key === 'b30' ? '#f05b04' : 'rgba(255,255,255,0.2)'"/>
-              <!-- body outline -->
-              <rect x="2" y="7" width="40" height="71" rx="6" fill="none"
-                    :stroke="b.key === 'b30' ? '#f05b04' : 'rgba(255,255,255,0.15)'" stroke-width="1.5"/>
-              <!-- fill (bottom-aligned, height proportional to capacity) -->
-              <rect x="4"
-                    :y="71 - Math.round((b.fillW / 68) * 61)"
-                    width="36"
-                    :height="Math.round((b.fillW / 68) * 61)"
-                    rx="4"
-                    :fill="b.key === 'b30' ? '#f05b04' : '#1e4a8a'"
-                    opacity="0.85"/>
-              <!-- capacity label -->
-              <text x="22" y="53" text-anchor="middle" font-size="11" fill="white" font-weight="900" opacity="0.9">
-                {{ b.fillLabel }}Ah
-              </text>
-            </svg>
-          </div>
-
-          <!-- Content -->
-          <div class="p-5 flex flex-col gap-3 flex-1">
-            <div class="text-2xl font-black text-white">{{ $t(`batteries.${b.key}.label`) }}</div>
-
-            <p class="text-xs text-[#8fa3bb] leading-relaxed flex-1">{{ $t(`batteries.${b.key}.desc`) }}</p>
-
-            <!-- Warranty tag -->
-            <div class="flex items-center gap-1.5">
-              <svg class="w-3 h-3 text-[#f05b04] flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
-              </svg>
-              <span class="text-[10px] text-[#566a7f]">{{ $t('batteries.advantages.warranty') }}</span>
-            </div>
-
-            <div class="pt-3" style="border-top: 1px solid rgba(255,255,255,0.07);">
-              <div class="text-xl font-black text-white mb-2">{{ $t(`batteries.${b.key}.buyPrice`) }}</div>
-              <a href="tel:+48789711631"
-                class="block w-full text-center text-xs font-bold py-2.5 rounded-xl transition-colors text-white hover:bg-white/10"
-                style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1);">
-                {{ $t('batteries.buyButton') }}
-              </a>
-            </div>
-          </div>
         </div>
       </div>
     </section>

@@ -56,7 +56,13 @@ export default {
       service: 'Service included',
       minimum: 'Minimum rental'
     },
-    imageAlt: 'Electric bike rental'
+    imageAlt: 'Electric bike rental',
+    priceChips: {
+      fullSuspensionLabel: 'Full suspension',
+      fullSuspensionPrice: '250 zł / week',
+      hardtailPrice: '220 zł / week',
+      hardtailNote: '30Ah · service'
+    }
   },
   benefits: {
     kicker: 'What is included in the price',
@@ -287,26 +293,27 @@ export default {
   },
   batteries: {
     kicker: 'E-bike Batteries',
-    title: 'Battery Rental Wroclaw',
+    title: 'E-bike Battery Rental and Purchase Wroclaw',
+    sectionTitle: 'Batteries 22–35Ah — rental and purchase',
     subtitle: 'from 50 zl / week · buy with 1-year warranty · service included',
-    description: 'E-bike batteries to rent by the week or buy outright. 22 to 35Ah. We match the option to your route and budget.',
+    description: 'E-bike battery rental and purchase in Wroclaw. Capacities 22Ah, 25Ah, 30Ah, 35Ah — 48V, 21700 M58T cells, Smart BMS. Rental from 50 zl/week, purchase with a 12-month warranty.',
     rentTitle: 'Batteries for rent',
     rentDescription: 'Minimum 1 week. Service twice a week is included in the price.',
     buyTitle: 'Buy a battery',
     buyDescription: 'New batteries with a 12-month warranty. Original 21700 M58T cells, Smart BMS with Bluetooth.',
-    serviceNote: 'Service 2x / week · 1-year warranty · Min. 1 week',
+    serviceNote: 'All batteries: 48V, 21700 M58T cells, Smart BMS with Bluetooth monitoring. Rental from 50 zl/week, purchase from 1200 PLN with a 12-month warranty.',
     priceLabel: 'Price',
     bestValueBadge: 'Popular',
     rangeTitle: 'Up to 100 km on a single charge*',
-    rangeNote: '* At average speed of 25 km/h on flat road',
+    rangeNote: '* At average speed of 25 km/h on flat road. Actual range depends on load, terrain, and assist level.',
     appButton: 'BMS Control App',
     orderButton: 'Order',
     rentButton: 'Rent',
     buyButton: 'Buy',
     points: {
-      one: '22 to 35Ah — matched to any route and load',
-      two: 'Battery service twice a week — included in the rental price',
-      three: '12-month warranty on all batteries when purchased'
+      one: '22–35Ah — matched to your route and load, available now',
+      two: 'Service twice a week included in the rental price — nothing extra',
+      three: '12-month warranty on every battery when purchased'
     },
     statCapacity: 'Capacity',
     statRent: 'Rent / week',
@@ -316,64 +323,64 @@ export default {
       label: '22Ah',
       rentPrice: '50 zl / week',
       buyPrice: '1200 PLN',
-      desc: 'Compact and light. A good add-on battery alongside your main one.'
+      desc: 'A lightweight add-on battery for 3–4 hours of riding. Works well as a second alongside your main one. 48V, 21700 cells.'
     },
     b25: {
       label: '25Ah',
       rentPrice: '70 zl / week',
       buyPrice: '1400 PLN',
-      desc: 'City standard. Enough for a full working day at moderate load.'
+      desc: 'City standard: 4–5 hours without recharging at moderate load. Enough for a full working shift.'
     },
     b30: {
       label: '30Ah',
       badge: 'Popular',
       rentPrice: '90 zl / week',
       buyPrice: '1600 PLN',
-      desc: 'Courier base. Full working day without recharging.'
+      desc: 'The courier base battery. Full working day without recharging, up to 85 km at average speed.'
     },
     b35: {
       label: '35Ah',
       rentPrice: '130 zl / week',
       buyPrice: '2000 PLN',
-      desc: 'Maximum capacity. For long routes, heavy loads, and hilly terrain.'
+      desc: 'Maximum capacity: 10+ hours of work or long routes with cargo. Handles hilly terrain with no issue.'
     },
     advantages: {
       title: 'What is included in rental and purchase:',
       warranty: '12-month warranty',
       service: 'Service 2x / week included',
-      cells: 'Original 21700 cells',
-      temperature: 'Temperature control',
-      monitoring: 'Bluetooth monitoring'
+      cells: '21700 M58T cells · 48V',
+      temperature: 'Overheating and over-discharge protection',
+      monitoring: 'Bluetooth monitoring, iOS and Android'
     }
   },
   batteriesFaq: {
     kicker: 'Battery FAQ',
     title: 'Frequently asked questions',
-    description: 'Answers to the most common questions about renting and buying e-bike batteries.',
+    description: 'Answers to the most common questions about renting and buying e-bike batteries in Wroclaw.',
     items: {
       sizes: {
         question: 'What capacities are available to rent and buy?',
-        answer: 'Four options are available for both rent and purchase: 22Ah, 25Ah, 30Ah, and 35Ah. Weekly rental rates run from 50 to 130 zl; purchase prices from 1200 to 2000 PLN.'
+        answer: 'Four options are available: 22Ah, 25Ah, 30Ah, and 35Ah — all 48V, 21700 M58T cells, Smart BMS. Weekly rental rates run from 50 to 130 zl; purchase prices from 1200 to 2000 PLN with a 12-month warranty.'
       },
       standalone: {
         question: 'Can I rent a battery without renting a bike?',
-        answer: 'Yes. A battery can be rented on its own, without a bike rental. The minimum period is 1 week and a separate agreement is signed.'
+        answer: 'Yes. An e-bike battery can be rented on its own, without a bike rental. The minimum period is 1 week and a separate agreement is signed. A good option if you already own your own e-bike.'
       },
       serviceInBattery: {
         question: 'What does service include with battery rental?',
-        answer: 'Technical inspection and maintenance of the battery are included in the rental price and are done twice a week.'
+        answer: 'Battery maintenance — diagnostics, cell inspection, connector check, and BMS check — is included in the rental price. Scheduled service twice a week; unscheduled service on request at no extra charge.'
       },
       warranty: {
-        question: 'What warranty do I get when buying a battery?',
-        answer: 'All batteries sold by us carry a 12-month warranty. If any issue arises, we will replace or repair it.'
+        question: 'What warranty do I get when buying an e-bike battery?',
+        answer: 'All batteries purchased from us carry a 12-month warranty. If any issue arises within the warranty period, we will replace or repair it at our cost.'
       },
       minTerm: {
-        question: 'What is the minimum rental period?',
-        answer: 'The minimum battery rental period is 1 week. You can extend it week by week with no upper limit.'
+        question: 'What is the minimum battery rental period?',
+        answer: 'The minimum rental period is 1 week. After that you extend week by week with no upper limit and no penalties.'
       },
       range: {
-        question: 'What range does a 30Ah battery give?',
-        answer: 'At an average speed of 25 km/h on flat road, a 30Ah battery covers roughly 70–90 km. Actual range depends on load, terrain, and riding style.'
+        question: 'What range does a 48V 30Ah battery give?',
+        answer: 'At an average speed of 25 km/h on flat road, a 30Ah battery covers roughly 70–90 km. With a 20–30 kg load on hilly terrain, expect 50–65 km. Actual range depends on terrain, load, and assist level.'
       }
     }
   },
