@@ -1,6 +1,6 @@
 # EVOLA — Full Reference
 
-> EVOLA rents electric bikes and spare batteries in Wroclaw, Poland, and builds/converts electric bikes to order. This file contains the full pricing, specs, and FAQ content of the site in Russian (default, path `/`), English (path `/en`), and Polish (path `/pl`).
+> EVOLA rents electric bikes and batteries in Wroclaw, Poland, converts bicycles into electric ones, and sells e-bike batteries. This file contains the full pricing, specs, and FAQ content in Russian (default, `/`), English (`/en`), and Polish (`/pl`).
 
 Contact: +48 789 711 631 · evolateam@gmail.com · ul. Kwiska 20, Wroclaw, Poland
 Telegram: https://t.me/evola_manager · Facebook: https://www.facebook.com/profile.php?id=61572740802927
@@ -9,136 +9,190 @@ Telegram: https://t.me/evola_manager · Facebook: https://www.facebook.com/profi
 
 ## RUSSIAN (default, https://evola.pl/)
 
-### Аренда велосипедов
+### Аренда велосипедов (https://evola.pl/rent)
 - Двухподвес 30Ah — 250 zł / неделя. В комплекте: батарея 30Ah, полный набор аксессуаров, сервис 2 раза в неделю, понятный договор аренды.
 - Хардтейл 30Ah — 220 zł / неделя. В комплекте: батарея 30Ah, полный набор аксессуаров, сервис 2 раза в неделю.
 - Минимальный срок аренды — 1 неделя.
 - В комплекте с любым велосипедом: мягкое сиденье, крылья, фонарь, замок, сигнализация, держатель для телефона.
 
-### Батареи в аренду
-- Ёмкости: 20Ah, 25Ah, 30Ah, 35Ah.
-- Ставка: 40-90 PLN в неделю в зависимости от ёмкости.
-- Можно арендовать отдельно от велосипеда или как дополнение.
-- Батарея 25Ah (продажа): 1600 PLN, ячейки 21700 M58T, корпус Polly DP5C, Smart BMS с Bluetooth, 48V, зарядка 4А.
-- Батарея 30Ah (продажа): 2000 PLN, ячейки 21700 M58T, корпус Polly DP7, Smart BMS с Bluetooth, 48V, зарядка 4А.
-- Гарантия на батареи — 12 месяцев, оригинальные ячейки, контроль температуры, мониторинг через приложение на телефоне.
-- Запас хода до 100 км на одном заряде при средней скорости 25 км/ч на ровной дороге.
+### Батареи — аренда и продажа (https://evola.pl/batteries)
 
-### Электрокомплекты для конверсии
+Аренда (минимум 1 неделя, сервис в цене):
+- 22Ah — 50 zł / нед.
+- 25Ah — 70 zł / нед.
+- 30Ah — 90 zł / нед. (популярный)
+- 35Ah — 130 zł / нед.
+
+Покупка (гарантия 12 месяцев, ячейки 21700 M58T, Smart BMS с Bluetooth, 48V):
+- 22Ah — 1200 PLN
+- 25Ah — 1400 PLN
+- 30Ah — 1600 PLN
+- 35Ah — 2000 PLN
+
+Что включено: сервис 2x в неделю в цене аренды, гарантия 12 месяцев на покупку, оригинальные ячейки 21700, контроль температуры, мониторинг через Bluetooth.
+Запас хода: до 100 км на одном заряде при средней скорости 25 км/ч на ровной дороге.
+
+### Электрокомплекты для конверсии (https://evola.pl/kits)
 - LITE — 250W, скорость 25 км/ч, запас хода 100 км, 2600 PLN. Легальный комплект для города, без регистрации.
 - BASE — 500W, скорость 40 км/ч, запас хода 70 км, 3200 PLN. Универсальный комплект для города и пригорода, без регистрации.
 - TURBO — 3000W, скорость 70 км/ч, запас хода 70 км, 4500 PLN. Максимальная мощность для экстремального катания.
 
 ### Конверсия и сборка на заказ
-Этапы: оценка базового велосипеда → подбор мотора, батареи и конфигурации → сборка и настройка → передача готового велосипеда с тест-драйвом. Можно переделать свой велосипед или купить уже готовый.
+Этапы: оценка базового велосипеда → подбор мотора, батареи и конфигурации → сборка и настройка → передача готового велосипеда с тест-драйвом.
 
-### FAQ
+### FAQ — велосипеды
 В: Какой минимальный срок аренды?
-О: Минимальный срок аренды велосипеда или батареи — 1 неделя. Дальше можно продлевать понедельно без ограничений.
+О: 1 неделя. Дальше продлевается понедельно.
 
 В: Что входит в сервис 2 раза в неделю?
-О: В сервис входят ремонт, регулировки и плановое техобслуживание велосипеда. Это уже включено в стоимость аренды, отдельно платить не нужно.
+О: Ремонт, регулировки и плановое техобслуживание велосипеда. Входит в стоимость аренды.
 
 В: Что входит в комплектацию велосипеда?
-О: Вместе с велосипедом вы получаете мягкое сиденье, крылья, фонарь, замок, сигнализацию и держатель для телефона.
-
-В: Можно ли арендовать только батарею?
-О: Да, батарею можно арендовать отдельно от велосипеда. Доступны варианты ёмкостью 20Ah, 25Ah, 30Ah и 35Ah по ставке от 40 до 90 PLN в неделю.
+О: Мягкое сиденье, крылья, фонарь, замок, сигнализация и держатель для телефона.
 
 В: Заключаете ли вы договор аренды?
-О: Да, при аренде заключается договор с понятными условиями, без скрытых платежей и штрафов.
+О: Да, договор с понятными условиями, без скрытых платежей и штрафов.
 
 В: Можно ли переделать мой велосипед в электрический?
-О: Да, мы занимаемся конверсией обычных велосипедов в электрические: подбираем мотор, батарею и комплектующие под ваши задачи и бюджет.
+О: Да, подбираем мотор, батарею и комплектующие под задачи и бюджет.
+
+### FAQ — батареи
+В: Какие ёмкости доступны в аренду и на продажу?
+О: 22Ah, 25Ah, 30Ah и 35Ah. Аренда — от 50 до 130 zł в неделю, покупка — от 1200 до 2000 PLN.
+
+В: Можно арендовать батарею без велосипеда?
+О: Да, минимум 1 неделя, отдельный договор.
+
+В: Какая гарантия при покупке аккумулятора?
+О: 12 месяцев на все аккумуляторы.
+
+В: Какой запас хода у аккумулятора 30Ah?
+О: До 70–90 км при средней скорости 25 км/ч на ровной дороге.
 
 ---
 
 ## ENGLISH (https://evola.pl/en)
 
-### Bike rental
+### Bike rental (https://evola.pl/en/rent)
 - Full suspension 30Ah — 250 zl / week. Includes: 30Ah battery, full accessory package, service twice a week, clear rental contract.
 - Hardtail 30Ah — 220 zl / week. Includes: 30Ah battery, full accessory package, service twice a week.
 - Minimum rental period — 1 week.
 - Included with every bike: soft saddle, fenders, light, lock, alarm, phone holder.
 
-### Battery rental
-- Capacities: 20Ah, 25Ah, 30Ah, 35Ah.
-- Rate: 40-100 PLN per week depending on capacity.
-- Can be rented separately from a bike or as an add-on.
-- Battery 25Ah (purchase): 1600 PLN, 21700 M58T cells, Polly DP5C case, Smart BMS with Bluetooth, 48V, 4A charging.
-- Battery 30Ah (purchase): 2000 PLN, 21700 M58T cells, Polly DP7 case, Smart BMS with Bluetooth, 48V, 4A charging.
-- 12-month warranty on batteries, original cells, temperature control, phone app monitoring.
-- Up to 100 km range on a single charge at an average speed of 25 km/h on flat road.
+### Batteries — rent and buy (https://evola.pl/en/batteries)
 
-### Conversion kits
+Rental (minimum 1 week, service included):
+- 22Ah — 50 zl / week
+- 25Ah — 70 zl / week
+- 30Ah — 90 zl / week (popular)
+- 35Ah — 130 zl / week
+
+Purchase (12-month warranty, 21700 M58T cells, Smart BMS with Bluetooth, 48V):
+- 22Ah — 1200 PLN
+- 25Ah — 1400 PLN
+- 30Ah — 1600 PLN
+- 35Ah — 2000 PLN
+
+Included: service twice a week in the rental price; 12-month warranty on purchase; original 21700 cells; temperature control; Bluetooth monitoring.
+Range: up to 100 km on a single charge at 25 km/h on flat road.
+
+### Conversion kits (https://evola.pl/en/kits)
 - LITE — 250W, 25 km/h top speed, 100 km range, 2600 PLN. Legal city kit, no registration required.
-- BASE — 500W, 40 km/h top speed, 70 km range, 3200 PLN. Universal kit for city and countryside, no registration required.
+- BASE — 500W, 40 km/h top speed, 70 km range, 3200 PLN. Universal for city and countryside, no registration.
 - TURBO — 3000W, 70 km/h top speed, 70 km range, 4500 PLN. Maximum power for extreme riding.
 
 ### Custom conversion and builds
-Steps: assess the base bike → choose motor, battery, and configuration → build and tune → hand over the finished bike for a test ride. Convert your own bike or buy a ready-made one.
+Steps: assess base bike → choose motor, battery, configuration → build and tune → hand over for test ride.
 
-### FAQ
+### FAQ — bikes
 Q: What is the minimum rental period?
-A: The minimum rental period for a bike or battery is 1 week. You can extend it week by week with no limit.
+A: 1 week. Extend week by week with no limit.
 
 Q: What does the twice-a-week service include?
-A: Service includes repairs, adjustments, and scheduled maintenance of the bike. It is already included in the rental price, no extra charge.
+A: Repairs, adjustments, and scheduled maintenance. Included in the rental price.
 
 Q: What comes with the bike?
-A: Along with the bike you get a soft saddle, fenders, a light, a lock, an alarm, and a phone holder.
-
-Q: Can I rent only a battery?
-A: Yes, a battery can be rented separately from a bike. Capacities of 20Ah, 25Ah, 30Ah, and 35Ah are available at a weekly rate from 40 to 90 PLN.
+A: Soft saddle, fenders, a light, a lock, an alarm, and a phone holder.
 
 Q: Do you sign a rental contract?
-A: Yes, a rental agreement with clear terms is signed for every rental, with no hidden fees or penalties.
+A: Yes, clear terms, no hidden fees or penalties.
 
-Q: Can you convert my own bike into an electric one?
-A: Yes, we convert standard bicycles into electric ones: we select the motor, battery, and components to match your needs and budget.
+Q: Can you convert my bike into an electric one?
+A: Yes, we select motor, battery, and components to match your needs and budget.
+
+### FAQ — batteries
+Q: What capacities are available?
+A: 22Ah, 25Ah, 30Ah, and 35Ah. Rental: 50–130 zl/week; purchase: 1200–2000 PLN.
+
+Q: Can I rent a battery without renting a bike?
+A: Yes, minimum 1 week, separate agreement.
+
+Q: What warranty do I get when buying a battery?
+A: 12-month warranty on all batteries.
+
+Q: What range does a 30Ah battery give?
+A: Roughly 70–90 km at 25 km/h on flat road.
 
 ---
 
 ## POLISH (https://evola.pl/pl)
 
-### Wynajem rowerów
+### Wynajem rowerów (https://evola.pl/pl/rent)
 - Full suspension 30Ah — 250 zł / tydzień. W cenie: bateria 30Ah, pełny pakiet akcesoriów, serwis 2 razy w tygodniu, jasna umowa wynajmu.
 - Hardtail 30Ah — 220 zł / tydzień. W cenie: bateria 30Ah, pełny pakiet akcesoriów, serwis 2 razy w tygodniu.
 - Minimalny okres wynajmu — 1 tydzień.
 - W cenie każdego roweru: miękkie siodełko, błotniki, lampka, zamek, alarm, uchwyt na telefon.
 
-### Wynajem baterii
-- Pojemności: 20Ah, 25Ah, 30Ah, 35Ah.
-- Stawka: 40-100 PLN za tydzień w zależności od pojemności.
-- Można wynająć osobno od roweru albo jako dodatek.
-- Bateria 25Ah (sprzedaż): 1600 PLN, ogniwa 21700 M58T, obudowa Polly DP5C, Smart BMS z Bluetooth, 48V, ładowanie 4A.
-- Bateria 30Ah (sprzedaż): 2000 PLN, ogniwa 21700 M58T, obudowa Polly DP7, Smart BMS z Bluetooth, 48V, ładowanie 4A.
-- 12 miesięcy gwarancji na baterie, oryginalne ogniwa, kontrola temperatury, monitoring przez aplikację na telefonie.
-- Zasięg do 100 km na jednym ładowaniu przy średniej prędkości 25 km/h na płaskiej drodze.
+### Baterie — wynajem i zakup (https://evola.pl/pl/batteries)
 
-### Zestawy konwersyjne
+Wynajem (minimum 1 tydzień, serwis w cenie):
+- 22Ah — 50 zł / tydz.
+- 25Ah — 70 zł / tydz.
+- 30Ah — 90 zł / tydz. (popularny)
+- 35Ah — 130 zł / tydz.
+
+Zakup (gwarancja 12 miesięcy, ogniwa 21700 M58T, Smart BMS z Bluetooth, 48V):
+- 22Ah — 1200 PLN
+- 25Ah — 1400 PLN
+- 30Ah — 1600 PLN
+- 35Ah — 2000 PLN
+
+Wliczone: serwis 2x w tygodniu w cenie wynajmu; gwarancja 12 miesięcy przy zakupie; oryginalne ogniwa 21700; kontrola temperatury; monitoring przez Bluetooth.
+Zasięg: do 100 km na jednym ładowaniu przy 25 km/h na płaskiej drodze.
+
+### Zestawy konwersyjne (https://evola.pl/pl/kits)
 - LITE — 250W, prędkość 25 km/h, zasięg 100 km, 2600 PLN. Legalny zestaw miejski, bez rejestracji.
-- BASE — 500W, prędkość 40 km/h, zasięg 70 km, 3200 PLN. Uniwersalny zestaw do miasta i poza miastem, bez rejestracji.
+- BASE — 500W, prędkość 40 km/h, zasięg 70 km, 3200 PLN. Uniwersalny do miasta i poza miastem, bez rejestracji.
 - TURBO — 3000W, prędkość 70 km/h, zasięg 70 km, 4500 PLN. Maksymalna moc do ekstremalnej jazdy.
 
 ### Konwersja i budowa na zamówienie
-Etapy: ocena bazowego roweru → dobór silnika, baterii i konfiguracji → montaż i ustawienie → przekazanie gotowego roweru z jazdą próbną. Można przerobić własny rower albo kupić gotowy.
+Etapy: ocena bazowego roweru → dobór silnika, baterii, konfiguracji → montaż i ustawienie → przekazanie roweru z jazdą próbną.
 
-### FAQ
+### FAQ — rowery
 P: Jaki jest minimalny okres wynajmu?
-O: Minimalny okres wynajmu roweru lub baterii to 1 tydzień. Później można przedłużać tydzień po tygodniu bez ograniczeń.
+O: 1 tydzień. Przedłużaj tydzień po tygodniu bez ograniczeń.
 
 P: Co obejmuje serwis 2 razy w tygodniu?
-O: Serwis obejmuje naprawy, regulacje i planowy przegląd techniczny roweru. Jest już wliczony w cenę wynajmu, bez dodatkowych opłat.
+O: Naprawy, regulacje i planowy przegląd techniczny. Wliczony w cenę wynajmu.
 
 P: Co wchodzi w skład wyposażenia roweru?
-O: Razem z rowerem otrzymujesz miękkie siodełko, błotniki, lampkę, zamek, alarm i uchwyt na telefon.
-
-P: Czy można wynająć samą baterię?
-O: Tak, baterię można wynająć osobno od roweru. Dostępne są warianty 20Ah, 25Ah, 30Ah i 35Ah w stawce od 40 do 90 PLN za tydzień.
+O: Miękkie siodełko, błotniki, lampka, zamek, alarm, uchwyt na telefon.
 
 P: Czy podpisujecie umowę wynajmu?
-O: Tak, przy wynajmie podpisywana jest umowa z jasnymi warunkami, bez ukrytych opłat i kar.
+O: Tak, jasne warunki, bez ukrytych opłat i kar.
 
 P: Czy można przerobić mój rower na elektryczny?
-O: Tak, zajmujemy się konwersją zwykłych rowerów na elektryczne: dobieramy silnik, baterię i osprzęt pod Twoje potrzeby i budżet.
+O: Tak, dobieramy silnik, baterię i osprzęt pod potrzeby i budżet.
+
+### FAQ — baterie
+P: Jakie pojemności są dostępne?
+O: 22Ah, 25Ah, 30Ah i 35Ah. Wynajem: 50–130 zł/tydz.; zakup: 1200–2000 PLN.
+
+P: Czy można wynająć baterię bez roweru?
+O: Tak, minimum 1 tydzień, osobna umowa.
+
+P: Jaka jest gwarancja przy zakupie akumulatora?
+O: 12 miesięcy na wszystkie akumulatory.
+
+P: Jaki zasięg daje akumulator 30Ah?
+O: Około 70–90 km przy 25 km/h na płaskiej drodze.

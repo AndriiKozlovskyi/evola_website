@@ -4,12 +4,12 @@
 
       <!-- Section header -->
       <div class="text-center mb-10 sm:mb-14">
-        <div class="label-pill mb-5 mx-auto inline-flex">{{ $t('faq.kicker') }}</div>
+        <div class="label-pill mb-5 mx-auto inline-flex">{{ $t(`${namespace}.kicker`) }}</div>
         <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black mb-4" style="color: var(--text-1);">
-          {{ $t('faq.title') }}
+          {{ $t(`${namespace}.title`) }}
         </h2>
         <p class="text-[#8fa3bb] max-w-xl mx-auto text-base">
-          {{ $t('faq.description') }}
+          {{ $t(`${namespace}.description`) }}
         </p>
       </div>
 
@@ -49,17 +49,20 @@
 import { computed, ref } from 'vue'
 import { useI18n } from 'vue-i18n'
 
+const props = defineProps({
+  namespace: { type: String, default: 'faq' },
+  itemKeys: { type: Array, default: () => ['minTerm', 'service', 'whatIncluded', 'battery', 'contract', 'conversion'] }
+})
+
 const { t } = useI18n()
 
-const faqKeys = ['minTerm', 'service', 'whatIncluded', 'battery', 'contract', 'conversion']
-
-const faqItems = computed(() => faqKeys.map((key) => ({
+const faqItems = computed(() => props.itemKeys.map((key) => ({
   key,
-  question: t(`faq.items.${key}.question`),
-  answer: t(`faq.items.${key}.answer`)
+  question: t(`${props.namespace}.items.${key}.question`),
+  answer: t(`${props.namespace}.items.${key}.answer`)
 })))
 
-const openKey = ref(faqKeys[0])
+const openKey = ref(props.itemKeys[0])
 
 function toggle(key) {
   openKey.value = openKey.value === key ? null : key
@@ -68,6 +71,7 @@ function toggle(key) {
 useHead(() => ({
   script: [
     {
+      key: `faq-ld-${props.namespace}`,
       type: 'application/ld+json',
       children: JSON.stringify({
         '@context': 'https://schema.org',
@@ -75,10 +79,7 @@ useHead(() => ({
         mainEntity: faqItems.value.map((item) => ({
           '@type': 'Question',
           name: item.question,
-          acceptedAnswer: {
-            '@type': 'Answer',
-            text: item.answer
-          }
+          acceptedAnswer: { '@type': 'Answer', text: item.answer }
         }))
       })
     }

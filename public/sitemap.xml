@@ -1,37 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset
       xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xhtml="http://www.w3.org/1999/xhtml"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
-
+<!-- Russian (default) -->
 <url>
-  <loc>https://evola.tech/</loc>
-  <lastmod>2025-05-31T13:38:21+00:00</lastmod>
+  <loc>https://evola.pl/</loc>
+  <xhtml:link rel="alternate" hreflang="ru" href="https://evola.pl/"/>
+  <xhtml:link rel="alternate" hreflang="en" href="https://evola.pl/en"/>
+  <xhtml:link rel="alternate" hreflang="pl" href="https://evola.pl/pl"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://evola.pl/"/>
+  <lastmod>2026-07-12</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://evola.tech/kits</loc>
-  <lastmod>2025-05-31T13:38:21+00:00</lastmod>
+  <loc>https://evola.pl/batteries</loc>
+  <xhtml:link rel="alternate" hreflang="ru" href="https://evola.pl/batteries"/>
+  <xhtml:link rel="alternate" hreflang="en" href="https://evola.pl/en/batteries"/>
+  <xhtml:link rel="alternate" hreflang="pl" href="https://evola.pl/pl/batteries"/>
+  <lastmod>2026-07-12</lastmod>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://evola.pl/rent</loc>
+  <xhtml:link rel="alternate" hreflang="ru" href="https://evola.pl/rent"/>
+  <xhtml:link rel="alternate" hreflang="en" href="https://evola.pl/en/rent"/>
+  <xhtml:link rel="alternate" hreflang="pl" href="https://evola.pl/pl/rent"/>
+  <lastmod>2026-07-12</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://evola.tech/batteries</loc>
-  <lastmod>2025-05-31T13:38:21+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://evola.pl/kits</loc>
+  <xhtml:link rel="alternate" hreflang="ru" href="https://evola.pl/kits"/>
+  <xhtml:link rel="alternate" hreflang="en" href="https://evola.pl/en/kits"/>
+  <xhtml:link rel="alternate" hreflang="pl" href="https://evola.pl/pl/kits"/>
+  <lastmod>2026-07-12</lastmod>
+  <priority>0.70</priority>
 </url>
 <url>
-  <loc>https://evola.tech/blog</loc>
-  <lastmod>2025-05-31T13:38:21+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://evola.tech/blog/kak-vybrat-elektrovelosiped</loc>
-  <lastmod>2025-05-31T13:38:21+00:00</lastmod>
-  <priority>0.64</priority>
+  <loc>https://evola.pl/blog</loc>
+  <xhtml:link rel="alternate" hreflang="ru" href="https://evola.pl/blog"/>
+  <xhtml:link rel="alternate" hreflang="en" href="https://evola.pl/en/blog"/>
+  <xhtml:link rel="alternate" hreflang="pl" href="https://evola.pl/pl/blog"/>
+  <lastmod>2026-07-12</lastmod>
+  <priority>0.60</priority>
 </url>
 
+<!-- English (/en) -->
+<url>
+  <loc>https://evola.pl/en</loc>
+  <lastmod>2026-07-12</lastmod>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://evola.pl/en/batteries</loc>
+  <lastmod>2026-07-12</lastmod>
+  <priority>0.85</priority>
+</url>
+<url>
+  <loc>https://evola.pl/en/rent</loc>
+  <lastmod>2026-07-12</lastmod>
+  <priority>0.75</priority>
+</url>
+<url>
+  <loc>https://evola.pl/en/kits</loc>
+  <lastmod>2026-07-12</lastmod>
+  <priority>0.65</priority>
+</url>
+
+<!-- Polish (/pl) -->
+<url>
+  <loc>https://evola.pl/pl</loc>
+  <lastmod>2026-07-12</lastmod>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://evola.pl/pl/batteries</loc>
+  <lastmod>2026-07-12</lastmod>
+  <priority>0.85</priority>
+</url>
+<url>
+  <loc>https://evola.pl/pl/rent</loc>
+  <lastmod>2026-07-12</lastmod>
+  <priority>0.75</priority>
+</url>
+<url>
+  <loc>https://evola.pl/pl/kits</loc>
+  <lastmod>2026-07-12</lastmod>
+  <priority>0.65</priority>
+</url>
 
 </urlset>

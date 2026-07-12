@@ -245,7 +245,8 @@ export default {
   },
   menu: {
     rent: 'Wynajem',
-    blog: 'Blog'
+    blog: 'Blog',
+    batteries: 'Baterie'
   },
   header: {
     callUs: 'Zadzwoń'
@@ -285,49 +286,96 @@ export default {
     }
   },
   batteries: {
-    kicker: 'Linia baterii',
+    kicker: 'Baterie do E-bike',
+    title: 'Wynajem akumulatorów Wrocław',
+    subtitle: 'od 50 zł / tydz. · zakup z gwarancją 1 rok · serwis w cenie',
+    description: 'Akumulatory do rowerów elektrycznych do wynajęcia tygodniowo lub do kupienia. Od 22 do 35Ah.',
+    rentTitle: 'Baterie do wynajęcia',
+    rentDescription: 'Minimum 1 tydzień. Serwis 2 razy w tygodniu jest wliczony w cenę.',
+    buyTitle: 'Kup akumulator',
+    buyDescription: 'Nowe akumulatory z gwarancją 12 miesięcy. Oryginalne ogniwa 21700 M58T, Smart BMS z Bluetooth.',
+    serviceNote: 'Serwis 2x / tydz. · Gwarancja 1 rok · Min. 1 tydzień',
     priceLabel: 'Cena',
-    bestValueBadge: 'Najlepszy wybór',
-    title: 'Baterie do rowerów elektrycznych',
+    bestValueBadge: 'Popularny',
     rangeTitle: 'Do 100 km na jednym ładowaniu*',
     rangeNote: '* Przy średniej prędkości 25 km/h na płaskiej drodze',
     appButton: 'Aplikacja do sterowania BMS',
-    
-    battery25: {
-      title: 'Bateria 25Ah',
-      specs: {
-        cells: 'Ogniwa: 21700 M58T',
-        case: 'Obudowa: Polly DP5C',
-        bms: 'Smart BMS z Bluetooth',
-        voltage: 'Napięcie: 48V',
-        charging: 'Ładowanie 4A'
-      },
-      description: 'Idealne rozwiązanie do użytku miejskiego, kompaktowa obudowa.',
-      price: '1600 PLN'
+    orderButton: 'Zamów',
+    rentButton: 'Wynajmij',
+    buyButton: 'Kup',
+    points: {
+      one: 'Od 22 do 35Ah — dopasowane do każdej trasy i ładunku',
+      two: 'Serwis akumulatora 2 razy w tygodniu — wliczony w wynajem',
+      three: 'Gwarancja 12 miesięcy na wszystkie akumulatory przy zakupie'
     },
-    
-    battery30: {
-      title: 'Bateria 30Ah',
-      specs: {
-        cells: 'Ogniwa: 21700 M58T',
-        case: 'Obudowa: Polly DP7',
-        bms: 'Smart BMS z Bluetooth',
-        voltage: 'Napięcie: 48V',
-        charging: 'Ładowanie 4A'
-      },
-      description: 'Zwiększona pojemność do długich jazd. Przestronna obudowa zapewnia optymalne chłodzenie.',
-      price: '2000 PLN'
+    statCapacity: 'Pojemność',
+    statRent: 'Wynajem / tydz.',
+    statBuy: 'Zakup',
+    statWarranty: 'Gwarancja',
+    b22: {
+      label: '22Ah',
+      rentPrice: '50 zł / tydz.',
+      buyPrice: '1200 PLN',
+      desc: 'Kompaktowy i lekki. Dobry jako dodatkowy akumulator do głównego.'
     },
-
+    b25: {
+      label: '25Ah',
+      rentPrice: '70 zł / tydz.',
+      buyPrice: '1400 PLN',
+      desc: 'Miejski standard. Wystarczy na pełny dzień pracy przy umiarkowanym obciążeniu.'
+    },
+    b30: {
+      label: '30Ah',
+      badge: 'Popularny',
+      rentPrice: '90 zł / tydz.',
+      buyPrice: '1600 PLN',
+      desc: 'Kurierska podstawa. Pełny dzień pracy bez ładowania.'
+    },
+    b35: {
+      label: '35Ah',
+      rentPrice: '130 zł / tydz.',
+      buyPrice: '2000 PLN',
+      desc: 'Maksymalna pojemność. Do długich tras, ciężkich ładunków i pagórkowatego terenu.'
+    },
     advantages: {
-      title: 'Zalety naszych baterii:',
+      title: 'Co jest wliczone w wynajem i zakup:',
       warranty: '12 miesięcy gwarancji',
-      cells: 'Oryginalne ogniwa',
+      service: 'Serwis 2x / tydz. w cenie',
+      cells: 'Oryginalne ogniwa 21700',
       temperature: 'Kontrola temperatury',
-      monitoring: 'Monitoring przez telefon'
-    },
-    
-    orderButton: 'Zamów'
+      monitoring: 'Monitoring przez Bluetooth'
+    }
+  },
+  batteriesFaq: {
+    kicker: 'Pytania o baterie',
+    title: 'Najczęściej zadawane pytania',
+    description: 'Odpowiedzi na najczęstsze pytania o wynajem i zakup akumulatorów do E-bike.',
+    items: {
+      sizes: {
+        question: 'Jakie pojemności są dostępne do wynajmu i zakupu?',
+        answer: 'Do wynajmu i zakupu dostępne są cztery warianty: 22Ah, 25Ah, 30Ah i 35Ah. Tygodniowe stawki wynajmu: od 50 do 130 zł; ceny zakupu: od 1200 do 2000 PLN.'
+      },
+      standalone: {
+        question: 'Czy można wynająć baterię bez roweru?',
+        answer: 'Tak. Baterię można wziąć osobno, bez wynajmu roweru. Minimalny okres to 1 tydzień i podpisywana jest osobna umowa.'
+      },
+      serviceInBattery: {
+        question: 'Co obejmuje serwis przy wynajmie akumulatora?',
+        answer: 'Przegląd techniczny i konserwacja akumulatora są wliczone w cenę wynajmu i wykonywane 2 razy w tygodniu.'
+      },
+      warranty: {
+        question: 'Jaka jest gwarancja przy zakupie akumulatora?',
+        answer: 'Na wszystkie akumulatory kupione u nas obowiązuje gwarancja 12 miesięcy. Jeśli pojawi się problem – wymienimy lub naprawimy.'
+      },
+      minTerm: {
+        question: 'Jaki jest minimalny okres wynajmu?',
+        answer: 'Minimalny okres wynajmu akumulatora to 1 tydzień. Później można przedłużać tydzień po tygodniu bez ograniczeń.'
+      },
+      range: {
+        question: 'Jaki zasięg daje akumulator 30Ah?',
+        answer: 'Przy średniej prędkości 25 km/h na płaskiej drodze akumulator 30Ah daje około 70–90 km zasięgu. Rzeczywisty zasięg zależy od ładunku, terenu i stylu jazdy.'
+      }
+    }
   },
   faq: {
     kicker: 'Pytania i odpowiedzi',

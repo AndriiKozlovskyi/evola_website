@@ -12,15 +12,6 @@ export default defineNuxtConfig({
       },
     },
   },
-  runtimeConfig: {
-    public: {
-      i18n: {
-        experimental: {
-          jsTsFormatResource: true
-        }
-      }
-    }
-  },
   components: {
     global: true,
     dirs: ['~/components']
@@ -49,14 +40,15 @@ export default defineNuxtConfig({
     ],
     defaultLocale: 'ru',
     strategy: 'prefix_except_default',
-    detectBrowserLanguage: {
-      useCookie: true,
-      cookieKey: 'i18n_redirected',
-      alwaysRedirect: false,
-      fallbackLocale: 'ru'
-      // If you want to use localStorage instead of cookies:
-      // useLocalStorage: true,
-      // localStorageKey: 'i18n_redirected',
+    detectBrowserLanguage: false,
+  },
+  runtimeConfig: {
+    public: {
+      i18n: {
+        experimental: {
+          jsTsFormatResource: true
+        }
+      }
     }
   },
   modules: [
