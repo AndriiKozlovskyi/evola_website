@@ -137,23 +137,24 @@
             </div>
           </div>
           <!-- CTA buttons -->
-          <div class="mt-10 flex flex-col sm:flex-row gap-3 items-center justify-center sm:items-center mb-6 md:mb-10">
-            <a href="tel:+48789711631"
-              class="inline-flex items-center justify-center w-full gap-2 text-sm font-bold text-white bg-[#f05b04] hover:bg-[#d44d03] px-6 py-3.5 rounded-xl transition-colors">
-              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3 5.5C3 4.67 3.67 4 4.5 4H7.28C8.04 4 8.69 4.53 8.83 5.28L9.45 8.37C9.56 8.94 9.35 9.53 8.89 9.9L7.09 11.37C8.09 13.83 10.05 15.79 12.51 16.79L13.98 14.98C14.35 14.53 14.93 14.31 15.51 14.43L18.6 15.04C19.34 15.19 19.88 15.84 19.88 16.6V19.38C19.88 20.2 19.2 20.88 18.38 20.88H17.25C9.38 20.88 3 14.5 3 6.63V5.5Z"/>
-              </svg>
-              {{ $t('header.callUs') }}
-            </a>
-            <a href="https://t.me/evola_manager" target="_blank" rel="noopener"
-              class="inline-flex items-center justify-center w-full gap-2 text-sm font-semibold text-[#8fa3bb] hover:text-white transition-colors px-6 py-3.5 rounded-xl"
-              style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1);">
-              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
-              </svg>
-              Telegram
-            </a>
-          </div>
+            <!-- Mobile CTAs — pinned to bottom of hero -->
+      <div class="md:hidden relative z-10 flex flex-col gap-3 px-4 pb-8 pt-10">
+        <a href="tel:+48789711631"
+          class="inline-flex items-center justify-center gap-2 text-sm font-bold text-white bg-[#f05b04] hover:bg-[#d44d03] w-full py-3.5 rounded-xl transition-colors">
+          <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 5.5C3 4.67 3.67 4 4.5 4H7.28C8.04 4 8.69 4.53 8.83 5.28L9.45 8.37C9.56 8.94 9.35 9.53 8.89 9.9L7.09 11.37C8.09 13.83 10.05 15.79 12.51 16.79L13.98 14.98C14.35 14.53 14.93 14.31 15.51 14.43L18.6 15.04C19.34 15.19 19.88 15.84 19.88 16.6V19.38C19.88 20.2 19.2 20.88 18.38 20.88H17.25C9.38 20.88 3 14.5 3 6.63V5.5Z"/>
+          </svg>
+          {{ $t('header.callUs') }}
+        </a>
+        <a href="https://t.me/evola_manager" target="_blank" rel="noopener"
+          class="inline-flex items-center justify-center gap-2 text-sm font-semibold text-[#8fa3bb] hover:text-white transition-colors w-full py-3.5 rounded-xl"
+          style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1);">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+          </svg>
+          Telegram
+        </a>
+      </div>
 
         </div>
       </div>
@@ -277,7 +278,7 @@
           <p class="text-[#8fa3bb] text-sm mt-2 max-w-lg">{{ $t('batteries.buyDescription') }}</p>
         </div>
         <a href="https://t.me/evola_manager" target="_blank" rel="noopener"
-          class="inline-flex items-center gap-2 text-sm font-semibold text-[#8fa3bb] hover:text-white transition-colors px-5 py-2.5 rounded-xl flex-shrink-0"
+          class="inline-flex items-center gap-2 hidden text-sm font-semibold text-[#8fa3bb] hover:text-white transition-colors px-5 py-2.5 rounded-xl flex-shrink-0"
           style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1);">
           <svg class="w-4 h-4 text-[#f05b04]" fill="currentColor" viewBox="0 0 24 24">
             <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
@@ -286,52 +287,44 @@
         </a>
       </div>
 
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-
-        <!-- Left: featured image card -->
-        <div class="card-accent rounded-3xl overflow-hidden flex flex-col" style="border-color: rgba(240,91,4,0.25);">
-          <div class="relative flex-1 flex items-center justify-center p-8"
-               style="min-height: 280px; background: linear-gradient(135deg, rgba(240,91,4,0.08) 0%, rgba(240,91,4,0.03) 100%);">
-            <div class="absolute inset-0"
-                 style="background: radial-gradient(ellipse at center, rgba(240,91,4,0.12) 0%, transparent 65%);"></div>
-            <img src="/assets/dp7.webp" alt="Battery 30Ah EVOLA"
-                 class="relative max-h-56 w-auto object-contain drop-shadow-2xl" />
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        <div
+          v-for="b in batteryData"
+          :key="`buy-${b.key}`"
+          class="card-premium rounded-2xl flex flex-col overflow-hidden"
+        >
+          <!-- Battery icon zone -->
+          <div class="flex items-center justify-center px-6 pt-6 pb-4"
+               :style="b.key === 'b30'
+                 ? 'background: linear-gradient(160deg, rgba(240,91,4,0.10) 0%, rgba(240,91,4,0.03) 100%);'
+                 : 'background: rgba(255,255,255,0.015);'">
+            <svg viewBox="0 0 44 80" class="w-14 h-24" style="filter: drop-shadow(0 0 8px rgba(240,91,4,0.2));">
+              <!-- terminal nub -->
+              <rect x="15" y="0" width="14" height="7" rx="3"
+                    :fill="b.key === 'b30' ? '#f05b04' : 'rgba(255,255,255,0.2)'"/>
+              <!-- body outline -->
+              <rect x="2" y="7" width="40" height="71" rx="6" fill="none"
+                    :stroke="b.key === 'b30' ? '#f05b04' : 'rgba(255,255,255,0.15)'" stroke-width="1.5"/>
+              <!-- fill (bottom-aligned, height proportional to capacity) -->
+              <rect x="4"
+                    :y="71 - Math.round((b.fillW / 68) * 61)"
+                    width="36"
+                    :height="Math.round((b.fillW / 68) * 61)"
+                    rx="4"
+                    :fill="b.key === 'b30' ? '#f05b04' : '#1e4a8a'"
+                    opacity="0.85"/>
+              <!-- capacity label -->
+              <text x="22" y="53" text-anchor="middle" font-size="11" fill="white" font-weight="900" opacity="0.9">
+                {{ b.fillLabel }}Ah
+              </text>
+            </svg>
           </div>
-          <div class="p-6 flex flex-col gap-4">
-            <div>
-              <div class="text-xs text-[#f05b04] font-black uppercase tracking-widest mb-1">30 – 35 Ah</div>
-              <p class="text-sm text-[#8fa3bb]">{{ $t('batteries.b30.desc') }}</p>
-            </div>
-            <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-              <li v-for="spec in buySpecs" :key="spec"
-                  class="flex items-center gap-2 text-xs text-[#8fa3bb]">
-                <svg class="w-3.5 h-3.5 text-[#f05b04] flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>
-                </svg>
-                {{ spec }}
-              </li>
-            </ul>
-          </div>
-        </div>
 
-        <!-- Right: 2×2 price grid -->
-        <div class="grid grid-cols-2 gap-4">
-          <div
-            v-for="b in batteryData"
-            :key="`buy-${b.key}`"
-            class="card-premium rounded-2xl flex flex-col p-5 gap-3"
-          >
-            <!-- Product image -->
-            <div class="flex items-center justify-center h-20 rounded-xl"
-                 style="background: rgba(255,255,255,0.02);">
-              <img
-                :src="b.key === 'b22' || b.key === 'b25' ? '/assets/dp5c.webp' : '/assets/dp7.webp'"
-                :alt="`Battery ${b.key}`"
-                class="h-16 w-auto object-contain opacity-90"
-              />
-            </div>
-
+          <!-- Content -->
+          <div class="p-5 flex flex-col gap-3 flex-1">
             <div class="text-2xl font-black text-white">{{ $t(`batteries.${b.key}.label`) }}</div>
+
+            <p class="text-xs text-[#8fa3bb] leading-relaxed flex-1">{{ $t(`batteries.${b.key}.desc`) }}</p>
 
             <!-- Warranty tag -->
             <div class="flex items-center gap-1.5">
@@ -340,8 +333,6 @@
               </svg>
               <span class="text-[10px] text-[#566a7f]">{{ $t('batteries.advantages.warranty') }}</span>
             </div>
-
-            <div class="flex-1"></div>
 
             <div class="pt-3" style="border-top: 1px solid rgba(255,255,255,0.07);">
               <div class="text-xl font-black text-white mb-2">{{ $t(`batteries.${b.key}.buyPrice`) }}</div>
@@ -396,7 +387,7 @@
                style="background: radial-gradient(ellipse at center, rgba(240,91,4,0.1) 0%, transparent 70%);"></div>
           <div class="relative rounded-3xl overflow-hidden ring-1 ring-white/10 w-full flex items-center justify-center"
                style="min-height: 340px; background: linear-gradient(135deg, #09111f 0%, #060e1a 100%);">
-            <img src="/assets/dp5c.webp" alt="EVOLA battery 25Ah"
+            <img src="/assets/battery_hero1.png" alt="EVOLA battery 25Ah"
                  class="max-h-72 w-auto object-contain drop-shadow-2xl p-6" />
           </div>
           <!-- Range badge -->
@@ -460,14 +451,6 @@ const serviceTags = computed(() => [
   { text: locale.value === 'ru' ? 'Договор аренды' : locale.value === 'pl' ? 'Umowa wynajmu' : 'Rental contract' },
 ])
 
-const buySpecs = computed(() => [
-  'Cells: 21700 M58T',
-  'Smart BMS + Bluetooth',
-  '48V · 4A charging',
-  t('batteries.advantages.warranty'),
-  t('batteries.advantages.temperature'),
-  t('batteries.advantages.monitoring'),
-])
 
 const advantageList = computed(() => {
   const noteWarranty = locale.value === 'ru' ? 'На все аккумуляторы при покупке' : locale.value === 'pl' ? 'Na wszystkie akumulatory przy zakupie' : 'On all batteries when purchased'

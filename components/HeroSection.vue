@@ -36,7 +36,7 @@
     <div class="relative z-10 flex-1 max-w-screen-xl mx-auto w-full px-4 sm:px-6 lg:px-8 pt-10 pb-10 sm:pt-14 sm:pb-14 md:py-28 flex flex-col justify-center">
 
       <!-- Mobile: kicker + title always at top -->
-      <div class="md:hidden mb-4">
+      <div class="md:hidden">
         <div class="label-pill mb-4 self-start inline-flex">
           <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.2">
             <path stroke-linecap="round" stroke-linejoin="round" d="M4.75 12.75l4.5 4.5 10-10.5"/>
@@ -66,10 +66,6 @@
             </h1>
           </div>
 
-          <p class="text-base sm:text-lg text-[#8fa3bb] leading-relaxed mb-3">
-            {{ $t('hero.subtitle') }}
-          </p>
-
           <!-- Desktop-only bullet points -->
           <div class="hidden md:grid gap-3 mb-4">
             <div v-for="point in heroPoints" :key="point" class="feature-tile px-4 py-3 text-sm text-[#d7e1ec]">
@@ -84,25 +80,23 @@
             {{ $t('hero.locationLine') }}
           </p>
 
-          <!-- CTA Row -->
-          <div class="flex flex-col sm:flex-row sm:flex-wrap gap-3 sm:gap-4 items-stretch sm:items-center mb-6 md:mb-0">
-            <Button
-              type="button"
-              variant="primary"
-              class="w-full sm:w-auto text-base px-8 py-3.5"
-              @click="redirectToCall()"
-            >
-              {{ $t('hero.orderButton') }}
-            </Button>
-            <button
-              class="inline-flex w-full sm:w-auto justify-center sm:justify-start items-center gap-2 text-sm font-medium text-[#8fa3bb] hover:text-white transition-colors"
-              @click="redirectToCall()"
-            >
-              <span>{{ $t('hero.viewOffers') }}</span>
-              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+          <!-- Desktop CTAs -->
+          <div class="hidden md:flex flex-row flex-wrap gap-3 items-center">
+            <a href="tel:+48789711631"
+              class="inline-flex items-center justify-center gap-2 text-sm font-bold text-white bg-[#f05b04] hover:bg-[#d44d03] px-6 py-3.5 rounded-xl transition-colors">
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 5.5C3 4.67 3.67 4 4.5 4H7.28C8.04 4 8.69 4.53 8.83 5.28L9.45 8.37C9.56 8.94 9.35 9.53 8.89 9.9L7.09 11.37C8.09 13.83 10.05 15.79 12.51 16.79L13.98 14.98C14.35 14.53 14.93 14.31 15.51 14.43L18.6 15.04C19.34 15.19 19.88 15.84 19.88 16.6V19.38C19.88 20.2 19.2 20.88 18.38 20.88H17.25C9.38 20.88 3 14.5 3 6.63V5.5Z"/>
               </svg>
-            </button>
+              {{ $t('header.callUs') }}
+            </a>
+            <a href="https://t.me/evola_manager" target="_blank" rel="noopener"
+              class="inline-flex items-center justify-center gap-2 text-sm font-semibold text-[#8fa3bb] hover:text-white transition-colors px-6 py-3.5 rounded-xl"
+              style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1);">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+              </svg>
+              Telegram
+            </a>
           </div>
 
           <!-- Desktop-only quick stats -->
@@ -117,67 +111,60 @@
         <!-- Right: image -->
         <div class="relative flex items-center justify-center min-h-[260px] md:min-h-0">
 
-          <!-- Desktop image (original rounded card) -->
-          <div class="hidden md:block relative w-full">
-            <div class="absolute inset-0 rounded-3xl" style="background: radial-gradient(ellipse at center, rgba(240,91,4,0.15) 0%, transparent 70%);"></div>
-            <img
-              src="/assets/bic.webp"
-              :alt="$t('hero.imageAlt')"
-              class="relative w-full h-auto rounded-3xl object-cover ring-1 ring-white/10 shadow-2xl"
-              width="960"
-              height="640"
-              decoding="async"
-              fetchpriority="high"
-            />
-            <!-- Floating badge (desktop) -->
-            <div class="absolute bottom-3 left-3 right-3 sm:right-auto sm:bottom-4 sm:left-6 z-20 card-premium bg-black/80 px-3 sm:px-4 py-3 flex items-center gap-3 max-w-[calc(100%-1.5rem)] sm:max-w-none">
-              <div class="w-9 h-9 rounded-full flex items-center justify-center" style="background: rgba(240,91,4,0.15); border: 1px solid rgba(240,91,4,0.3);">
-                <svg class="w-4 h-4 text-[#f05b04]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.2">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 3l2.8 5.68 6.27.92-4.54 4.42 1.07 6.23L12 17.29l-5.6 2.96 1.07-6.23L2.93 9.6l6.27-.92L12 3z"/>
-                </svg>
-              </div>
-              <div>
-                <div class="text-xs font-bold text-white">{{ $t('hero.badgeTitle') }}</div>
-                <div class="text-[10px] text-[#8fa3bb]">{{ $t('hero.badgeSubtitle') }}</div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Mobile image (bike_hero.png, same pattern as batteries page) -->
+          <!-- bike_hero.png — all screen sizes -->
           <img
             src="/assets/bike_hero.png"
             :alt="$t('hero.imageAlt')"
-            class="md:hidden mb-16 relative z-10 w-auto object-contain select-none"
-            style="max-height: 300px; max-width: 100%; filter: drop-shadow(0 20px 60px rgba(240,91,4,0.22)) drop-shadow(0 8px 24px rgba(0,0,0,0.5));"
+            class="mb-20 md:mb-0 relative z-10 object-contain select-none w-full"
+            style="max-height: 420px; filter: drop-shadow(0 20px 60px rgba(240,91,4,0.22)) drop-shadow(0 8px 24px rgba(0,0,0,0.5));"
             decoding="async"
             fetchpriority="high"
           />
 
-          <!-- Mobile price strip -->
-          <div class="absolute bottom-0 inset-x-0 md:hidden flex justify-center gap-2.5 pb-3">
+          <!-- Price strip -->
+          <div class="absolute bottom-0 inset-x-0 flex justify-center gap-2.5 pb-3 md:pb-4">
             <div class="flex flex-col items-center rounded-xl px-4 py-2.5 gap-0.5"
                  style="background: rgba(240,91,4,0.15); backdrop-filter: blur(6px); border: 1px solid rgba(240,91,4,0.35);">
-              <span class="text-[11px] font-black text-white leading-none">Full suspension</span>
-              <span class="text-[10px] font-bold text-[#f05b04] leading-none">250 zł / нед.</span>
-              <span class="text-[9px] text-[#566a7f] leading-none mt-0.5">{{ $t('hero.stats.service') }}</span>
+              <span class="text-[14px] font-black text-white leading-none">Full suspension</span>
+              <span class="text-[13px] font-bold text-[#f05b04] leading-none">250 zł / нед.</span>
+              <span class="text-[12px] text-[#566a7f] leading-none mt-0.5">{{ $t('hero.stats.service') }}</span>
             </div>
             <div class="flex flex-col items-center rounded-xl px-4 py-2.5 gap-0.5"
                  style="background: rgba(0,0,0,0.6); backdrop-filter: blur(6px); border: 1px solid rgba(255,255,255,0.08);">
-              <span class="text-[11px] font-black text-white leading-none">Hardtail</span>
-              <span class="text-[10px] font-bold text-[#f07040] leading-none">220 zł / нед.</span>
-              <span class="text-[9px] text-[#566a7f] leading-none mt-0.5">30Ah · сервис</span>
+              <span class="text-[14px] font-black text-white leading-none">Hardtail</span>
+              <span class="text-[13px] font-bold text-[#f07040] leading-none">220 zł / нед.</span>
+              <span class="text-[12px] text-[#566a7f] leading-none mt-0.5">30Ah · сервис</span>
             </div>
           </div>
         </div>
 
       </div>
+
+      <!-- Mobile CTAs — pinned to bottom of hero -->
+      <div class="md:hidden relative z-10 flex flex-col gap-3 px-4 pb-8 pt-10">
+        <a href="tel:+48789711631"
+          class="inline-flex items-center justify-center gap-2 text-sm font-bold text-white bg-[#f05b04] hover:bg-[#d44d03] w-full py-3.5 rounded-xl transition-colors">
+          <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 5.5C3 4.67 3.67 4 4.5 4H7.28C8.04 4 8.69 4.53 8.83 5.28L9.45 8.37C9.56 8.94 9.35 9.53 8.89 9.9L7.09 11.37C8.09 13.83 10.05 15.79 12.51 16.79L13.98 14.98C14.35 14.53 14.93 14.31 15.51 14.43L18.6 15.04C19.34 15.19 19.88 15.84 19.88 16.6V19.38C19.88 20.2 19.2 20.88 18.38 20.88H17.25C9.38 20.88 3 14.5 3 6.63V5.5Z"/>
+          </svg>
+          {{ $t('header.callUs') }}
+        </a>
+        <a href="https://t.me/evola_manager" target="_blank" rel="noopener"
+          class="inline-flex items-center justify-center gap-2 text-sm font-semibold text-[#8fa3bb] hover:text-white transition-colors w-full py-3.5 rounded-xl"
+          style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1);">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+          </svg>
+          Telegram
+        </a>
+      </div>
+
     </div>
   </section>
 </template>
 
 <script setup>
 import { computed } from 'vue'
-import Button from './ui/Button.vue'
 import { useI18n } from 'vue-i18n'
 
 const { t } = useI18n()
@@ -194,8 +181,4 @@ const stats = computed(() => [
   { value: t('hero.statValues.service'), label: t('hero.stats.service') },
   { value: t('hero.statValues.minimum'), label: t('hero.stats.minimum') },
 ])
-
-function redirectToCall() {
-  window.location.href = 'tel:+48789711631'
-}
 </script>
