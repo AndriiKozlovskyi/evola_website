@@ -34,7 +34,7 @@
           </span>
           <span class="flex-1 min-w-0">
             <span class="block sm:inline">{{ option.label }}</span>
-            <span class="block sm:inline sm:ml-1.5 text-xs opacity-70">{{ option.meta }}</span>
+            <span class="block sm:inline sm:ml-1.5 text-xs opacity-85">{{ option.meta }}</span>
           </span>
         </button>
       </div>

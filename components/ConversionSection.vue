@@ -21,7 +21,7 @@
               </div>
               <div>
                 <div class="text-sm font-bold text-white mb-0.5">{{ step.title }}</div>
-                <div class="text-sm text-[#566a7f]">{{ step.desc }}</div>
+                <div class="text-sm text-[#7a91a8]">{{ step.desc }}</div>
               </div>
             </li>
           </ol>
@@ -33,7 +33,7 @@
             >
               {{ $t('conversion.cta') }}
             </a>
-            <p class="text-sm text-[#566a7f]">
+            <p class="text-sm text-[#7a91a8]">
               {{ $t('conversion.ctaNote') }}
             </p>
           </div>

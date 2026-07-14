@@ -9,7 +9,7 @@
         <div class="md:col-span-2">
           <div class="text-2xl font-black tracking-tight text-white mb-1">
             <span class="text-[#f05b04]">E</span>VOLA
-            <span class="text-sm font-semibold text-[#f05b04]/60 ml-1">{{ $t('footer.brandTagline') }}</span>
+            <span class="text-sm font-semibold text-[#f05b04]/85 ml-1">{{ $t('footer.brandTagline') }}</span>
           </div>
           <p class="text-sm text-[#566a7f] mt-3 mb-6 max-w-xs leading-relaxed">
             {{ $t('footer.description') }}
@@ -67,8 +67,8 @@
 
       <!-- Bottom bar -->
       <div class="pt-6 flex flex-col sm:flex-row justify-between items-center gap-3">
-        <p class="text-xs text-[#3d5066]">{{ $t('footer.copyright', { year: new Date().getFullYear() }) }}</p>
-        <p class="text-xs text-[#3d5066]">{{ $t('footer.builtIn') }}</p>
+        <p class="text-xs text-[#566a7f]">{{ $t('footer.copyright', { year: new Date().getFullYear() }) }}</p>
+        <p class="text-xs text-[#566a7f]">{{ $t('footer.builtIn') }}</p>
       </div>
 
     </div>
