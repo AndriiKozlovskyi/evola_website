@@ -46,7 +46,7 @@ export default {
     badgeSubtitle: 'And your back side will thank you.',
     statValues: {
       fullSuspension: '250 zl',
-      hardtail: '220 zl',
+      hardtail: '200 zl',
       service: '2x/week',
       minimum: '1 week'
     },
@@ -60,7 +60,7 @@ export default {
     priceChips: {
       fullSuspensionLabel: 'Full suspension',
       fullSuspensionPrice: '250 zł / week',
-      hardtailPrice: '220 zł / week',
+      hardtailPrice: '200 zł / week',
       hardtailNote: '30Ah · service'
     }
   },
@@ -135,7 +135,7 @@ export default {
     cards: {
       hardtail: {
         title: 'Hardtail 30Ah',
-        price: '220 zl / week',
+        price: '200 zl / week',
         description: 'They say there is nothing wrong with a hardtail... if money is the main thing in your life...',
         orderButton: 'Reserve hardtail'
       },
@@ -183,14 +183,14 @@ export default {
       },
       hardtail: {
         label: 'Hardtail',
-        meta: '220 zl / week',
+        meta: '200 zl / week',
         description: 'This is possible too, but for that you need 29-inch wheels. And we will give you 29-inch wheels.',
         highlights: {
           one: 'Good for daily work and standard routes around the city.',
           two: 'Gives you 30Ah without paying extra for softer suspension.'
         },
         primary: '30Ah',
-        secondary: '220 zl / week',
+        secondary: '200 zl / week',
         tertiary: 'Minimum 1 week',
         priceNote: '30Ah + accessory package',
         checklist: {

@@ -46,7 +46,7 @@ export default {
     badgeSubtitle: 'A Twój tyłek powie Ci: dziękuję.',
     statValues: {
       fullSuspension: '250 zł',
-      hardtail: '220 zł',
+      hardtail: '200 zł',
       service: '2x/tydz.',
       minimum: '1 tydz.'
     },
@@ -60,7 +60,7 @@ export default {
     priceChips: {
       fullSuspensionLabel: 'Full suspension',
       fullSuspensionPrice: '250 zł / tydz.',
-      hardtailPrice: '220 zł / tydz.',
+      hardtailPrice: '200 zł / tydz.',
       hardtailNote: '30Ah · serwis'
     }
   },
@@ -135,7 +135,7 @@ export default {
     cards: {
       hardtail: {
         title: 'Hardtail 30Ah',
-        price: '220 zł / tydzień',
+        price: '200 zł / tydzień',
         description: 'Mówią, że nie ma nic złego w hardtailu... jeśli najważniejsze w życiu są pieniądze...',
         orderButton: 'Rezerwuj hardtail'
       },
@@ -183,14 +183,14 @@ export default {
       },
       hardtail: {
         label: 'Hardtail',
-        meta: '220 zł / tydz.',
+        meta: '200 zł / tydz.',
         description: 'Tak też można, ale do tego potrzebne są koła 29. I my damy Ci koła 29.',
         highlights: {
           one: 'Dobry do codziennej pracy i standardowych tras po mieście.',
           two: 'Daje 30Ah bez dopłaty za bardziej miękkie zawieszenie.'
         },
         primary: '30Ah',
-        secondary: '220 zł / tydz.',
+        secondary: '200 zł / tydz.',
         tertiary: 'Minimum 1 tydzień',
         priceNote: '30Ah + komplet akcesoriów',
         checklist: {

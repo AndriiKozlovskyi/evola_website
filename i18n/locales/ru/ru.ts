@@ -47,7 +47,7 @@ export default {
     badgeSubtitle: 'И твоя пятая точка скажет тебе: "спасибо"!',
     statValues: {
       fullSuspension: '250 zł',
-      hardtail: '220 zł',
+      hardtail: '200 zł',
       service: '2x/нед.',
       minimum: '1 нед.'
     },
@@ -61,7 +61,7 @@ export default {
     priceChips: {
       fullSuspensionLabel: 'Full suspension',
       fullSuspensionPrice: '250 zł / нед.',
-      hardtailPrice: '220 zł / нед.',
+      hardtailPrice: '200 zł / нед.',
       hardtailNote: '30Ah · сервис'
     }
   },
@@ -136,7 +136,7 @@ export default {
     cards: {
       hardtail: {
         title: 'Хардтейл 30Ah',
-        price: '220 zł / неделя',
+        price: '200 zł / неделя',
         description: 'Говорят, нет ничего плохого в хардтейле...Если главное в вашей жизни - деньги...',
         orderButton: 'Забронировать хардтейл'
       },
@@ -184,14 +184,14 @@ export default {
       },
       hardtail: {
         label: 'Хардтейл',
-        meta: '220 zł / нед.',
+        meta: '200 zł / нед.',
         description: 'Так тоже можно, но для этого нужны 29 колёса.И мы дадим тебе 29 колёса.',
         highlights: {
           one: 'Удобен для ежедневной работы и типовых маршрутов по городу.',
           two: 'Даёт 30Ah без переплаты за более мягкую подвеску.'
         },
         primary: '30Ah',
-        secondary: '220 zł / нед.',
+        secondary: '200 zł / нед.',
         tertiary: 'Минимум 1 неделя',
         priceNote: '30Ah + комплект аксессуаров',
         checklist: {
