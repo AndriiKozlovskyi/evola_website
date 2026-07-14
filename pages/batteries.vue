@@ -314,8 +314,9 @@
                style="background: radial-gradient(ellipse at center, rgba(240,91,4,0.1) 0%, transparent 70%);"></div>
           <div class="relative rounded-3xl overflow-hidden ring-1 ring-white/10 w-full flex items-center justify-center"
                style="min-height: 340px; background: linear-gradient(135deg, #09111f 0%, #060e1a 100%);">
-            <img src="/assets/battery_hero1.png" alt="EVOLA battery 25Ah"
-                 class="max-h-72 w-auto object-contain drop-shadow-2xl p-6" />
+            <img src="/assets/battery_hero1.webp" alt="EVOLA battery 25Ah"
+                 class="max-h-72 w-auto object-contain drop-shadow-2xl p-6"
+                 width="420" height="420" loading="lazy" decoding="async" />
           </div>
           <!-- Range badge -->
           <div class="absolute bottom-4 right-4 card-premium bg-black/90 px-4 py-3 rounded-2xl text-center">

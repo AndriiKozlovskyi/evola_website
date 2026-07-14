@@ -120,7 +120,8 @@
             :alt="$t('hero.imageAlt')"
             class="mb-20 md:mb-20 relative z-10 object-contain select-none w-full"
             style="max-height: 420px; filter: drop-shadow(0 20px 60px rgba(240,91,4,0.22)) drop-shadow(0 8px 24px rgba(0,0,0,0.5));"
-            width="773" height="705"
+            width="680" height="620"
+            sizes="(max-width: 768px) 100vw, 50vw"
             decoding="async"
             fetchpriority="high"
           />

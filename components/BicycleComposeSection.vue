@@ -47,7 +47,8 @@
             :src="activeOption.image"
             :alt="activeOption.label"
             class="relative w-full max-w-md mx-auto rounded-2xl ring-1 ring-white/10 object-contain"
-            width="800" height="600"
+            width="680" height="510"
+            sizes="(max-width: 640px) 100vw, 448px"
             loading="lazy"
             decoding="async"
           />

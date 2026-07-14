@@ -108,42 +108,7 @@ export default defineNuxtConfig({
         { name: 'twitter:image', content: 'https://evola.pl/assets/bic.webp' },
         { name: 'google-site-verification', content: 'KcLmVDC3N39Va81b0fzPIAXqIM8RhhGlxUYuTX9a2rk' }
       ],
-      script: [
-        {
-          hid: 'gtag-src',
-          src: 'https://www.googletagmanager.com/gtag/js?id=G-SV44Q2B4KH',
-          async: true,
-        },
-        {
-          hid: 'gtag-init',
-          innerHTML: `window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'G-SV44Q2B4KH');`,
-          type: 'text/javascript'
-        },
-        {
-          hid: 'gtm-script',
-          innerHTML: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-MKB9FKVR');`,
-          type: 'text/javascript'
-        }
-      ],
-      noscript: [
-        {
-          hid: 'gtm-noscript',
-          innerHTML: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MKB9FKVR"
-height="0" width="0" style="display:none;visibility:hidden"></iframe>`
-        }
-      ],
-      __dangerouslyDisableSanitizersByTagID: {
-        'gtag-init': ['innerHTML'],
-        'gtm-script': ['innerHTML'],
-        'gtm-noscript': ['innerHTML']
-      }
+      script: [],
     },
   },
   devServer: {
