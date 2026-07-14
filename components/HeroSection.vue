@@ -114,12 +114,13 @@
         <!-- Right: image -->
         <div class="relative flex items-center justify-center min-h-[260px] md:min-h-0">
 
-          <!-- bike_hero.png — all screen sizes -->
+          <!-- bike_hero — all screen sizes -->
           <img
-            src="/assets/bike_hero.png"
+            src="/assets/bike_hero.webp"
             :alt="$t('hero.imageAlt')"
             class="mb-20 md:mb-20 relative z-10 object-contain select-none w-full"
             style="max-height: 420px; filter: drop-shadow(0 20px 60px rgba(240,91,4,0.22)) drop-shadow(0 8px 24px rgba(0,0,0,0.5));"
+            width="773" height="705"
             decoding="async"
             fetchpriority="high"
           />

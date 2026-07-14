@@ -79,11 +79,7 @@ export default defineNuxtConfig({
       link: [
         { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
         { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
-        { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' },
-        {
-          rel: 'stylesheet',
-          href: 'https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap'
-        }
+        { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }
       ],
       meta: [
         { name: 'viewport', content: 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' },
@@ -114,6 +110,19 @@ export default defineNuxtConfig({
       ],
       script: [
         {
+          hid: 'gtag-src',
+          src: 'https://www.googletagmanager.com/gtag/js?id=G-SV44Q2B4KH',
+          async: true,
+        },
+        {
+          hid: 'gtag-init',
+          innerHTML: `window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-SV44Q2B4KH');`,
+          type: 'text/javascript'
+        },
+        {
           hid: 'gtm-script',
           innerHTML: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -131,6 +140,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>`
         }
       ],
       __dangerouslyDisableSanitizersByTagID: {
+        'gtag-init': ['innerHTML'],
         'gtm-script': ['innerHTML'],
         'gtm-noscript': ['innerHTML']
       }

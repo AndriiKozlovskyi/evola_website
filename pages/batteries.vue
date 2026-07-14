@@ -112,11 +112,11 @@
 
             <!-- Battery image — centered, large, no container box -->
             <img
-              src="/assets/battery_hero.png"
+              src="/assets/battery_hero.webp"
               alt="E-bike battery EVOLA"
               class="mb-20 md:mb-0 relative z-10 w-auto object-contain drop-shadow-2xl select-none"
               style="max-height: 340px; max-width: 100%; filter: drop-shadow(0 20px 60px rgba(240,91,4,0.25)) drop-shadow(0 8px 24px rgba(0,0,0,0.6));"
-
+              width="336" height="199"
               decoding="async"
               fetchpriority="high"
             />

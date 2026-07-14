@@ -43,9 +43,11 @@
         <div class="relative">
           <div class="absolute inset-0 rounded-3xl" style="background: radial-gradient(ellipse at 70% 50%, rgba(240,91,4,0.1) 0%, transparent 65%);"></div>
           <img
-            src="/assets/conversion.webp"
+            src="/assets/conversion_opt.webp"
             :alt="$t('conversion.imageAlt')"
             class="relative w-full h-auto rounded-3xl ring-1 ring-white/10 shadow-2xl"
+            width="800" height="647"
+            loading="lazy"
           />
         </div>
 

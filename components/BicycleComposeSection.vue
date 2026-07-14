@@ -47,7 +47,9 @@
             :src="activeOption.image"
             :alt="activeOption.label"
             class="relative w-full max-w-md mx-auto rounded-2xl ring-1 ring-white/10 object-contain"
+            width="800" height="600"
             loading="lazy"
+            decoding="async"
           />
         </div>
 
@@ -143,7 +145,7 @@
 import { computed, ref } from 'vue'
 import Button from './ui/Button.vue'
 import { useI18n } from 'vue-i18n'
-import bicycleMain from '@/assets/bicycle_main.webp'
+const bicycleMain = '/assets/bicycle_main_opt.webp'
 
 const { t } = useI18n()
 const selected = ref('fullSuspension')
@@ -172,7 +174,7 @@ const rentalOptions = computed(()=> [
   },
   {
     value: 'hardtail',
-    image: '/assets/conversion.webp',
+    image: '/assets/conversion_opt.webp',
     label: t('bicycleCompose.options.hardtail.label'),
     meta: t('bicycleCompose.options.hardtail.meta'),
     description: t('bicycleCompose.options.hardtail.description'),
