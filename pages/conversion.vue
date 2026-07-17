@@ -156,6 +156,10 @@
               :alt="$t(photo.altKey)"
               class="w-full h-64 sm:h-72 object-cover group-hover:scale-105 transition-transform duration-500"
               loading="lazy"
+              decoding="async"
+              width="820"
+              height="1093"
+              sizes="(max-width: 640px) 100vw, (max-width: 1280px) 33vw, 427px"
             />
             <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(5,10,18,0.85) 0%, transparent 50%);"></div>
             <div class="absolute bottom-4 left-4 right-4">

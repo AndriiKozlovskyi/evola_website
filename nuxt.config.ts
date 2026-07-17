@@ -20,7 +20,7 @@ export default defineNuxtConfig({
     dirs: ['~/components']
   },
   i18n: {
-    baseUrl: 'https://evola.pl',
+    baseUrl: 'https://evola-bikes.com',
     locales: [
       {
         code: 'ru',
