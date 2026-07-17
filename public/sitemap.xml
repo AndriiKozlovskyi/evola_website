@@ -25,6 +25,14 @@
   <priority>0.90</priority>
 </url>
 <url>
+  <loc>https://evola-bikes.com/conversion</loc>
+  <xhtml:link rel="alternate" hreflang="ru" href="https://evola-bikes.com/conversion"/>
+  <xhtml:link rel="alternate" hreflang="en" href="https://evola-bikes.com/en/conversion"/>
+  <xhtml:link rel="alternate" hreflang="pl" href="https://evola-bikes.com/pl/conversion"/>
+  <lastmod>2026-07-15</lastmod>
+  <priority>0.90</priority>
+</url>
+<url>
   <loc>https://evola-bikes.com/blog</loc>
   <xhtml:link rel="alternate" hreflang="ru" href="https://evola-bikes.com/blog"/>
   <xhtml:link rel="alternate" hreflang="en" href="https://evola-bikes.com/en/blog"/>

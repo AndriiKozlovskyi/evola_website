@@ -77,12 +77,13 @@ import LanguageSelector from './ui/LanguageSelector.vue'
 
 const route = useRoute()
 const { t } = useI18n()
+const localePath = useLocalePath()
 const isMobileMenuOpen = ref(false)
 
 const navItems = computed(() => [
-  { to: '/', label: t('menu.rent') },
-  { to: '/batteries', label: t('menu.batteries') },
-  { to: '/blog', label: t('menu.blog') }
+  { to: localePath('/'), label: t('menu.rent') },
+  { to: localePath('/batteries'), label: t('menu.batteries') },
+  { to: localePath('/conversion'), label: t('menu.conversion') },
 ])
 </script>
 

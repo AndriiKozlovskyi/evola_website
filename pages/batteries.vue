@@ -2,42 +2,11 @@
   <div>
 
     <!-- ═══ HERO ═══ -->
-    <section class="relative overflow-hidden min-h-[560px] md:min-h-[640px] flex flex-col">
+    <section class="relative overflow-hidden min-h-[560px] md:min-h-[640px] flex flex-col" style="background: var(--bg-1, #07111f);">
 
-      <!-- Diagonal split background: left = site dark, right = orange-tinted panel -->
-      <!-- Full dark base -->
-      <div class="absolute inset-0" style="background: var(--bg-1, #07111f);"></div>
-
-      <!-- Right orange panel with diagonal left edge (desktop only) -->
-      <div class="absolute inset-y-0 right-0 hidden md:block"
-           style="width: 52%; clip-path: polygon(12% 0%, 100% 0%, 100% 100%, 0% 100%); background: linear-gradient(135deg, rgba(240,91,4,0.18) 0%, rgba(180,60,0,0.10) 50%, rgba(100,30,0,0.06) 100%);">
-        <!-- inner radial glow -->
-        <div class="absolute inset-0"
-             style="background: radial-gradient(ellipse at 60% 40%, rgba(240,91,4,0.22) 0%, transparent 65%);"></div>
-      </div>
-
-      <!-- Mobile: diagonal orange panel (bottom portion, diagonal top edge) -->
-      <div class="absolute inset-x-0 bottom-0 md:hidden pointer-events-none"
-           style="top: 30%; clip-path: polygon(0% 60%, 100% 0%, 100% 100%, 10% 100%); background: linear-gradient(160deg, rgba(240,91,4,0.17) 0%, rgba(160,50,0,0.10) 50%, rgba(80,20,0,0.05) 100%);">
-        <div class="absolute inset-0"
-             style="background: radial-gradient(ellipse at 50% 60%, rgba(240,91,4,0.18) 0%, transparent 65%);"></div>
-      </div>
-      <!-- Mobile: diagonal border line -->
-      <div class="absolute inset-x-0 bottom-0 md:hidden pointer-events-none" style="top: 30%;">
-        <svg class="absolute top-0 left-0 w-full" style="height: 60px;" preserveAspectRatio="none" viewBox="0 0 100 10">
-          <line x1="0" y1="1.8" x2="100" y2="0"
-                stroke="rgba(240,91,4,0.30)" stroke-width="0.25" vector-effect="non-scaling-stroke"/>
-        </svg>
-      </div>
-
-      <!-- Desktop: diagonal border line -->
-      <div class="absolute inset-y-0 right-0 hidden md:block pointer-events-none"
-           style="width: 52%;">
-        <svg class="absolute inset-0 w-full h-full" preserveAspectRatio="none" viewBox="0 0 100 100">
-          <line x1="12" y1="0" x2="0" y2="100"
-                stroke="rgba(240,91,4,0.25)" stroke-width="0.3" vector-effect="non-scaling-stroke"/>
-        </svg>
-      </div>
+      <!-- Radial orange glow from top center -->
+      <div class="absolute inset-0 pointer-events-none" style="background: radial-gradient(ellipse 80% 55% at 50% 0%, rgba(240,91,4,0.18) 0%, transparent 70%);"></div>
+      <div class="absolute inset-0 pointer-events-none" style="background: linear-gradient(180deg, rgba(240,91,4,0.05) 0%, transparent 50%);"></div>
 
       <div class="relative z-10 flex-1 max-w-screen-xl mx-auto w-full px-4 sm:px-6 lg:px-8 pt-10 pb-10 sm:pt-14 sm:pb-14 md:py-24 flex flex-col justify-center">
 
@@ -98,13 +67,6 @@
               </a>
             </div>
 
-            <!-- Stats row -->
-          <div class="hidden md:grid mt-10 sm:mt-12 grid-cols-2 sm:flex sm:flex-wrap gap-x-6 sm:gap-x-8 gap-y-5">
-              <div v-for="stat in heroStats" :key="stat.label" class="flex flex-col">
-                <span class="text-xl sm:text-2xl font-black text-white">{{ stat.value }}</span>
-                <span class="text-xs text-[#566a7f] mt-0.5">{{ stat.label }}</span>
-              </div>
-            </div>
           </div>
 
           <!-- Right: battery image over diagonal panel (image before text on mobile) -->
@@ -114,25 +76,12 @@
             <img
               src="/assets/battery_hero.webp"
               alt="E-bike battery EVOLA"
-              class="mb-20 md:mb-0 relative z-10 w-auto object-contain drop-shadow-2xl select-none"
+              class="relative z-10 w-auto object-contain drop-shadow-2xl select-none"
               style="max-height: 340px; max-width: 100%; filter: drop-shadow(0 20px 60px rgba(240,91,4,0.25)) drop-shadow(0 8px 24px rgba(0,0,0,0.6));"
               width="336" height="199"
               decoding="async"
               fetchpriority="high"
             />
-
-            <!-- Bottom price strip -->
-            <div class="bottom-0 absolute inset-x-0 flex justify-center gap-2.5 pb-3 md:pb-4">
-              <div v-for="b in batteryData.slice(1)" :key="`m-${b.key}`"
-                   class="flex flex-col items-center rounded-xl px-3 py-2.5 gap-0.5"
-                   :style="b.key === 'b30'
-                     ? 'background: rgba(240,91,4,0.15); backdrop-filter: blur(6px); border: 1px solid rgba(240,91,4,0.35);'
-                     : 'background: rgba(0,0,0,0.6); backdrop-filter: blur(6px); border: 1px solid rgba(255,255,255,0.08);'">
-                <span class="text-[14px] font-black text-white leading-none">{{ $t(`batteries.${b.key}.label`) }}</span>
-                <span class="text-[13px] font-bold leading-none" :class="b.key === 'b30' ? 'text-[#f05b04]' : 'text-[#f07040]'">{{ $t(`batteries.${b.key}.rentPrice`) }}</span>
-                <span class="text-[12px] text-[#566a7f] leading-none mt-0.5">{{ $t(`batteries.${b.key}.buyPrice`) }}</span>
-              </div>
-            </div>
           </div>
           <!-- CTA buttons -->
             <!-- Mobile CTAs — pinned to bottom of hero -->
@@ -161,7 +110,18 @@
       </div>
     </section>
 
-    <div class="max-w-screen-xl mx-auto px-4 sm:px-6"><div class="divider-glow"></div></div>
+    <!-- Stats strip -->
+    <section class="py-6 sm:py-8" style="border-top: 1px solid rgba(255,255,255,0.06); border-bottom: 1px solid rgba(255,255,255,0.06);">
+      <div class="max-w-screen-xl mx-auto px-4 sm:px-6">
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6">
+          <div v-for="stat in heroStats" :key="stat.label" class="text-center">
+            <div class="text-xl sm:text-2xl font-black text-[#f05b04] leading-none mb-1">{{ stat.value }}</div>
+            <div class="text-xs text-[#566a7f] uppercase tracking-widest">{{ stat.label }}</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
 
     <!-- ═══ BATTERIES SECTION (rent + buy merged) ═══ -->
     <section class="max-w-screen-xl mx-auto px-4 sm:px-6 py-14 sm:py-20">
@@ -410,7 +370,7 @@ useSeoMeta({
   description: () => t('batteries.description'),
   ogTitle: () => t('batteries.title'),
   ogDescription: () => t('batteries.description'),
-  ogImage: 'https://evola.pl/assets/dp7.webp',
+  ogImage: 'https://evola-bikes.com/assets/dp7.webp',
   twitterCard: 'summary_large_image',
 })
 
@@ -424,7 +384,7 @@ useHead(() => ({
         '@type': 'ItemList',
         name: pageTitle.value,
         description: pageDesc.value,
-        url: 'https://evola.pl/batteries',
+        url: 'https://evola-bikes.com/batteries',
         itemListElement: batterySchema.map((b, i) => ({
           '@type': 'ListItem',
           position: i + 1,
@@ -441,7 +401,7 @@ useHead(() => ({
                 priceCurrency: 'PLN',
                 availability: 'https://schema.org/InStock',
                 itemCondition: 'https://schema.org/NewCondition',
-                seller: { '@type': 'LocalBusiness', name: 'EVOLA', url: 'https://evola.pl', telephone: '+48789711631' }
+                seller: { '@type': 'LocalBusiness', name: 'EVOLA', url: 'https://evola-bikes.com', telephone: '+48789711631' }
               },
               {
                 '@type': 'Offer',

@@ -23,7 +23,7 @@ const seoMeta = computed(() => {
     default:
       return {
         title: 'Аренда Электровелосипедов для Курьеров — Вроцлав | Evola',
-        description: 'Аренда электровелосипедов для курьеров во Вроцлаве. Хардтейл 200 zł/нед., full suspension 250 zł/нед. Обслуживание полностью за наш счёт плюс бонусы постоянным клиентам.',
+        description: 'Аренда электровелосипедов для курьеров во Вроцлаве. Хардтейл 200 zł/нед., двухподвес 250 zł/нед. Сервис в цене, договор, бонусы постоянным клиентам.',
       }
   }
 })
@@ -33,7 +33,7 @@ useSeoMeta({
   description: () => seoMeta.value.description,
   ogTitle: () => seoMeta.value.title,
   ogDescription: () => seoMeta.value.description,
-  ogImage: 'https://evola.pl/assets/bic.webp',
+  ogImage: 'https://evola-bikes.com/assets/bic.webp',
   twitterCard: 'summary_large_image',
 })
 
@@ -45,8 +45,8 @@ useHead({
         '@context': 'https://schema.org',
         '@type': 'LocalBusiness',
         name: 'Evola E-bicycles',
-        url: 'https://evola.pl',
-        image: 'https://evola.pl/assets/bic.webp',
+        url: 'https://evola-bikes.com',
+        image: 'https://evola-bikes.com/assets/bic.webp',
         description: 'Wynajem rowerów elektrycznych we Wrocławiu z serwisem w cenie.',
         telephone: '+48789711631',
         email: 'evolateam@gmail.com',

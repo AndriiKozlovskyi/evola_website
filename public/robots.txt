@@ -1,6 +1,21 @@
 
 User-agent: *
-Disallow: 
 Disallow: /cgi-bin/
 Disallow: /_nuxt/
-Sitemap: https://evola.tech/sitemap.xml
+Sitemap: https://evola-bikes.com/sitemap.xml
+
+# AI crawlers — allow full access
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Googlebot
+Allow: /

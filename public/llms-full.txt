@@ -1,21 +1,21 @@
 # EVOLA — Full Reference
 
-> EVOLA rents electric bikes and batteries in Wroclaw, Poland, converts bicycles into electric ones, and sells e-bike batteries. This file contains the full pricing, specs, and FAQ content in Russian (default, `/`), English (`/en`), and Polish (`/pl`).
+> EVOLA rents electric bikes and batteries in Wroclaw, Poland, converts bicycles into electric ones, repairs and reconditions e-bike batteries, and sells e-bike batteries. This file contains the full pricing, specs, and FAQ content in Russian (default, `/`), English (`/en`), and Polish (`/pl`).
 
 Contact: +48 789 711 631 · evolateam@gmail.com · ul. Kwiska 20, Wroclaw, Poland
 Telegram: https://t.me/evola_manager · Facebook: https://www.facebook.com/profile.php?id=61572740802927
 
 ---
 
-## RUSSIAN (default, https://evola.pl/)
+## RUSSIAN (default, https://evola-bikes.com/)
 
-### Аренда велосипедов (https://evola.pl/rent)
+### Аренда велосипедов (https://evola-bikes.com/)
 - Двухподвес 30Ah — 250 zł / неделя. В комплекте: батарея 30Ah, полный набор аксессуаров, сервис 2 раза в неделю, понятный договор аренды.
-- Хардтейл 30Ah — 220 zł / неделя. В комплекте: батарея 30Ah, полный набор аксессуаров, сервис 2 раза в неделю.
+- Хардтейл 30Ah — 200 zł / неделя. В комплекте: батарея 30Ah, полный набор аксессуаров, сервис 2 раза в неделю.
 - Минимальный срок аренды — 1 неделя.
 - В комплекте с любым велосипедом: мягкое сиденье, крылья, фонарь, замок, сигнализация, держатель для телефона.
 
-### Батареи — аренда и продажа (https://evola.pl/batteries)
+### Батареи — аренда и продажа (https://evola-bikes.com/batteries)
 
 Аренда (минимум 1 неделя, сервис в цене):
 - 22Ah — 50 zł / нед.
@@ -32,13 +32,20 @@ Telegram: https://t.me/evola_manager · Facebook: https://www.facebook.com/profi
 Что включено: сервис 2x в неделю в цене аренды, гарантия 12 месяцев на покупку, оригинальные ячейки 21700, контроль температуры, мониторинг через Bluetooth.
 Запас хода: до 100 км на одном заряде при средней скорости 25 км/ч на ровной дороге.
 
-### Электрокомплекты для конверсии (https://evola.pl/kits)
-- LITE — 250W, скорость 25 км/ч, запас хода 100 км, 2600 PLN. Легальный комплект для города, без регистрации.
-- BASE — 500W, скорость 40 км/ч, запас хода 70 км, 3200 PLN. Универсальный комплект для города и пригорода, без регистрации.
-- TURBO — 3000W, скорость 70 км/ч, запас хода 70 км, 4500 PLN. Максимальная мощность для экстремального катания.
+### Конверсия велосипедов (https://evola-bikes.com/conversion)
+Конверсия обычного велосипеда в электровелосипед от 1200 zł. Срок выполнения 2–4 дня. Гарантия 12 месяцев. Бесплатная консультация.
 
-### Конверсия и сборка на заказ
-Этапы: оценка базового велосипеда → подбор мотора, батареи и конфигурации → сборка и настройка → передача готового велосипеда с тест-драйвом.
+Услуги:
+- Конверсия велосипеда — от 1200 zł. Установка электропривода: Mid Drive (центральный) или Hub Motor (мотор-колесо), аккумулятор до 35Ah, контроллер, дисплей.
+- Велосипед под заказ — по запросу. Сборка с нуля, классический или электрический, под любой бюджет.
+- Ремонт и регенерация АКБ e-bike — по запросу. Диагностика, замена ячеек 18650/21700, ремонт BMS, восстановление ёмкости.
+- Изготовление аккумуляторов — от 1200 zł. Ячейки 18650/21700, 10–50Ah, в корпусе или сумке, Smart BMS.
+
+Типы приводов:
+- Mid Drive: мотор в каретке, работает через трансмиссию, лучше на рельефе и длинных маршрутах.
+- Hub Motor: мотор в ступице колеса, проще, тише, дешевле — для ровного городского использования.
+
+Какой велосипед подойдёт: колёса 26–29″, стальная или алюминиевая рама, дисковые тормоза (рекомендуется), исправная ходовая часть.
 
 ### FAQ — велосипеды
 В: Какой минимальный срок аренды?
@@ -54,7 +61,7 @@ Telegram: https://t.me/evola_manager · Facebook: https://www.facebook.com/profi
 О: Да, договор с понятными условиями, без скрытых платежей и штрафов.
 
 В: Можно ли переделать мой велосипед в электрический?
-О: Да, подбираем мотор, батарею и комплектующие под задачи и бюджет.
+О: Да, конверсия велосипеда в электровелосипед от 1200 zł. Подбираем мотор, батарею и комплектующие под задачи и бюджет.
 
 ### FAQ — батареи
 В: Какие ёмкости доступны в аренду и на продажу?
@@ -69,17 +76,27 @@ Telegram: https://t.me/evola_manager · Facebook: https://www.facebook.com/profi
 В: Какой запас хода у аккумулятора 30Ah?
 О: До 70–90 км при средней скорости 25 км/ч на ровной дороге.
 
+### FAQ — конверсия
+В: Любой ли велосипед подходит для конверсии?
+О: Большинство горных и городских велосипедов с колёсами 26–29″. Раму смотрим индивидуально — пришлите фото.
+
+В: Сколько времени занимает конверсия?
+О: Сборка 1–2 дня, с учётом подбора и доставки компонентов — 2–4 дня от обращения до выдачи.
+
+В: Нужно ли регистрировать электровелосипед в Польше?
+О: До 250 Вт и 25 км/ч — не требуется. Более мощные установки — вопрос отдельно.
+
 ---
 
-## ENGLISH (https://evola.pl/en)
+## ENGLISH (https://evola-bikes.com/en)
 
-### Bike rental (https://evola.pl/en/rent)
+### Bike rental (https://evola-bikes.com/en)
 - Full suspension 30Ah — 250 zl / week. Includes: 30Ah battery, full accessory package, service twice a week, clear rental contract.
-- Hardtail 30Ah — 220 zl / week. Includes: 30Ah battery, full accessory package, service twice a week.
+- Hardtail 30Ah — 200 zl / week. Includes: 30Ah battery, full accessory package, service twice a week.
 - Minimum rental period — 1 week.
 - Included with every bike: soft saddle, fenders, light, lock, alarm, phone holder.
 
-### Batteries — rent and buy (https://evola.pl/en/batteries)
+### Batteries — rent and buy (https://evola-bikes.com/en/batteries)
 
 Rental (minimum 1 week, service included):
 - 22Ah — 50 zl / week
@@ -96,13 +113,20 @@ Purchase (12-month warranty, 21700 M58T cells, Smart BMS with Bluetooth, 48V):
 Included: service twice a week in the rental price; 12-month warranty on purchase; original 21700 cells; temperature control; Bluetooth monitoring.
 Range: up to 100 km on a single charge at 25 km/h on flat road.
 
-### Conversion kits (https://evola.pl/en/kits)
-- LITE — 250W, 25 km/h top speed, 100 km range, 2600 PLN. Legal city kit, no registration required.
-- BASE — 500W, 40 km/h top speed, 70 km range, 3200 PLN. Universal for city and countryside, no registration.
-- TURBO — 3000W, 70 km/h top speed, 70 km range, 4500 PLN. Maximum power for extreme riding.
+### E-bike conversion (https://evola-bikes.com/en/conversion)
+Electric bike conversion and e-bike kit installation from 1200 zł. Turnaround 2–4 days. 12-month warranty. Free consultation.
 
-### Custom conversion and builds
-Steps: assess base bike → choose motor, battery, configuration → build and tune → hand over for test ride.
+Services:
+- Bike conversion — from 1200 zł. Mid Drive or Hub Motor, battery up to 35Ah, controller, display.
+- Custom bike build — quote on request. Built from scratch, classic or electric, any budget.
+- E-bike battery repair and reconditioning — quote on request. Diagnostics, cell replacement 18650/21700, BMS repair, capacity restoration.
+- Custom battery building — from 1200 zł. 18650/21700 cells, 10–50Ah, case or bag, Smart BMS.
+
+Drive types:
+- Mid Drive: motor at the bottom bracket, uses the bike drivetrain, best for hills and long routes.
+- Hub Motor: motor in the wheel hub, simpler, quieter, lower cost — great for flat city use.
+
+Suitable bikes: wheels 26–29″, steel or aluminium frame, disc brakes recommended, sound drivetrain.
 
 ### FAQ — bikes
 Q: What is the minimum rental period?
@@ -118,7 +142,7 @@ Q: Do you sign a rental contract?
 A: Yes, clear terms, no hidden fees or penalties.
 
 Q: Can you convert my bike into an electric one?
-A: Yes, we select motor, battery, and components to match your needs and budget.
+A: Yes, electric bike conversion from 1200 zł. We select motor, battery, and components to match your needs and budget.
 
 ### FAQ — batteries
 Q: What capacities are available?
@@ -133,17 +157,27 @@ A: 12-month warranty on all batteries.
 Q: What range does a 30Ah battery give?
 A: Roughly 70–90 km at 25 km/h on flat road.
 
+### FAQ — conversion
+Q: Does every bike qualify for conversion?
+A: Most mountain and city bikes with 26–29″ wheels qualify. We assess frames individually — send a photo.
+
+Q: How long does a conversion take?
+A: Assembly 1–2 days; including parts sourcing — 2–4 days from enquiry to pickup.
+
+Q: Does an e-bike need to be registered in Poland?
+A: Up to 250 W and 25 km/h — no registration required. More powerful setups are a separate question.
+
 ---
 
-## POLISH (https://evola.pl/pl)
+## POLISH (https://evola-bikes.com/pl)
 
-### Wynajem rowerów (https://evola.pl/pl/rent)
+### Wynajem rowerów (https://evola-bikes.com/pl)
 - Full suspension 30Ah — 250 zł / tydzień. W cenie: bateria 30Ah, pełny pakiet akcesoriów, serwis 2 razy w tygodniu, jasna umowa wynajmu.
-- Hardtail 30Ah — 220 zł / tydzień. W cenie: bateria 30Ah, pełny pakiet akcesoriów, serwis 2 razy w tygodniu.
+- Hardtail 30Ah — 200 zł / tydzień. W cenie: bateria 30Ah, pełny pakiet akcesoriów, serwis 2 razy w tygodniu.
 - Minimalny okres wynajmu — 1 tydzień.
 - W cenie każdego roweru: miękkie siodełko, błotniki, lampka, zamek, alarm, uchwyt na telefon.
 
-### Baterie — wynajem i zakup (https://evola.pl/pl/batteries)
+### Baterie — wynajem i zakup (https://evola-bikes.com/pl/batteries)
 
 Wynajem (minimum 1 tydzień, serwis w cenie):
 - 22Ah — 50 zł / tydz.
@@ -160,13 +194,20 @@ Zakup (gwarancja 12 miesięcy, ogniwa 21700 M58T, Smart BMS z Bluetooth, 48V):
 Wliczone: serwis 2x w tygodniu w cenie wynajmu; gwarancja 12 miesięcy przy zakupie; oryginalne ogniwa 21700; kontrola temperatury; monitoring przez Bluetooth.
 Zasięg: do 100 km na jednym ładowaniu przy 25 km/h na płaskiej drodze.
 
-### Zestawy konwersyjne (https://evola.pl/pl/kits)
-- LITE — 250W, prędkość 25 km/h, zasięg 100 km, 2600 PLN. Legalny zestaw miejski, bez rejestracji.
-- BASE — 500W, prędkość 40 km/h, zasięg 70 km, 3200 PLN. Uniwersalny do miasta i poza miastem, bez rejestracji.
-- TURBO — 3000W, prędkość 70 km/h, zasięg 70 km, 4500 PLN. Maksymalna moc do ekstremalnej jazdy.
+### Konwersja roweru na elektryczny (https://evola-bikes.com/pl/conversion)
+Konwersja roweru na elektryczny i montaż zestawu elektrycznego od 1200 zł. Czas realizacji 2–4 dni. Gwarancja 12 miesięcy. Konsultacja bezpłatna.
 
-### Konwersja i budowa na zamówienie
-Etapy: ocena bazowego roweru → dobór silnika, baterii, konfiguracji → montaż i ustawienie → przekazanie roweru z jazdą próbną.
+Usługi:
+- Konwersja roweru — od 1200 zł. Montaż napędu Mid Drive lub silnika w piaście (Hub Motor), akumulator do 35Ah, kontroler, wyświetlacz.
+- Rower na zamówienie — wycena indywidualna. Budowa od podstaw, klasyczny lub elektryczny, każdy budżet.
+- Naprawa i regeneracja baterii ebike — wycena indywidualna. Diagnostyka, wymiana ogniw 18650/21700, naprawa BMS, przywrócenie pojemności.
+- Budowa akumulatorów — od 1200 zł. Ogniwa 18650/21700, 10–50Ah, w obudowie lub torbie, Smart BMS.
+
+Typy napędów:
+- Mid Drive: silnik w suporcie, pracuje przez układ napędowy roweru, najlepszy na wzniesieniach i długich trasach.
+- Hub Motor: silnik w piaście koła, prostszy, cichszy, tańszy — idealny do jazdy po mieście.
+
+Jakie rowery się nadają: koła 26–29″, rama stalowa lub aluminiowa, hamulce tarczowe (zalecane), sprawne koła jezdne.
 
 ### FAQ — rowery
 P: Jaki jest minimalny okres wynajmu?
@@ -182,7 +223,7 @@ P: Czy podpisujecie umowę wynajmu?
 O: Tak, jasne warunki, bez ukrytych opłat i kar.
 
 P: Czy można przerobić mój rower na elektryczny?
-O: Tak, dobieramy silnik, baterię i osprzęt pod potrzeby i budżet.
+O: Tak, konwersja roweru na elektryczny od 1200 zł. Dobieramy silnik, baterię i osprzęt pod potrzeby i budżet.
 
 ### FAQ — baterie
 P: Jakie pojemności są dostępne?
@@ -196,3 +237,16 @@ O: 12 miesięcy na wszystkie akumulatory.
 
 P: Jaki zasięg daje akumulator 30Ah?
 O: Około 70–90 km przy 25 km/h na płaskiej drodze.
+
+### FAQ — konwersja
+P: Czy każdy rower nadaje się do konwersji?
+O: Większość rowerów górskich i miejskich z kołami 26–29″. Ramę oceniamy indywidualnie — wyślij zdjęcie.
+
+P: Ile trwa konwersja?
+O: Montaż 1–2 dni; z uwzględnieniem doboru i dostawy komponentów — 2–4 dni od zgłoszenia do odbioru.
+
+P: Czy trzeba rejestrować e-bike w Polsce?
+O: Do 250 W i 25 km/h — bez rejestracji. Mocniejsze instalacje — to kwestia oddzielna.
+
+P: Jaki zasięg po konwersji?
+O: Z akumulatorem 30Ah na płaskim terenie — 70–90 km przy średniej prędkości.

@@ -2,10 +2,6 @@
   <div class="overflow-hidden">
     <HeroSection />
 
-    <div class=" px-4 sm:px-6">
-      <div class="divider-glow my-4"></div>
-    </div>
-
     <PricingSection />
 
     <div class="  px-4 sm:px-6">

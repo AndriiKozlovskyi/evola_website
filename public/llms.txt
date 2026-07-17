@@ -1,26 +1,23 @@
 # EVOLA
 
-> EVOLA rents electric bikes and batteries in Wroclaw, Poland, converts standard bicycles into electric ones, and sells e-bike batteries. Rental periods start at 1 week with bike service included twice a week.
+> EVOLA rents electric bikes and batteries in Wroclaw, Poland, converts standard bicycles into electric ones, repairs and reconditions e-bike batteries, and sells e-bike batteries. Rental periods start at 1 week with bike service included twice a week.
 
-EVOLA offers two e-bike models for weekly rental (full suspension and hardtail, both with 30Ah batteries), standalone battery rentals (22–35Ah, 50–130 zl/week), battery sales (22–35Ah, 1200–2000 PLN, 1-year warranty), custom e-bike conversion/build services, and ready-made e-bike kits (250W–3000W). The site is available in three languages: Russian at `/` (default), English at `/en`, and Polish at `/pl`.
+EVOLA offers two e-bike models for weekly rental (full suspension and hardtail, both with 30Ah batteries), standalone battery rentals (22–35Ah, 50–130 zl/week), battery sales (22–35Ah, 1200–2000 PLN, 12-month warranty), custom e-bike conversion/build services from 1200 zl, battery repair and reconditioning, and ready-made e-bike kits (250W–3000W). The site is available in three languages: Russian at `/` (default), English at `/en`, and Polish at `/pl`.
 
 ## Site (Russian, default)
-- [Главная — Аренда электровелосипедов](https://evola.pl/): Hero, pricing, comparison, benefits, conversion, FAQ.
-- [Аренда](https://evola.pl/rent): Full rental landing page.
-- [Батареи — аренда и продажа](https://evola.pl/batteries): Battery rental (50–130 zł/week) and purchase (1200–2000 PLN) for 22/25/30/35Ah. Service included. 1-year warranty on purchase. FAQ.
-- [Электрокомплекты](https://evola.pl/kits): E-bike conversion kits (LITE 250W, BASE 500W, TURBO 3000W).
+- [Главная — Аренда электровелосипедов](https://evola-bikes.com/): Hero, pricing, comparison, benefits, conversion, FAQ.
+- [Батареи — аренда и продажа](https://evola-bikes.com/batteries): Battery rental (50–130 zł/week) and purchase (1200–2000 PLN) for 22/25/30/35Ah. Service included. 12-month warranty on purchase. FAQ.
+- [Конверсия — электровелосипед под заказ](https://evola-bikes.com/conversion): Bike-to-electric conversion from 1200 zł, custom builds, battery repair and reconditioning, custom battery assembly. Gallery, tech specs, process, FAQ.
 
 ## Site (English)
-- [Home — Electric bike rental](https://evola.pl/en): Hero, pricing, comparison, benefits, conversion, FAQ.
-- [Rent](https://evola.pl/en/rent): Full rental landing page.
-- [Batteries — rent and buy](https://evola.pl/en/batteries): Battery rental (50–130 zl/week) and purchase (1200–2000 PLN) for 22/25/30/35Ah. Service included. 1-year warranty on purchase. FAQ.
-- [Kits](https://evola.pl/en/kits): E-bike conversion kits (LITE 250W, BASE 500W, TURBO 3000W).
+- [Home — Electric bike rental](https://evola-bikes.com/en): Hero, pricing, comparison, benefits, conversion, FAQ.
+- [Batteries — rent and buy](https://evola-bikes.com/en/batteries): Battery rental (50–130 zl/week) and purchase (1200–2000 PLN) for 22/25/30/35Ah. Service included. 12-month warranty on purchase. FAQ.
+- [Conversion — custom e-bike](https://evola-bikes.com/en/conversion): Bike-to-electric conversion from 1200 zł, custom builds, battery repair and reconditioning, custom battery assembly. Gallery, tech specs, process, FAQ.
 
 ## Site (Polish)
-- [Strona główna — Wynajem rowerów elektrycznych](https://evola.pl/pl): Hero, pricing, comparison, benefits, conversion, FAQ.
-- [Wynajem](https://evola.pl/pl/rent): Full rental landing page.
-- [Baterie — wynajem i zakup](https://evola.pl/pl/batteries): Wynajem baterii (50–130 zł/tydz.) i zakup (1200–2000 PLN) dla 22/25/30/35Ah. Serwis w cenie. Gwarancja 1 rok przy zakupie. FAQ.
-- [Zestawy](https://evola.pl/pl/kits): E-bike conversion kits (LITE 250W, BASE 500W, TURBO 3000W).
+- [Strona główna — Wynajem rowerów elektrycznych](https://evola-bikes.com/pl): Hero, pricing, comparison, benefits, conversion, FAQ.
+- [Baterie — wynajem i zakup](https://evola-bikes.com/pl/batteries): Wynajem baterii (50–130 zł/tydz.) i zakup (1200–2000 PLN) dla 22/25/30/35Ah. Serwis w cenie. Gwarancja 12 miesięcy przy zakupie. FAQ.
+- [Konwersja — rower elektryczny na zamówienie](https://evola-bikes.com/pl/conversion): Konwersja roweru na elektryczny od 1200 zł, budowa na zamówienie, naprawa i regeneracja baterii ebike, budowa akumulatorów. Galeria, dane techniczne, proces, FAQ.
 
 ## Contact
 - Phone: +48 789 711 631
@@ -30,4 +27,4 @@ EVOLA offers two e-bike models for weekly rental (full suspension and hardtail, 
 - Facebook: https://www.facebook.com/profile.php?id=61572740802927
 
 ## Optional
-- [llms-full.txt](https://evola.pl/llms-full.txt): Full pricing, specs, and FAQ content in all three languages.
+- [llms-full.txt](https://evola-bikes.com/llms-full.txt): Full pricing, specs, and FAQ content in all three languages.

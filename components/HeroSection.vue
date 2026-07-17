@@ -1,37 +1,9 @@
 <template>
-  <section class="relative overflow-hidden min-h-[560px] md:min-h-[90vh] flex flex-col">
+  <section class="relative overflow-hidden min-h-[560px] md:min-h-[90vh] flex flex-col" style="background: var(--bg-1, #07111f);">
 
-    <!-- Full dark base -->
-    <div class="absolute inset-0" style="background: var(--bg-1, #07111f);"></div>
-
-    <!-- Desktop: right orange diagonal panel -->
-    <div class="absolute inset-y-0 right-0 hidden md:block"
-         style="width: 52%; clip-path: polygon(12% 0%, 100% 0%, 100% 100%, 0% 100%); background: linear-gradient(135deg, rgba(240,91,4,0.18) 0%, rgba(180,60,0,0.10) 50%, rgba(100,30,0,0.06) 100%);">
-      <div class="absolute inset-0"
-           style="background: radial-gradient(ellipse at 60% 40%, rgba(240,91,4,0.22) 0%, transparent 65%);"></div>
-    </div>
-
-    <!-- Mobile: diagonal orange panel -->
-    <div class="absolute inset-x-0 bottom-0 md:hidden pointer-events-none"
-         style="top: 30%; clip-path: polygon(0% 60%, 100% 0%, 100% 100%, 10% 100%); background: linear-gradient(160deg, rgba(240,91,4,0.17) 0%, rgba(160,50,0,0.10) 50%, rgba(80,20,0,0.05) 100%);">
-      <div class="absolute inset-0"
-           style="background: radial-gradient(ellipse at 50% 60%, rgba(240,91,4,0.18) 0%, transparent 65%);"></div>
-    </div>
-    <!-- Mobile: diagonal border line -->
-    <div class="absolute inset-x-0 bottom-0 md:hidden pointer-events-none" style="top: 30%;">
-      <svg class="absolute top-0 left-0 w-full" style="height: 60px;" preserveAspectRatio="none" viewBox="0 0 100 10">
-        <line x1="0" y1="1.8" x2="100" y2="0"
-              stroke="rgba(240,91,4,0.30)" stroke-width="0.25" vector-effect="non-scaling-stroke"/>
-      </svg>
-    </div>
-
-    <!-- Desktop: diagonal border line -->
-    <div class="absolute inset-y-0 right-0 hidden md:block pointer-events-none" style="width: 52%;">
-      <svg class="absolute inset-0 w-full h-full" preserveAspectRatio="none" viewBox="0 0 100 100">
-        <line x1="12" y1="0" x2="0" y2="100"
-              stroke="rgba(240,91,4,0.25)" stroke-width="0.3" vector-effect="non-scaling-stroke"/>
-      </svg>
-    </div>
+    <!-- Radial orange glow from top center -->
+    <div class="absolute inset-0 pointer-events-none" style="background: radial-gradient(ellipse 80% 55% at 50% 0%, rgba(240,91,4,0.18) 0%, transparent 70%);"></div>
+    <div class="absolute inset-0 pointer-events-none" style="background: linear-gradient(180deg, rgba(240,91,4,0.05) 0%, transparent 50%);"></div>
 
     <div class="relative z-10 flex-1 max-w-screen-xl mx-auto w-full px-4 sm:px-6 lg:px-8 pt-10 pb-10 sm:pt-14 sm:pb-14 md:py-28 flex flex-col justify-center">
 
@@ -64,27 +36,21 @@
             <h1 class="text-3xl sm:text-5xl lg:text-[3.8rem] font-black leading-[1.08] mb-4 sm:mb-5" style="color: var(--text-1);">
               {{ $t('hero.title') }}
             </h1>
-            <p class="text-base text-[#8fa3bb] leading-relaxed mb-6">
+            <p class="text-base text-[#8fa3bb] leading-relaxed mb-6 hidden">
               {{ $t('hero.subtitle') }}
             </p>
           </div>
 
           <!-- Desktop-only bullet points -->
-          <div class="hidden md:grid gap-3 mb-4">
-            <div v-for="point in heroPoints" :key="point" class="feature-tile px-4 py-3 text-sm text-[#d7e1ec]">
-              <div class="flex items-start gap-3">
-                <span class="icon-dot mt-1.5"></span>
-                <span>{{ point }}</span>
+          <div class="hidden md:grid gap-2.5 mb-4">
+              <div v-for="pt in heroPoints" :key="pt" class="flex items-start gap-3 text-sm text-[#d7e1ec]">
+                <span class="icon-dot mt-1.5 flex-shrink-0"></span>
+                <span>{{ pt }}</span>
               </div>
             </div>
-          </div>
-
-          <p class="hidden md:block text-sm text-[#566a7f] mb-8 sm:mb-10">
-            {{ $t('hero.locationLine') }}
-          </p>
 
           <!-- Desktop CTAs -->
-          <div class="hidden md:flex flex-row flex-wrap gap-3 items-center">
+          <div class="hidden md:flex flex-row flex-wrap gap-3 items-center mt-5">
             <a href="tel:+48789711631"
               class="inline-flex items-center justify-center gap-2 text-sm font-bold text-white bg-[#f05b04] hover:bg-[#d44d03] px-6 py-3.5 rounded-xl transition-colors">
               <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
@@ -102,13 +68,7 @@
             </a>
           </div>
 
-          <!-- Desktop-only quick stats -->
-          <div class="hidden md:grid mt-10 sm:mt-12 grid-cols-2 sm:flex sm:flex-wrap gap-x-6 sm:gap-x-8 gap-y-5">
-            <div v-for="stat in stats" :key="stat.label" class="flex flex-col min-w-0">
-              <span class="text-2xl font-black text-white">{{ stat.value }}</span>
-              <span class="text-xs text-[#566a7f] mt-0.5">{{ stat.label }}</span>
-            </div>
-          </div>
+
         </div>
 
         <!-- Right: image -->
@@ -118,29 +78,13 @@
           <img
             src="/assets/bike_hero.webp"
             :alt="$t('hero.imageAlt')"
-            class="mb-20 md:mb-20 relative z-10 object-contain select-none w-full"
+            class="relative z-10 object-contain select-none w-full"
             style="max-height: 420px; filter: drop-shadow(0 20px 60px rgba(240,91,4,0.22)) drop-shadow(0 8px 24px rgba(0,0,0,0.5));"
             width="680" height="620"
             sizes="(max-width: 768px) 100vw, 50vw"
             decoding="async"
             fetchpriority="high"
           />
-
-          <!-- Price strip -->
-          <div class="absolute bottom-0 inset-x-0 flex justify-center gap-2.5 pb-3 md:pb-4">
-            <div class="flex flex-col items-center rounded-xl px-4 py-2.5 gap-0.5"
-                 style="background: rgba(240,91,4,0.15); backdrop-filter: blur(6px); border: 1px solid rgba(240,91,4,0.35);">
-              <span class="text-[14px] font-black text-white leading-none">{{ $t('hero.priceChips.fullSuspensionLabel') }}</span>
-              <span class="text-[13px] font-bold text-[#f05b04] leading-none">{{ $t('hero.priceChips.fullSuspensionPrice') }}</span>
-              <span class="text-[12px] text-[#566a7f] leading-none mt-0.5">{{ $t('hero.stats.service') }}</span>
-            </div>
-            <div class="flex flex-col items-center rounded-xl px-4 py-2.5 gap-0.5"
-                 style="background: rgba(0,0,0,0.6); backdrop-filter: blur(6px); border: 1px solid rgba(255,255,255,0.08);">
-              <span class="text-[14px] font-black text-white leading-none">Hardtail</span>
-              <span class="text-[13px] font-bold text-[#f07040] leading-none">{{ $t('hero.priceChips.hardtailPrice') }}</span>
-              <span class="text-[12px] text-[#566a7f] leading-none mt-0.5">{{ $t('hero.priceChips.hardtailNote') }}</span>
-            </div>
-          </div>
         </div>
 
       </div>
@@ -169,6 +113,18 @@
         {{ $t('hero.subtitle') }}
       </p>
 
+    </div>
+  </section>
+
+  <!-- Stats strip -->
+  <section class="py-6 sm:py-8" style="border-top: 1px solid rgba(255,255,255,0.06); border-bottom: 1px solid rgba(255,255,255,0.06);">
+    <div class="max-w-screen-xl mx-auto px-4 sm:px-6">
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6">
+        <div v-for="stat in stats" :key="stat.label" class="text-center">
+          <div class="text-xl sm:text-2xl font-black text-[#f05b04] leading-none mb-1">{{ stat.value }}</div>
+          <div class="text-xs text-[#566a7f] uppercase tracking-widest">{{ stat.label }}</div>
+        </div>
+      </div>
     </div>
   </section>
 </template>

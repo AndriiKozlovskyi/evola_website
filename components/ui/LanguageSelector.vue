@@ -2,7 +2,8 @@
 import { ref, computed } from 'vue';
 import { useI18n } from 'vue-i18n';
 
-const { locales, locale, setLocale } = useI18n();
+const { locales, locale } = useI18n();
+const switchLocalePath = useSwitchLocalePath();
 
 type LanguageCode = 'en' | 'ru' | 'pl';
 
@@ -28,7 +29,7 @@ const toggleDropdown = () => {
 };
 
 const selectLanguage = (code: LanguageCode) => {
-  setLocale(code);
+  navigateTo(switchLocalePath(code));
   isOpen.value = false;
 };
 </script>

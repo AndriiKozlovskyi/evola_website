@@ -75,7 +75,8 @@ export default defineNuxtConfig({
   },
   app: {
     head: {
-      title: 'Аренда Велосипедов Вроцлав',
+      titleTemplate: '%s',
+      title: 'EVOLA',
       link: [
         { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
         { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
@@ -83,29 +84,14 @@ export default defineNuxtConfig({
       ],
       meta: [
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-        { 
-          name: 'description', 
-          content: 'Wynajem rowerow elektrycznych we Wroclawiu. Full suspension 30Ah za 250 zl tygodniowo, hardtail 30Ah za 220 zl i osobny wynajem baterii od 1 tygodnia.' 
-        },
         { name: 'robots', content: 'index, follow, max-image-preview:large' },
         { name: 'theme-color', content: '#d35400' },
         { property: 'og:type', content: 'website' },
-        { property: 'og:site_name', content: 'Аренда Велосипедов Вроцлав' },
-        { property: 'og:locale', content: 'pl_PL' },
-        { property: 'og:title', content: 'Аренда Велосипедов Вроцлав' },
-        {
-          property: 'og:description',
-          content: 'Wynajem rowerow elektrycznych i baterii we Wroclawiu z serwisem 2 razy w tygodniu w cenie.'
-        },
-        { property: 'og:image', content: 'https://evola.pl/assets/bic.webp' },
-        { property: 'og:url', content: 'https://evola.pl' },
+        { property: 'og:site_name', content: 'EVOLA' },
+        { property: 'og:image', content: 'https://evola-bikes.com/assets/bic.webp' },
+        { property: 'og:url', content: 'https://evola-bikes.com' },
         { name: 'twitter:card', content: 'summary_large_image' },
-        { name: 'twitter:title', content: 'Аренда Велосипедов Вроцлав' },
-        {
-          name: 'twitter:description',
-          content: 'Wynajem rowerow elektrycznych i baterii we Wroclawiu z serwisem w cenie.'
-        },
-        { name: 'twitter:image', content: 'https://evola.pl/assets/bic.webp' },
+        { name: 'twitter:image', content: 'https://evola-bikes.com/assets/bic.webp' },
         { name: 'google-site-verification', content: 'KcLmVDC3N39Va81b0fzPIAXqIM8RhhGlxUYuTX9a2rk' }
       ],
       script: [],
